@@ -37,8 +37,14 @@ function Food() {
 
   // }
 
-  function removeFood(index) {
-    setFood([...food.slice(0, index), ...food.slice(index + 1)]);
+  async function removeFood(id) {
+    setFood([...food.slice(0, id), ...food.slice(id + 1)]);
+    let response = await fetch(`http://localhost:3000/food/${id}`, {
+      method: "DELETE",
+    });
+    let data = response.json();
+    console.log({ data });
+    console.log({ food });
   }
 
   return (
