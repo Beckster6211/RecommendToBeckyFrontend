@@ -8,7 +8,7 @@ function List({ food, deleteFood }) {
           <ListItem
             foodText={item.food}
             index={index}
-            key={item.id}
+            key={index}
             deleteFd={deleteFood}
           />
         );

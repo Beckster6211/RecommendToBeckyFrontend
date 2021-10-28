@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Item({ foodName, foodDone, index }) {
+function Item({ foodName, foodDone, removeFood, index }) {
   //   const [eaten, setEaten] = useState();
   //   console.log(eaten);
 
@@ -35,6 +35,15 @@ function Item({ foodName, foodDone, index }) {
           <option>No</option>
           <option>Alright?</option>
         </select> */}
+      </td>
+      <td>
+        <button
+          onClick={() => {
+            removeFood(index);
+          }}
+        >
+          X
+        </button>
       </td>
     </tr>
   );

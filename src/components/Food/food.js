@@ -5,29 +5,36 @@ import FoodTable from "./Table/table";
 /////
 import List from "./List/list";
 import FoodList from "../../food";
+import Input from "./Input/input";
 
 console.log({ FoodList });
 
 function Food() {
-  const [food, setFood] = useState(FoodList);
+  const [food, setFood] = useState([]);
   console.log({ food });
+  const [form, setForm] = useState({});
 
-  // useEffect(() => {
-  //   async function GetFood() {
-  //     let response = await fetch("http://localhost:3000/food");
-  //     console.log({ response });
-  //     let payload = await response.json();
-  //     console.log({ payload });
-  //     let data = payload.data;
-  //     console.log({ data });
-  //     setFood(data);
-  //   }
-  //   GetFood();
-  // }, []);
+  useEffect(() => {
+    async function GetFood() {
+      let response = await fetch("http://localhost:3000/food");
+      console.log({ response });
+      let payload = await response.json();
+      console.log({ payload });
+      let data = payload.data;
+      console.log({ data });
+      setFood(data);
+    }
+    GetFood();
+  }, []);
 
   // function GetFood() {
   //   console.log({ FoodList });
   //   setFood(FoodList);
+  // }
+
+  // function addFood(item) {
+  //   setFood([...food, { food: item }]);
+
   // }
 
   function removeFood(index) {
@@ -37,8 +44,9 @@ function Food() {
   return (
     <div>
       <h1>Food</h1>
-      <List food={food} deleteFood={removeFood} />
-      {/* <FoodTable food={food} /> */}
+      {/* <Input addToList={addFood} />
+      <List food={food} deleteFood={removeFood} /> */}
+      <FoodTable food={food} deleteFood={removeFood} />
     </div>
   );
 }
