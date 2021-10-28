@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 import FoodTable from "./Table/table";
+import Form from "./Form/form";
 
-/////
-import List from "./List/list";
-import FoodList from "../../food";
-import Input from "./Input/input";
+///// when was a list
+// import List from "./List/list";
+// import FoodList from "../../food";
+// import Input from "./Input/input";
 
-console.log({ FoodList });
+// console.log({ FoodList });
 
 function Food() {
   const [food, setFood] = useState([]);
@@ -27,22 +28,36 @@ function Food() {
     GetFood();
   }, []);
 
-  // function GetFood() {
-  //   console.log({ FoodList });
-  //   setFood(FoodList);
+  // function handleChange(event) {
+  //   const foodName = event.target.name;
+  //   console.log(foodName);
+  //   const foodValue = event.target.value;
+  //   console.log(foodValue);
+  //   let newFood = { [foodName]: foodValue, isDone: false };
+  //   console.log({ newFood });
+  //   setForm([{ ...form, newFood }]);
   // }
 
-  // function addFood(item) {
-  //   setFood([...food, { food: item }]);
-
+  // async function handleSubmit(event) {
+  //   console.log("submit pressed");
+  //   console.log(form);
+  //   event.preventDefault();
+  //   const response = await fetch("http://localhost:3000/food", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(form),
+  //   });
+  //   console.log(response);
+  //   const data = await response.json();
+  //   console.log(data);
   // }
 
-  async function removeFood(id) {
-    setFood([...food.slice(0, id), ...food.slice(id + 1)]);
+  async function removeFood(index, id) {
+    setFood([...food.slice(0, index), ...food.slice(index + 1)]);
     let response = await fetch(`http://localhost:3000/food/${id}`, {
       method: "DELETE",
     });
-    let data = response.json();
+    let data = await response.json();
     console.log({ data });
     console.log({ food });
   }
@@ -53,6 +68,11 @@ function Food() {
       {/* <Input addToList={addFood} />
       <List food={food} deleteFood={removeFood} /> */}
       <FoodTable food={food} deleteFood={removeFood} />
+      {/* <Form
+        food={food}
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+      /> */}
     </div>
   );
 }

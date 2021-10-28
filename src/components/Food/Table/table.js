@@ -10,9 +10,11 @@ function FoodTable({ food, deleteFood }) {
         <thead>
           <tr>
             <th>Food</th>
-            <th>Best place to get?</th>
-            <th>Eaten</th>
+            {/* <th>Best place to get?</th>
+            <th>Tried it</th>
             <th>Did Becky like it?</th>
+            <th>Recommended By</th> */}
+            <th>Delete</th>
           </tr>
         </thead>
         <tbody>
@@ -22,6 +24,7 @@ function FoodTable({ food, deleteFood }) {
                 foodName={item.food}
                 foodDone={item.isdone}
                 index={index}
+                id={item.id}
                 key={item.id}
                 removeFood={deleteFood}
               />
