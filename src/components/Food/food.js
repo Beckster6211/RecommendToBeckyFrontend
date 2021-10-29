@@ -15,6 +15,9 @@ function Food() {
   console.log({ food });
   const [form, setForm] = useState({});
   const [updatePage, setUpdatePage] = useState(false);
+  const [foodName, setFoodName] = useState("");
+  const [foodValue, setFoodValue] = useState("");
+  const [newFood, setNewFood] = useState({});
 
   // useEffect(() => {
   //   async function getFood() {
@@ -42,13 +45,15 @@ function Food() {
   }, [updatePage]);
 
   function handleChange(event) {
-    const foodName = event.target.name;
-    console.log(foodName);
-    const foodValue = event.target.value;
-    console.log(foodValue);
-    let newFood = { [foodName]: foodValue, isDone: false };
-    console.log({ newFood });
-    setForm([{ ...form, newFood }]);
+    let inputName = event.target.name;
+    setFoodName(inputName);
+    console.log({ foodName });
+    let fdvl = event.target.value;
+    setFoodValue(fdvl);
+    console.log({ foodValue });
+    // setNewFood({ foodName: foodValue, isdone: false });
+    setForm({ food: foodValue, isdone: false });
+    console.log({ form });
   }
 
   async function handleSubmit(event) {

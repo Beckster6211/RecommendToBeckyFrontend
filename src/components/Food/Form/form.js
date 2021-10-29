@@ -32,6 +32,7 @@ function Form({ handleChange, handleSubmit }) {
     <div>
       <h3>Form</h3>
       <form
+        autoComplete="off"
         onSubmit={(event) => {
           handleSubmit(event);
         }}
