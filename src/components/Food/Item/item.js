@@ -13,7 +13,6 @@ function Item({ foodName, foodDone, removeFood, index, id }) {
   //   }
 
   //   isEaten(foodDone);
-
   return (
     <tr>
       <td>
@@ -22,11 +21,11 @@ function Item({ foodName, foodDone, removeFood, index, id }) {
       </td>
       {/* <td>
         <p>Somewhere</p>
-      </td>
+      </td> */}
       <td>
         <input type="checkbox" value={foodDone} />
       </td>
-      <td>
+      {/* <td>
       not sure about buttons
         <button>yes</button>
         <button>no</button>
@@ -36,8 +35,8 @@ function Item({ foodName, foodDone, removeFood, index, id }) {
           <option>No</option>
           <option>Alright?</option>
         </select>
-      </td>
-      <td>
+      </td> */}
+      {/* <td>
         <p>Someone</p>
       </td> */}
       <td>

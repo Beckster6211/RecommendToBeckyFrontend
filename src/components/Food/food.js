@@ -18,6 +18,7 @@ function Food() {
   const [foodName, setFoodName] = useState("");
   const [foodValue, setFoodValue] = useState("");
   const [newFood, setNewFood] = useState({});
+  const [isDone, setIsDone] = useState(false);
 
   // useEffect(() => {
   //   async function getFood() {
@@ -55,7 +56,7 @@ function Food() {
     // console.log({ foodValue });
     // console.log(`${foodValue}`);
     // setNewFood({ foodName: foodValue, isdone: false });
-    setForm({ food: fdvl, isdone: false });
+    setForm({ food: fdvl, isdone: isDone });
     console.log({ form });
   }
 

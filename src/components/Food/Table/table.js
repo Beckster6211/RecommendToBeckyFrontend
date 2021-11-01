@@ -10,10 +10,10 @@ function FoodTable({ food, deleteFood }) {
         <thead>
           <tr>
             <th>Food</th>
-            {/* <th>Best place to get?</th>
+            {/* <th>Best place to get?</th> */}
             <th>Tried it</th>
-            <th>Did Becky like it?</th>
-            <th>Recommended By</th> */}
+            {/* <th>Did Becky like it?</th> */}
+            {/* <th>Recommended By</th> */}
             <th>Delete</th>
           </tr>
         </thead>
