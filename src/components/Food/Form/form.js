@@ -48,7 +48,7 @@ function Form({ handleChange, handleSubmit }) {
             }}
           />
         </label>
-        <input type="submit" />
+        <button type="submit">Submit</button>
       </form>
     </div>
   );

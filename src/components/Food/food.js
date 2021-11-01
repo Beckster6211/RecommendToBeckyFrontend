@@ -46,13 +46,16 @@ function Food() {
 
   function handleChange(event) {
     let inputName = event.target.name;
-    setFoodName(inputName);
-    console.log({ foodName });
+    console.log(inputName);
+    // setFoodName(inputName);
+    // console.log({ foodName });
     let fdvl = event.target.value;
-    setFoodValue(fdvl);
-    console.log({ foodValue });
+    console.log(fdvl);
+    // setFoodValue(fdvl);
+    // console.log({ foodValue });
+    // console.log(`${foodValue}`);
     // setNewFood({ foodName: foodValue, isdone: false });
-    setForm({ food: foodValue, isdone: false });
+    setForm({ food: fdvl, isdone: false });
     console.log({ form });
   }
 
