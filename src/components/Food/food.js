@@ -60,17 +60,32 @@ function Food() {
     console.log({ form });
   }
 
-  function handleTried(object) {
+  async function handleTried(id, object) {
     console.log("checkbox ticked");
     // setIsDone(!boolean);
-    console.log(object);
-    console.log(object.isdone);
-    console.log({ ...object });
-    if (object.isdone === true) {
-      return { ...object, isdone: false };
-    } else if (object.isdone === false) {
-      return { ...object, isdone: true };
-    }
+    // console.log(object);
+    // console.log(object.isdone);
+    // console.log({ ...object });
+    // if (object.isdone === true) {
+    //   console.log({ ...object, isdone: false });
+    //   return { ...object, isdone: false };
+    // } else if (object.isdone === false) {
+    //   console.log({ ...object, isdone: true });
+    //   return { ...object, isdone: true };
+    // }
+    // return { ...object };
+    console.log({ isDone });
+    setIsDone(!isDone);
+    console.log({ isDone });
+    const response = await fetch(`http://localhost:3000/food/${id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ food: object.food, isdone: isDone }),
+    });
+    console.log(response);
+    const data = await response.json();
+    console.log(data);
+    setUpdatePage(!updatePage);
   }
 
   async function handleSubmit(event) {

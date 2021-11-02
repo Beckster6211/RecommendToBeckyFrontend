@@ -31,9 +31,10 @@ function Item({ foodName, foodDone, removeFood, index, id, item, tried }) {
       <td>
         <input
           type="checkbox"
-          value={foodDone}
+          // value={foodDone}
+          checked={foodDone}
           onChange={() => {
-            tried(item);
+            tried(id, item);
           }}
         />
       </td>
