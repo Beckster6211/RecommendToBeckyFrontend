@@ -56,8 +56,21 @@ function Food() {
     // console.log({ foodValue });
     // console.log(`${foodValue}`);
     // setNewFood({ foodName: foodValue, isdone: false });
-    setForm({ food: fdvl, isdone: isDone });
+    setForm({ food: fdvl, isdone: false });
     console.log({ form });
+  }
+
+  function handleTried(object) {
+    console.log("checkbox ticked");
+    // setIsDone(!boolean);
+    console.log(object);
+    console.log(object.isdone);
+    console.log({ ...object });
+    if (object.isdone === true) {
+      return { ...object, isdone: false };
+    } else if (object.isdone === false) {
+      return { ...object, isdone: true };
+    }
   }
 
   async function handleSubmit(event) {
@@ -91,7 +104,11 @@ function Food() {
       <h1>Food</h1>
       {/* <Input addToList={addFood} />
       <List food={food} deleteFood={removeFood} /> */}
-      <FoodTable food={food} deleteFood={removeFood} />
+      <FoodTable
+        food={food}
+        deleteFood={removeFood}
+        handleTried={handleTried}
+      />
       <Form
         food={food}
         handleChange={handleChange}

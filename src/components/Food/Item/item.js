@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-function Item({ foodName, foodDone, removeFood, index, id }) {
-  //   const [eaten, setEaten] = useState();
+function Item({ foodName, foodDone, removeFood, index, id, item, tried }) {
+  // const [eaten, setEaten] = useState(false);
   //   console.log(eaten);
 
   //   function isEaten(boolean) {
@@ -13,6 +13,12 @@ function Item({ foodName, foodDone, removeFood, index, id }) {
   //   }
 
   //   isEaten(foodDone);
+
+  // function tried(boolean) {
+  //   console.log("checkbox checked");
+  //   setEaten(!boolean);
+  //   console.log(eaten);
+  // }
   return (
     <tr>
       <td>
@@ -23,7 +29,13 @@ function Item({ foodName, foodDone, removeFood, index, id }) {
         <p>Somewhere</p>
       </td> */}
       <td>
-        <input type="checkbox" value={foodDone} />
+        <input
+          type="checkbox"
+          value={foodDone}
+          onChange={() => {
+            tried(item);
+          }}
+        />
       </td>
       {/* <td>
       not sure about buttons
