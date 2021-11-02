@@ -66,21 +66,25 @@ function Food() {
     // console.log(object);
     // console.log(object.isdone);
     // console.log({ ...object });
-    // if (object.isdone === true) {
-    //   console.log({ ...object, isdone: false });
-    //   return { ...object, isdone: false };
-    // } else if (object.isdone === false) {
-    //   console.log({ ...object, isdone: true });
-    //   return { ...object, isdone: true };
-    // }
+    if (object.isdone === true) {
+      object.isdone = false;
+      console.log(object.isdone);
+      // console.log((object.isdone = false));
+      // return { ...object, isdone: false };
+    } else if (object.isdone === false) {
+      object.isdone = true;
+      console.log(object.isdone);
+      // console.log((object.isdone = true));
+      // return { ...object, isdone: true };
+    }
     // return { ...object };
-    console.log({ isDone });
-    setIsDone(!isDone);
-    console.log({ isDone });
+    // console.log({ isDone });
+    // setIsDone(!isDone);
+    // console.log({ isDone });
     const response = await fetch(`http://localhost:3000/food/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ food: object.food, isdone: isDone }),
+      body: JSON.stringify({ food: object.food, isdone: object.isdone }),
     });
     console.log(response);
     const data = await response.json();
