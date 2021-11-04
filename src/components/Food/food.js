@@ -15,8 +15,8 @@ function Food() {
   console.log({ food });
   const [form, setForm] = useState({});
   const [updatePage, setUpdatePage] = useState(false);
-  const [foodName, setFoodName] = useState("");
-  const [foodValue, setFoodValue] = useState("");
+  // const [foodName, setFoodName] = useState("");
+  // const [foodValue, setFoodValue] = useState("");
   const [newFood, setNewFood] = useState({});
   const [isDone, setIsDone] = useState(false);
 

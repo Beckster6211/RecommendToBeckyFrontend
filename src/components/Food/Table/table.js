@@ -13,7 +13,7 @@ function FoodTable({ food, deleteFood, handleTried }) {
             {/* <th>Best place to get?</th> */}
             <th>Tried it</th>
             {/* <th>Did Becky like it?</th> */}
-            {/* <th>Recommended By</th> */}
+            <th>Recommended By</th>
             <th>Delete</th>
           </tr>
         </thead>

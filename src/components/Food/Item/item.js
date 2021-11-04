@@ -2,23 +2,7 @@ import React, { useState } from "react";
 
 function Item({ foodName, foodDone, removeFood, index, id, item, tried }) {
   // const [eaten, setEaten] = useState(false);
-  //   console.log(eaten);
 
-  //   function isEaten(boolean) {
-  //     if (boolean === false) {
-  //       setEaten("Tick");
-  //     } else if (boolean === true) {
-  //       setEaten("Cross");
-  //     }
-  //   }
-
-  //   isEaten(foodDone);
-
-  // function tried(boolean) {
-  //   console.log("checkbox checked");
-  //   setEaten(!boolean);
-  //   console.log(eaten);
-  // }
   return (
     <tr>
       <td>
@@ -49,9 +33,9 @@ function Item({ foodName, foodDone, removeFood, index, id, item, tried }) {
           <option>Alright?</option>
         </select>
       </td> */}
-      {/* <td>
+      <td>
         <p>Someone</p>
-      </td> */}
+      </td>
       <td>
         <button
           onClick={() => {
