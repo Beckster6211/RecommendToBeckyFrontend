@@ -47,17 +47,20 @@ function Food() {
 
   function handleChange(event) {
     let inputName = event.target.name;
-    console.log(inputName);
+    console.log({ inputName });
     // setFoodName(inputName);
     // console.log({ foodName });
-    let fdvl = event.target.value;
-    console.log(fdvl);
+    let vl = event.target.value;
+    console.log({ vl });
+    console.log(`${inputName}: ${vl}`);
     // setFoodValue(fdvl);
     // console.log({ foodValue });
     // console.log(`${foodValue}`);
     // setNewFood({ foodName: foodValue, isdone: false });
-    setForm({ food: fdvl, isdone: false });
+    setForm({ ...form, [event.target.id]: event.target.value });
     console.log({ form });
+    // setForm({ [inputName]: vl, isdone: false, [inputName]: "someone" });
+    // console.log({ form });
   }
 
   async function handleTried(id, object) {
@@ -84,7 +87,11 @@ function Food() {
     const response = await fetch(`http://localhost:3000/food/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ food: object.food, isdone: object.isdone }),
+      body: JSON.stringify({
+        food: object.food,
+        isdone: object.isdone,
+        recommendedby: object.recommendedby,
+      }),
     });
     console.log(response);
     const data = await response.json();
