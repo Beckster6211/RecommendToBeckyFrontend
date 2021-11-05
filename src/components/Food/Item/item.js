@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 
-function Item({ foodName, foodDone, removeFood, index, id, item, tried }) {
+function Item({
+  foodName,
+  foodDone,
+  recommendedBy,
+  removeFood,
+  index,
+  id,
+  item,
+  tried,
+}) {
   // const [eaten, setEaten] = useState(false);
 
   return (
@@ -34,7 +43,7 @@ function Item({ foodName, foodDone, removeFood, index, id, item, tried }) {
         </select>
       </td> */}
       <td>
-        <p>Someone</p>
+        <p>{recommendedBy}</p>
       </td>
       <td>
         <button

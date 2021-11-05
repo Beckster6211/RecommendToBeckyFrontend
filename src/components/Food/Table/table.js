@@ -24,6 +24,7 @@ function FoodTable({ food, deleteFood, handleTried }) {
                 item={item}
                 foodName={item.food}
                 foodDone={item.isdone}
+                recommendedBy={item.recommendedby}
                 index={index}
                 id={item.id}
                 key={item.id}
