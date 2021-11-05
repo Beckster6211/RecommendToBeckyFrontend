@@ -31,17 +31,17 @@ function Item({
           }}
         />
       </td>
-      {/* <td>
-      not sure about buttons
-        <button>yes</button>
-        <button>no</button>
-        <button>alright</button>
-        <select>
+      <td>
+        {/* not sure about buttons */}
+        <button>Yes</button>
+        <button>No</button>
+        <button>Alright</button>
+        {/* <select>
           <option>Yes</option>
           <option>No</option>
           <option>Alright?</option>
-        </select>
-      </td> */}
+        </select> */}
+      </td>
       <td>
         <p>{recommendedBy}</p>
       </td>
