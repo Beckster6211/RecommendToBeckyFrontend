@@ -168,11 +168,13 @@ function Food() {
       <h1>Food</h1>
       {/* <Input addToList={addFood} />
       <List food={food} deleteFood={removeFood} /> */}
+      <h1>Food Table</h1>
       <Form
         food={food}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
       />
+      <br />
       <FoodTable
         food={food}
         deleteFood={removeFood}

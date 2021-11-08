@@ -5,7 +5,7 @@ import Item from "../Item/item";
 function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
   return (
     <div>
-      <h1>Food Table</h1>
+      {/* <h1>Food Table</h1> */}
       <table>
         <thead>
           <tr>

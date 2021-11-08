@@ -30,7 +30,7 @@ function Form({ handleChange, handleSubmit }) {
 
   return (
     <div>
-      <h3>Form</h3>
+      {/* <h3>Form</h3> */}
       <form
         autoComplete="off"
         onSubmit={(event) => {
