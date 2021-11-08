@@ -2,7 +2,7 @@ import React from "react";
 
 import Item from "../Item/item";
 
-function FoodTable({ food, deleteFood, handleTried }) {
+function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
   return (
     <div>
       <h1>Food Table</h1>
@@ -25,11 +25,13 @@ function FoodTable({ food, deleteFood, handleTried }) {
                 foodName={item.food}
                 foodDone={item.isdone}
                 recommendedBy={item.recommendedby}
+                beckyOpinion={item.beckyopinion}
                 index={index}
                 id={item.id}
                 key={item.id}
                 removeFood={deleteFood}
                 tried={handleTried}
+                opinion={handleOpinion}
               />
             );
           })}

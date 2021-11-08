@@ -89,8 +89,46 @@ function Food() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         food: object.food,
-        isdone: object.isdone,
         recommendedby: object.recommendedby,
+        beckyopinion: object.beckyopinion,
+        isdone: object.isdone,
+      }),
+    });
+    console.log(response);
+    const data = await response.json();
+    console.log(data);
+    setUpdatePage(!updatePage);
+  }
+
+  async function handleOpinion(event, id, object) {
+    console.log("button clicked");
+    console.log({ id });
+    console.log({ object });
+    console.log(event);
+    if (event.target.name === "yes") {
+      console.log("yes button clicked");
+      console.log(object.beckyopinion);
+      object.beckyopinion = "😋";
+      console.log(object.beckyopinion);
+    } else if (event.target.name === "no") {
+      console.log("no button clicked");
+      console.log(object.beckyopinion);
+      object.beckyopinion = "🤮";
+      console.log(object.beckyopinion);
+    } else if (event.target.name === "alright") {
+      console.log("alright button clicked");
+      console.log(object.beckyopinion);
+      object.beckyopinion = "🤔";
+      console.log(object.beckyopinion);
+    }
+    const response = await fetch(`http://localhost:3000/food/${id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        food: object.food,
+        recommendedby: object.recommendedby,
+        beckyopinion: object.beckyopinion,
+        isdone: object.isdone,
       }),
     });
     console.log(response);
@@ -130,15 +168,16 @@ function Food() {
       <h1>Food</h1>
       {/* <Input addToList={addFood} />
       <List food={food} deleteFood={removeFood} /> */}
-      <FoodTable
-        food={food}
-        deleteFood={removeFood}
-        handleTried={handleTried}
-      />
       <Form
         food={food}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
+      />
+      <FoodTable
+        food={food}
+        deleteFood={removeFood}
+        handleTried={handleTried}
+        handleOpinion={handleOpinion}
       />
     </div>
   );
