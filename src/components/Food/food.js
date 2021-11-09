@@ -17,9 +17,10 @@ function Food() {
   const [updatePage, setUpdatePage] = useState(false);
   // const [foodName, setFoodName] = useState("");
   // const [foodValue, setFoodValue] = useState("");
-  const [newFood, setNewFood] = useState({});
-  const [isDone, setIsDone] = useState(false);
+  // const [newFood, setNewFood] = useState({});
+  // const [isDone, setIsDone] = useState(false);
 
+  ////// this doesnt allow the page to refresh when changes made
   // useEffect(() => {
   //   async function getFood() {
   //     let response = await fetch("http://localhost:3000/food");
@@ -168,13 +169,13 @@ function Food() {
       <h1>Food</h1>
       {/* <Input addToList={addFood} />
       <List food={food} deleteFood={removeFood} /> */}
-      <h1>Food Table</h1>
       <Form
         food={food}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
       />
-      <br />
+      {/* <br /> */}
+      <h2>Food Table</h2>
       <FoodTable
         food={food}
         deleteFood={removeFood}

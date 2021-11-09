@@ -18,7 +18,6 @@ function Item({
     <tr>
       <td>
         <p>{foodName}</p>
-        {/* <p>{foodDone}</p> */}
       </td>
       {/* <td>
         <p>Somewhere</p>
@@ -45,14 +44,6 @@ function Item({
           😋
         </button>
         <button
-          name="no"
-          onClick={(event) => {
-            opinion(event, id, item);
-          }}
-        >
-          🤮
-        </button>
-        <button
           name="alright"
           onClick={(event) => {
             opinion(event, id, item);
@@ -60,6 +51,15 @@ function Item({
         >
           🤔
         </button>
+        <button
+          name="no"
+          onClick={(event) => {
+            opinion(event, id, item);
+          }}
+        >
+          🤮
+        </button>
+
         {/* <select>
           <option>Yes</option>
           <option>No</option>
