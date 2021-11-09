@@ -36,7 +36,7 @@ function Food() {
   // }, []);
 
   useEffect(() => {
-    fetch("http://localhost:3000/food")
+    fetch("http://localhost:3001/food")
       .then((response) => response.json())
       .then((response) => {
         setFood(response.data);
@@ -85,7 +85,7 @@ function Food() {
     // console.log({ isDone });
     // setIsDone(!isDone);
     // console.log({ isDone });
-    const response = await fetch(`http://localhost:3000/food/${id}`, {
+    const response = await fetch(`http://localhost:3001/food/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -122,7 +122,7 @@ function Food() {
       object.beckyopinion = "🤔";
       console.log(object.beckyopinion);
     }
-    const response = await fetch(`http://localhost:3000/food/${id}`, {
+    const response = await fetch(`http://localhost:3001/food/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -142,7 +142,7 @@ function Food() {
     console.log("submit pressed");
     console.log(form);
     event.preventDefault();
-    const response = await fetch("http://localhost:3000/food", {
+    const response = await fetch("http://localhost:3001/food", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
@@ -155,7 +155,7 @@ function Food() {
 
   async function removeFood(index, id) {
     setFood([...food.slice(0, index), ...food.slice(index + 1)]);
-    let response = await fetch(`http://localhost:3000/food/${id}`, {
+    let response = await fetch(`http://localhost:3001/food/${id}`, {
       method: "DELETE",
     });
     let data = await response.json();
