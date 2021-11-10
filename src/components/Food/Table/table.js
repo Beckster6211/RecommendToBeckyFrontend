@@ -21,6 +21,7 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
         <thead id="tableHeading" className="align-middle ">
           <tr>
             <th>Food</th>
+            <th>Where?</th>
             {/* <th>Best place to get?</th> */}
             <th>Tried it</th>
             <th>Becky opinion</th>

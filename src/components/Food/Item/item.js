@@ -19,9 +19,9 @@ function Item({
       <td>
         <p>{foodName}</p>
       </td>
-      {/* <td>
+      <td>
         <p>Somewhere</p>
-      </td> */}
+      </td>
       <td>
         <input
           type="checkbox"
