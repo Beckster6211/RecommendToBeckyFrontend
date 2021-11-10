@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// import "./food.css";
 
 import FoodTable from "./Table/table";
 import Form from "./Form/form";
@@ -165,7 +166,7 @@ function Food() {
   }
 
   return (
-    <div>
+    <div id="food">
       <h1>Food</h1>
       {/* <Input addToList={addFood} />
       <List food={food} deleteFood={removeFood} /> */}
