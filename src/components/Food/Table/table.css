@@ -2,11 +2,19 @@
   width: 99%;
   margin-left: auto;
   margin-right: auto;
+  /* display: block; */
+  overflow-y: auto;
 }
 
 #table {
   width: 100%;
   border: solid;
+  border-collapse: collapse;
+  table-layout: fixed;
+  /* word-break: break-all; */
+  overflow-wrap: break-word;
+  /* position: absolute;
+  overflow: auto; */
 
   /* table-layout: fixed; */
   /* overflow-y: auto;
@@ -14,9 +22,10 @@
   /* overflow: auto; */
 }
 
-/* #tableHeading {
-  display: block;
-} */
+#tableHeading {
+  position: sticky;
+  top: 0;
+}
 
 #tableBody {
   overflow-y: auto;
