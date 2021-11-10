@@ -1,0 +1,23 @@
+#div {
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#table {
+  width: 100%;
+  border: solid;
+
+  /* table-layout: fixed; */
+  /* overflow-y: auto;
+  overflow-x: hidden; */
+  /* overflow: auto; */
+}
+
+/* #tableHeading {
+  display: block;
+} */
+
+#tableBody {
+  overflow-y: auto;
+}

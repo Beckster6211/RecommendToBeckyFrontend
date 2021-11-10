@@ -25,7 +25,7 @@ function Nav() {
         {/* &nbsp; */}
         {/* <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav"> */}
-        <ReactBootStrap.Nav variant="tabs" className="justify-content-end">
+        <ReactBootStrap.Nav variant="tabs">
           {/* <Link to="/food"> */}
           <ReactBootStrap.Nav.Link href="/food">Eat</ReactBootStrap.Nav.Link>
           {/* </Link> */}

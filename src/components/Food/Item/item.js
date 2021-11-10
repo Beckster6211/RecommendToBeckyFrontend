@@ -75,7 +75,7 @@ function Item({
             removeFood(index, id);
           }}
         >
-          X
+          🗑️
         </button>
       </td>
     </tr>

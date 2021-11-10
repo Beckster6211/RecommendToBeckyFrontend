@@ -1,23 +1,34 @@
 import React from "react";
+import Table from "react-bootstrap/Table";
+
+import "./table.css";
 
 import Item from "../Item/item";
 
 function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
   return (
-    <div>
+    <div id="div" className="table-responsive">
       {/* <h1>Food Table</h1> */}
-      <table>
-        <thead>
+      <Table
+        id="table"
+        className="table-primary table-striped table-bordered table-hover table-sm table-fixed"
+        // striped
+        // bordered
+        // hover
+        // size="sm"
+        // responsive="sm"
+      >
+        <thead id="tableHeading" className="align-middle ">
           <tr>
             <th>Food</th>
             {/* <th>Best place to get?</th> */}
             <th>Tried it</th>
-            <th>Did Becky like it?</th>
-            <th>Recommended By</th>
+            <th>Becky opinion</th>
+            <th>Who By</th>
             <th>Delete</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="tableBody" className="table-info align-middle">
           {food.map((item, index) => {
             return (
               <Item
@@ -36,7 +47,7 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
             );
           })}
         </tbody>
-      </table>
+      </Table>
     </div>
   );
 }
