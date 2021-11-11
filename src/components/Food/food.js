@@ -140,7 +140,8 @@ function Food() {
   }
 
   async function handleSubmit(event) {
-    console.log(event.target.children[1].children[0].value);
+    // refreshes form, empties form inputs
+    window.location.reload();
     console.log("submit pressed");
     console.log(form);
     event.preventDefault();
