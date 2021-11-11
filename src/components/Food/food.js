@@ -140,6 +140,7 @@ function Food() {
   }
 
   async function handleSubmit(event) {
+    console.log(event.target.children[1].children[0].value);
     console.log("submit pressed");
     console.log(form);
     event.preventDefault();
@@ -166,8 +167,8 @@ function Food() {
   }
 
   return (
-    <div id="food">
-      <h1>Food</h1>
+    <div id="foodPage">
+      {/* <h1>Food</h1> */}
       {/* <Input addToList={addFood} />
       <List food={food} deleteFood={removeFood} /> */}
       <Form
@@ -176,7 +177,7 @@ function Food() {
         handleSubmit={handleSubmit}
       />
       {/* <br /> */}
-      <h2>Food Table</h2>
+      {/* <h2>Food Table</h2> */}
       <FoodTable
         food={food}
         deleteFood={removeFood}

@@ -2,7 +2,7 @@ import React from "react";
 import * as ReactBootStrap from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Food from "../Food/food";
+import FoodForm from "../Food/food";
 import Home from "../Home/home";
 
 function Nav() {
@@ -41,7 +41,7 @@ function Nav() {
         {/* </nav> */}
       </ReactBootStrap.Navbar>
       <Routes>
-        <Route path="/food" element={<Food />} />
+        <Route path="/food" element={<FoodForm />} />
         {/* <Food />
           </Route> */}
         <Route path="/" element={<Home />} />

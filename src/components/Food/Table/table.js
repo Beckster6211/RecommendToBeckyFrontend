@@ -11,7 +11,7 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
       {/* <h1>Food Table</h1> */}
       <Table
         id="table"
-        className="table-primary table-striped table-bordered table-hover table-sm table-fixed"
+        className="table-primary table-striped table-bordered table-hover table-sm"
         // striped
         // bordered
         // hover
@@ -21,7 +21,7 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
         <thead id="tableHeading" className="align-middle ">
           <tr>
             <th>Food</th>
-            <th>Where?</th>
+            {/* <th>Where/recipe?</th> */}
             {/* <th>Best place to get?</th> */}
             <th>Tried it</th>
             <th>Becky opinion</th>
