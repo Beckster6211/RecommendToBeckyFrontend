@@ -19,6 +19,17 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
             <th>Delete</th>
           </tr>
         </thead>
+        <tfoot>
+          <tr>
+            <th>Food</th>
+            {/* <th>Where/recipe?</th> */}
+            {/* <th>Best place to get?</th> */}
+            <th>Tried it</th>
+            <th>Becky opinion</th>
+            <th>Who By</th>
+            <th>Delete</th>
+          </tr>
+        </tfoot>
         <tbody id="tableBody" className="table-info align-middle">
           {food.map((item, index) => {
             return (
