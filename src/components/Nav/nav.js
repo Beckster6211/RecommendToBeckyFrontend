@@ -2,6 +2,7 @@ import React from "react";
 
 // bootstrap
 // import * as ReactBootStrap from "react-bootstrap";
+
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import FoodForm from "../Food/food";
@@ -12,7 +13,7 @@ function Nav() {
     <Router>
       {/* <div> */}
       {/* <h3>hi</h3> */}
-      <nav>
+      {/* <nav>
         <Link to="/food">Eat</Link>
         &nbsp;
         <Link to="/city">Visit</Link>
@@ -24,7 +25,7 @@ function Nav() {
         <Link to="/tele">Binge</Link>
         &nbsp;
         <Link to="/film">Watch</Link>
-      </nav>
+      </nav> */}
       {/*}
       <ReactBootStrap.Navbar
         //   collapseOnSelect
