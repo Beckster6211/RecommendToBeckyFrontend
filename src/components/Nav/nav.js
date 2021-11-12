@@ -1,8 +1,5 @@
 import React from "react";
 
-// bootstrap
-// import * as ReactBootStrap from "react-bootstrap";
-
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import FoodForm from "../Food/food";
@@ -11,9 +8,8 @@ import Home from "../Home/home";
 function Nav() {
   return (
     <Router>
-      {/* <div> */}
       {/* <h3>hi</h3> */}
-      {/* <nav>
+      <nav>
         <Link to="/food">Eat</Link>
         &nbsp;
         <Link to="/city">Visit</Link>
@@ -25,37 +21,7 @@ function Nav() {
         <Link to="/tele">Binge</Link>
         &nbsp;
         <Link to="/film">Watch</Link>
-      </nav> */}
-      {/*}
-      <ReactBootStrap.Navbar
-        //   collapseOnSelect
-        //   expand="sm"
-        bg="light"
-        variant="light"
-        //   style={{ justifyContent: "space-between" }}
-      >
-        {/* <nav> 
-        {/* <Link to="/">
-            <ReactBootStrap.Navbar.Brand>Home</ReactBootStrap.Navbar.Brand>
-          </Link> 
-        {/* &nbsp; 
-        {/* <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav"> 
-        <ReactBootStrap.Nav variant="tabs">
-          {/* <Link to="/food"> 
-          <ReactBootStrap.Nav.Link href="/food">Eat</ReactBootStrap.Nav.Link>
-          {/* </Link> 
-          <ReactBootStrap.Nav.Link href="/city">Visit</ReactBootStrap.Nav.Link>
-          <ReactBootStrap.Nav.Link href="/country">
-            Stay
-          </ReactBootStrap.Nav.Link>
-          <ReactBootStrap.Nav.Link href="/book">Read</ReactBootStrap.Nav.Link>
-          <ReactBootStrap.Nav.Link href="/tele">Binge</ReactBootStrap.Nav.Link>
-          <ReactBootStrap.Nav.Link href="/film">Watch</ReactBootStrap.Nav.Link>
-        </ReactBootStrap.Nav>
-        {/* </ReactBootStrap.Navbar.Collapse>
-        {/* </nav> 
-      </ReactBootStrap.Navbar>*/}
+      </nav>
       <Routes>
         <Route path="/food" element={<FoodForm />} />
         {/* <Food />
