@@ -174,7 +174,7 @@ function Food() {
     <Box
       id="foodPage"
       borderWidth="2px"
-      borderColor="blue"
+      borderColor="white"
       borderRadius="md"
       bg="pink"
       p={1}

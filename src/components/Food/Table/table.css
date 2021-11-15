@@ -3,9 +3,22 @@
   font-size: 1em;
   border: 2px solid black;
   border-radius: 5px;
+  table-layout: fixed;
+  /* word-wrap: break-word; */
+  /* overflow-wrap: break-word; */
   /*
   // border="2px"
       // borderColor="black"
       // borderRadius="lg"
       */
+}
+
+#tableBody {
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+Thead {
+  position: sticky;
+  top: 0;
 }

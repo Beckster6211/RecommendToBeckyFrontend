@@ -32,7 +32,7 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
       // borderColor="black"
       // borderRadius="lg"
     >
-      <Thead>
+      <Thead bg="purple.200">
         <Tr>
           <th>Food</th>
           {/* <th>Where/recipe?</th> */}
@@ -54,7 +54,7 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
             <th>Delete</th>
           </tr>
         </tfoot> */}
-      <Tbody>
+      <Tbody id="tableBody">
         {food.map((item, index) => {
           return (
             <Item
