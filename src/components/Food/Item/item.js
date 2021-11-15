@@ -1,5 +1,17 @@
 import React, { useState } from "react";
 
+// chakra
+import {
+  Table,
+  Thead,
+  Tbody,
+  Tfoot,
+  Tr,
+  Th,
+  Td,
+  TableCaption,
+} from "@chakra-ui/react";
+
 function Item({
   foodName,
   foodDone,
@@ -15,7 +27,12 @@ function Item({
   // const [eaten, setEaten] = useState(false);
 
   return (
-    <tr>
+    <Tr
+      _hover={{
+        background: "white",
+        color: "teal.500",
+      }}
+    >
       <td>
         <p>{foodName}</p>
       </td>
@@ -78,7 +95,7 @@ function Item({
           🗑️
         </button>
       </td>
-    </tr>
+    </Tr>
   );
 }
 

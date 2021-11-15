@@ -2,14 +2,15 @@ import React, { useState } from "react";
 // import "./form.css";
 
 function FoodForm({ handleChange, handleSubmit }) {
-  const [form, setForm] = useState({});
+  // const [form, setForm] = useState({});
   //   console.log({ food });
-  console.log({ form });
+  // console.log({ form });
 
   return (
     <div>
       {/* <h3>Form</h3> */}
       <form
+        // autocomplete stops drop down of previous entered
         autoComplete="off"
         onSubmit={(event) => {
           handleSubmit(event);
