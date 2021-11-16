@@ -11,7 +11,7 @@ function Nav() {
   return (
     <Router>
       {/* <h3>hi</h3> */}
-      <nav id="nav">
+      <nav className="nav">
         <Link to="/food">Eat 🍴</Link>
         {/* &nbsp; */}
         <Link to="/city">Visit 👀</Link>

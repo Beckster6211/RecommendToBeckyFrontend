@@ -7,11 +7,11 @@ function FoodForm({ handleChange, handleSubmit }) {
   // console.log({ form });
 
   return (
-    <div id="foodForm">
+    <div className="foodForm">
       {/* <h3>Form</h3> */}
       <form
-        id="formFoodForm"
-        // autocomplete stops drop down of previous entered
+        className="formFoodForm"
+        // autocomplete stops drop down of previous entered options
         autoComplete="off"
         onSubmit={(event) => {
           handleSubmit(event);
@@ -21,9 +21,10 @@ function FoodForm({ handleChange, handleSubmit }) {
         {/* <label>
             Food: &nbsp; */}
         <input
+          className="foodInput"
           type="text"
           name="food"
-          id="foodInput"
+          id="food"
           placeholder="Food..."
           // value={food}
           onChange={(event) => {
@@ -48,9 +49,10 @@ function FoodForm({ handleChange, handleSubmit }) {
         {/* <label>
           Recommended By: &nbsp; */}
         <input
+          className="recommendedByInput"
           type="text"
           name="recommendedBy"
-          id="recommendedByInput"
+          id="recommendedBy"
           placeholder="Recommended By..."
           onChange={(event) => {
             handleChange(event);
@@ -58,7 +60,7 @@ function FoodForm({ handleChange, handleSubmit }) {
         />
         {/* </label> */}
         <p></p>
-        <button id="foodFormSubmit" type="submit">
+        <button className="foodFormSubmit" type="submit">
           Submit
         </button>
         <p></p>

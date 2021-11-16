@@ -1,10 +1,10 @@
-#foodPage {
+.foodPage {
   margin: 2%;
   background-color: lightgray;
   padding: 1%;
 }
 
-#foodPageParagraphDiv {
+.foodPageParagraphDiv {
   margin: 1%;
   padding: 1%;
   background-color: lightgreen;
@@ -14,7 +14,7 @@
   border: 2px solid black;
 }
 
-#foodPageParagraph {
+.foodPageParagraph {
   margin-top: 1%;
   margin-bottom: 1%;
 }

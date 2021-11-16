@@ -1,11 +1,11 @@
-#foodForm {
+.foodForm {
   background-color: lightskyblue;
   padding: 1%;
   margin: 1%;
   border: 2px solid black;
 }
 
-/* #formFoodForm {
+/* .formFoodForm {
   border: 2px solid black;
 } */
 
@@ -13,7 +13,7 @@ p {
   margin: 1%;
 }
 
-#foodInput {
+.foodInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -22,7 +22,7 @@ p {
   border-radius: 5px;
 }
 
-#recommendedByInput {
+.recommendedByInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -35,7 +35,7 @@ p {
   color: black;
 } */
 
-#foodFormSubmit {
+.foodFormSubmit {
   border-radius: 5px;
   border: 2px solid black;
 }

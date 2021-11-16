@@ -171,12 +171,12 @@ function Food() {
   }
 
   return (
-    <div id="foodPage">
+    <div className="foodPage">
       {/* <h1>Food</h1> */}
       {/* <Input addToList={addFood} />
       <List food={food} deleteFood={removeFood} /> */}
-      <div id="foodPageParagraphDiv">
-        <p id="foodPageParagraph">
+      <div className="foodPageParagraphDiv">
+        <p className="foodPageParagraph">
           I'm getting better at being more adventurous with food <br />
           <b>
             <small>
