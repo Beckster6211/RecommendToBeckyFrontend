@@ -4,3 +4,21 @@
   margin: 1%;
   background-color: lightyellow;
 }
+
+table {
+  /* border: 2px solid black; */
+  border-collapse: collapse;
+}
+
+th {
+  text-align: center;
+  background-color: brown;
+}
+
+tbody {
+  background-color: coral;
+}
+
+tr:nth-child(even) {
+  background-color: darkgrey;
+}
