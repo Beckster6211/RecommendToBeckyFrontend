@@ -35,17 +35,17 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
             <th>Delete</th>
           </tr>
         </thead>
-        {/* <tfoot>
+        <tfoot>
           <tr>
             <th>Food</th>
-            <th>Where/recipe?</th>
-            <th>Best place to get?</th>
+            {/* <th>Where/recipe?</th>
+            <th>Best place to get?</th> */}
             <th>Tried it</th>
             <th>Becky opinion</th>
             <th>Who By</th>
             <th>Delete</th>
           </tr>
-        </tfoot> */}
+        </tfoot>
         <tbody>
           {food.map((item, index) => {
             return (
