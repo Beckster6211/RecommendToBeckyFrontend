@@ -10,24 +10,27 @@ function FoodForm({ handleChange, handleSubmit }) {
     <div id="foodForm">
       {/* <h3>Form</h3> */}
       <form
+        id="formFoodForm"
         // autocomplete stops drop down of previous entered
         autoComplete="off"
         onSubmit={(event) => {
           handleSubmit(event);
         }}
       >
-        <label>
-          Food: &nbsp;
-          <input
-            type="text"
-            name="food"
-            id="food"
-            // value={food}
-            onChange={(event) => {
-              handleChange(event);
-            }}
-          />
-        </label>
+        <p></p>
+        {/* <label>
+            Food: &nbsp; */}
+        <input
+          type="text"
+          name="food"
+          id="foodInput"
+          placeholder="Food..."
+          // value={food}
+          onChange={(event) => {
+            handleChange(event);
+          }}
+        />
+        {/* </label> */}
         {/* <br />
         <label style={{ display: "none" }}>
           Tried: &nbsp;
@@ -41,20 +44,24 @@ function FoodForm({ handleChange, handleSubmit }) {
             }}
           />
         </label> */}
-        <br />
-        <label>
-          Recommended By: &nbsp;
-          <input
-            type="text"
-            name="recommendedBy"
-            id="recommendedBy"
-            onChange={(event) => {
-              handleChange(event);
-            }}
-          />
-        </label>
-        <br />
-        <button type="submit">Submit</button>
+        <p></p>
+        {/* <label>
+          Recommended By: &nbsp; */}
+        <input
+          type="text"
+          name="recommendedBy"
+          id="recommendedByInput"
+          placeholder="Recommended By..."
+          onChange={(event) => {
+            handleChange(event);
+          }}
+        />
+        {/* </label> */}
+        <p></p>
+        <button id="foodFormSubmit" type="submit">
+          Submit
+        </button>
+        <p></p>
       </form>
     </div>
   );
