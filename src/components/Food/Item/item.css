@@ -1,3 +1,10 @@
 td {
   border: 2px solid black;
 }
+
+button {
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0.9em;
+}
