@@ -22,7 +22,7 @@ import Item from "../Item/item";
 
 function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
   return (
-    <div>
+    <div id="foodTable">
       <table>
         <thead>
           <tr>

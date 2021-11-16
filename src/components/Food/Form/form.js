@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "./form.css";
+import "./form.css";
 
 function FoodForm({ handleChange, handleSubmit }) {
   // const [form, setForm] = useState({});
@@ -7,7 +7,7 @@ function FoodForm({ handleChange, handleSubmit }) {
   // console.log({ form });
 
   return (
-    <div>
+    <div id="foodForm">
       {/* <h3>Form</h3> */}
       <form
         // autocomplete stops drop down of previous entered

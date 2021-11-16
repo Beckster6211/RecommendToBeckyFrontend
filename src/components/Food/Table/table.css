@@ -1,24 +1,6 @@
-/* #table {
-  width: 100%;
-  font-size: 1em;
+#foodTable {
   border: 2px solid black;
-  border-radius: 5px; */
-/* table-layout: fixed; */
-/* word-wrap: break-word; */
-/* overflow-wrap: break-word; */
-/*
-  // border="2px"
-      // borderColor="black"
-      // borderRadius="lg"
-      */
-/* } */
-
-/* #tableBody {
-  overflow-x: auto;
-  border-collapse: collapse;
+  padding: 1%;
+  margin: 1%;
+  background-color: lightyellow;
 }
-
-Thead Th {
-  position: sticky;
-  top: 0;
-} */
