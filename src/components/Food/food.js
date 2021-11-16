@@ -171,10 +171,24 @@ function Food() {
   }
 
   return (
-    <div>
+    <div id="foodPage">
       {/* <h1>Food</h1> */}
       {/* <Input addToList={addFood} />
       <List food={food} deleteFood={removeFood} /> */}
+      <p id="foodPageParagraph">
+        I'm getting better at being more adventurous with food <br />
+        <b>
+          <small>
+            {" "}
+            Conversation from a lot of my childhood- <br />
+            <q>
+              I don't like it. Have you tried it? No. How do you know you don't
+              like it? I just don't.
+            </q>
+          </small>
+        </b>
+        <br /> although I'm not a fan of spicy food 🥵
+      </p>
       <Form
         food={food}
         handleChange={handleChange}

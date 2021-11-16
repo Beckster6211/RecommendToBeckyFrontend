@@ -16,10 +16,6 @@ function FoodForm({ handleChange, handleSubmit }) {
           handleSubmit(event);
         }}
       >
-        <p>
-          I'm getting better at being more adventurous with food although I'm
-          not a fan of spicy 🥵
-        </p>
         <label>
           Food: &nbsp;
           <input

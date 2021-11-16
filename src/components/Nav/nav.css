@@ -2,4 +2,6 @@
   display: flex;
   justify-content: space-evenly;
   margin: 1%;
+  padding: 1%;
+  background-color: lightcoral;
 }
