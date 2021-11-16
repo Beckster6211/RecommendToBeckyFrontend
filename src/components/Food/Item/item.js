@@ -38,6 +38,7 @@ function Item({
       </td> */}
       <td>
         <input
+          className="checkBox"
           type="checkbox"
           // value={foodDone}
           checked={foodDone}

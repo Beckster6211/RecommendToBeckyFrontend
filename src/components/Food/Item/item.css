@@ -4,7 +4,20 @@ td {
 
 button {
   border-radius: 50%;
-  vertical-align: middle;
-  text-align: center;
+  /* vertical-align: middle;
+  text-align: center; */
   font-size: 0.9em;
+  border: 2px solid black;
+}
+
+/* input.checkBox {
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+} */
+
+.checkBox {
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
 }
