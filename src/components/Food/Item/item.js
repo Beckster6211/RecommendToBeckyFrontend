@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "./item.css";
+
 // chakra
 import {
   Table,
@@ -27,7 +29,7 @@ function Item({
   // const [eaten, setEaten] = useState(false);
 
   return (
-    <tr>
+    <tr className="item">
       <td>
         <p>{foodName}</p>
       </td>

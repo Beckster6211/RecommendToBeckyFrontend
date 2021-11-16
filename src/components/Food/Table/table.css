@@ -1,5 +1,5 @@
 .foodTable {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 1%;
   margin: 1%;
   background-color: lightyellow;
@@ -7,13 +7,17 @@
 
 table {
   /* border: 2px solid black; */
+  table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 th {
   text-align: center;
   background-color: brown;
+  border: 2px solid black;
 }
 
 tbody {
