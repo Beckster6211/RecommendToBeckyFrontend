@@ -27,12 +27,7 @@ function Item({
   // const [eaten, setEaten] = useState(false);
 
   return (
-    <Tr
-      _hover={{
-        background: "white",
-        color: "teal.500",
-      }}
-    >
+    <tr>
       <td>
         <p>{foodName}</p>
       </td>
@@ -95,7 +90,7 @@ function Item({
           🗑️
         </button>
       </td>
-    </Tr>
+    </tr>
   );
 }
 

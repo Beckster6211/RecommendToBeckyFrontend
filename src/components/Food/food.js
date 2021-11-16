@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./food.css";
 
-// chakra
-import { Box } from "@chakra-ui/react";
+// // chakra
+// import { Box } from "@chakra-ui/react";
 
 import FoodTable from "./Table/table";
 import Form from "./Form/form";
@@ -171,14 +171,7 @@ function Food() {
   }
 
   return (
-    <Box
-      id="foodPage"
-      borderWidth="2px"
-      borderColor="white"
-      borderRadius="md"
-      bg="pink"
-      p={1}
-    >
+    <div>
       {/* <h1>Food</h1> */}
       {/* <Input addToList={addFood} />
       <List food={food} deleteFood={removeFood} /> */}
@@ -195,7 +188,7 @@ function Food() {
         handleTried={handleTried}
         handleOpinion={handleOpinion}
       />
-    </Box>
+    </div>
   );
 }
 
