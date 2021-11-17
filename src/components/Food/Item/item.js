@@ -35,7 +35,7 @@ function Item({
         <p>{foodName}</p>
       </td>
       <td>
-        <textarea value={foodWhere} rows="3" readOnly></textarea>
+        <textarea defaultValue={foodWhere} rows="3" readOnly></textarea>
       </td>
       <td>
         <input
