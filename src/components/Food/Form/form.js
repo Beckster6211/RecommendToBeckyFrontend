@@ -48,11 +48,11 @@ function FoodForm({ handleChange, handleSubmit }) {
         <p></p>
         {/* <label>
           Where/Recipe: &nbsp; */}
-        <input
+        <textarea
           className="whereInput"
           type="text"
           name="where"
-          id="where"
+          id="recipe"
           placeholder="Where/Recipe..."
           onChange={(event) => {
             handleChange(event);
