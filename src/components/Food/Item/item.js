@@ -2,17 +2,17 @@ import React, { useState } from "react";
 
 import "./item.css";
 
-// chakra
-import {
-  Table,
-  Thead,
-  Tbody,
-  Tfoot,
-  Tr,
-  Th,
-  Td,
-  TableCaption,
-} from "@chakra-ui/react";
+// // chakra
+// import {
+//   Table,
+//   Thead,
+//   Tbody,
+//   Tfoot,
+//   Tr,
+//   Th,
+//   Td,
+//   TableCaption,
+// } from "@chakra-ui/react";
 
 function Item({
   foodName,
