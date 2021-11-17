@@ -16,6 +16,7 @@ import {
 
 function Item({
   foodName,
+  foodWhere,
   foodDone,
   recommendedBy,
   beckyOpinion,
@@ -33,9 +34,9 @@ function Item({
       <td>
         <p>{foodName}</p>
       </td>
-      {/* <td>
-        <p>Somewhere</p>
-      </td> */}
+      <td>
+        <textarea value={foodWhere || "Somewhere"} rows="3" readOnly></textarea>
+      </td>
       <td>
         <input
           className="checkBox"

@@ -47,6 +47,20 @@ function FoodForm({ handleChange, handleSubmit }) {
         </label> */}
         <p></p>
         {/* <label>
+          Where/Recipe: &nbsp; */}
+        <input
+          className="whereInput"
+          type="text"
+          name="where"
+          id="where"
+          placeholder="Where/Recipe..."
+          onChange={(event) => {
+            handleChange(event);
+          }}
+        />
+        {/* </label> */}
+        <p></p>
+        {/* <label>
           Recommended By: &nbsp; */}
         <input
           className="recommendedByInput"

@@ -94,6 +94,7 @@ function Food() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         food: object.food,
+        recipe: object.recipe,
         recommendedby: object.recommendedby,
         beckyopinion: object.beckyopinion,
         isdone: object.isdone,
@@ -131,6 +132,7 @@ function Food() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         food: object.food,
+        recipe: object.recipe,
         recommendedby: object.recommendedby,
         beckyopinion: object.beckyopinion,
         isdone: object.isdone,

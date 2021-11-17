@@ -27,7 +27,7 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
         <thead>
           <tr>
             <th>Food</th>
-            {/* <th>Where/recipe?</th> */}
+            <th>Where/Recipe?</th>
             {/* <th>Best place to get?</th> */}
             <th>Tried it</th>
             <th>Becky opinion</th>
@@ -38,8 +38,8 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
         <tfoot>
           <tr>
             <th>Food</th>
-            {/* <th>Where/recipe?</th>
-            <th>Best place to get?</th> */}
+            <th>Where/Recipe?</th>
+            {/* <th>Best place to get?</th> */}
             <th>Tried it</th>
             <th>Becky opinion</th>
             <th>Who By</th>
@@ -52,6 +52,7 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
               <Item
                 item={item}
                 foodName={item.food}
+                foodWhere={item.recipe}
                 foodDone={item.isdone}
                 recommendedBy={item.recommendedby}
                 beckyOpinion={item.beckyopinion}
