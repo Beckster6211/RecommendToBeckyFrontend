@@ -40,7 +40,7 @@ function Food() {
   // }, []);
 
   useEffect(() => {
-    fetch("http://localhost:3001/food")
+    fetch("http://localhost:5000/food")
       .then((response) => response.json())
       .then((response) => {
         setFood(response.data);
@@ -89,7 +89,7 @@ function Food() {
     // console.log({ isDone });
     // setIsDone(!isDone);
     // console.log({ isDone });
-    const response = await fetch(`http://localhost:3001/food/${id}`, {
+    const response = await fetch(`http://localhost:5000/food/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -127,7 +127,7 @@ function Food() {
       object.beckyopinion = "🤔";
       console.log(object.beckyopinion);
     }
-    const response = await fetch(`http://localhost:3001/food/${id}`, {
+    const response = await fetch(`http://localhost:5000/food/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -150,7 +150,7 @@ function Food() {
     console.log("submit pressed");
     console.log(form);
     event.preventDefault();
-    const response = await fetch("http://localhost:3001/food", {
+    const response = await fetch("http://localhost:5000/food", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
