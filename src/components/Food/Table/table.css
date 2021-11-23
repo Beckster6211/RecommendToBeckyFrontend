@@ -21,11 +21,11 @@ th {
 }
 
 tbody {
-  background-color: #6495ed;
+  background-color: #6495ed; /*cornflowerblue*/
 }
 
 tr:nth-child(even) {
-  background-color: #87cefa;
+  background-color: #87cefa; /*lightskyblue*/
 }
 
 tr:hover {
