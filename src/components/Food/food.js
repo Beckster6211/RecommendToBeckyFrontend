@@ -40,7 +40,7 @@ function Food() {
   // }, []);
 
   useEffect(() => {
-    fetch("http://localhost:5000/food")
+    fetch("https://recommend-to-becky.herokuapp.com/food")
       .then((response) => response.json())
       .then((response) => {
         setFood(response.data);
