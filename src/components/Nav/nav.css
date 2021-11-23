@@ -5,3 +5,34 @@
   padding: 1%;
   background-color: lightcoral;
 }
+
+#foodLink {
+  margin: 1%;
+  background-color: #00bfff; /*blue*/
+  border: 2px solid black;
+}
+
+#cityLink {
+  margin: 1%;
+  border: 2px solid black;
+}
+
+#countryLink {
+  margin: 1%;
+  border: 2px solid black;
+}
+
+#bookLink {
+  margin: 1%;
+  border: 2px solid black;
+}
+
+#teleLink {
+  margin: 1%;
+  border: 2px solid black;
+}
+
+#filmLink {
+  margin: 1%;
+  border: 2px solid black;
+}

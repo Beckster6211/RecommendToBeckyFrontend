@@ -1,20 +1,21 @@
 .foodPage {
   margin: 2%;
-  background-color: lightgray;
+  background-color: #00bfff; /*blue*/
   padding: 1%;
 }
 
 .foodPageParagraphDiv {
-  margin: 1%;
-  padding: 1%;
-  background-color: lightgreen;
+  /* margin: 1%;
+  padding: 1%; */
+  /* background-color: lightgreen; */
   /* background-color: white; */
   font-size: 0.8em;
   /* text-align: left; */
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .foodPageParagraph {
   margin-top: 1%;
   margin-bottom: 1%;
+  /* text-align: center; */
 }

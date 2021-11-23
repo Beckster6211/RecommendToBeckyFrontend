@@ -2,7 +2,7 @@
   /* border: 2px solid black; */
   padding: 1%;
   margin: 1%;
-  background-color: lightyellow;
+  /* background-color: lightyellow; */
 }
 
 table {
@@ -16,16 +16,16 @@ table {
 
 th {
   text-align: center;
-  background-color: brown;
+  background-color: #b0c4de; /*lightsteelblue*/
   border: 2px solid black;
 }
 
 tbody {
-  background-color: coral;
+  background-color: #6495ed;
 }
 
 tr:nth-child(even) {
-  background-color: darkgrey;
+  background-color: #87cefa;
 }
 
 tr:hover {

@@ -12,17 +12,29 @@ function Nav() {
     <Router>
       {/* <h3>hi</h3> */}
       <nav className="nav">
-        <Link to="/food">Eat 🍴</Link>
+        <div id="foodLink">
+          <Link to="/food">Eat 🍴</Link>
+        </div>
         {/* &nbsp; */}
-        <Link to="/city">Visit 👀</Link>
+        <div id="cityLink">
+          <Link to="/city">Visit 👀</Link>
+        </div>
         {/* &nbsp; */}
-        <Link to="/country">Stay ✈️</Link>
+        <div id="countryLink">
+          <Link to="/country">Stay ✈️</Link>
+        </div>
         {/* &nbsp; */}
-        <Link to="/book">Read 📚</Link>
+        <div id="bookLink">
+          <Link to="/book">Read 📚</Link>
+        </div>
         {/* &nbsp; */}
-        <Link to="/tele">Binge 📺</Link>
+        <div id="teleLink">
+          <Link to="/tele">Binge 📺</Link>
+        </div>
         {/* &nbsp; */}
-        <Link to="/film">Watch 🎬</Link>
+        <div id="filmLink">
+          <Link to="/film">Watch 🎬</Link>
+        </div>
       </nav>
       <Routes>
         <Route path="/food" element={<FoodForm />} />
