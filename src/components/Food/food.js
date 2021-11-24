@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 import "./food.css";
 
 // // chakra
@@ -15,6 +16,8 @@ import Form from "./Form/form";
 // console.log({ FoodList });
 
 function Food() {
+  const { user } = useAuth0();
+  console.log(user);
   const [food, setFood] = useState([]);
   console.log({ food });
   const [form, setForm] = useState({});
