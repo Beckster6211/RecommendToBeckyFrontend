@@ -1,20 +1,17 @@
-#loginButton {
+/* #loginButton {
   background-color: white;
   /* width: 20%; */
-  /* background-image: url("./Capture.PNG");
+/* background-image: url("./Capture.PNG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; */
-  /* width: 200px; */
-  /* color: rgba(0, 0, 0, 0); */
-  width: 10%;
-  padding: 1%;
-}
+/* width: 200px; */
+/* color: rgba(0, 0, 0, 0); */
+/* width: 10%;
+  padding: 1%; */
+/* } */
 
-#loginPic {
-  /* margin-top: 10%;
-  margin-right: 10%; */
-  padding: 1%;
-  width: 10%;
+.loginPic {
+  width: 20%;
   border-radius: 35px;
 }

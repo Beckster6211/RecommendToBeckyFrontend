@@ -1,5 +1,5 @@
 import React from "react";
-import { useAuth0 } from "@auth0/auth0-react";
+// import { useAuth0 } from "@auth0/auth0-react";
 import "./header.css";
 
 import Login from "../Login/login";
@@ -8,29 +8,29 @@ import Logout from "../Logout/logout";
 // import { Heading } from "@chakra-ui/react";
 
 function Header() {
-  const { loginWithRedirect } = useAuth0();
-  const { logout } = useAuth0();
+  // const { loginWithRedirect } = useAuth0();
+  // const { logout } = useAuth0();
   return (
     <div>
       {/* <header>Header</header> */}
       <header className="header">
-        <img
+        {/* <img
           className="loginPic"
           src="./Capture.PNG"
           alt="SoC avatar"
           onClick={() => loginWithRedirect()}
-        />
-        {/* <Login /> */}
+        /> */}
+        <Login />
         <a className="headerText" href="/">
           Recommend To Becky
         </a>
-        <img
+        {/* <img
           className="logoutPic"
           src="./Capture1.PNG"
           alt="Quackers head"
           onClick={() => logout({ returnTo: window.location.origin })}
-        />
-        {/* <Logout /> */}
+        /> */}
+        <Logout />
       </header>
     </div>
   );

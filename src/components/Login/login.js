@@ -9,6 +9,7 @@ function Login() {
     <img
       className="loginPic"
       src="./Capture.PNG"
+      alt="SoC avatar"
       onClick={() => loginWithRedirect()}
     />
     // <img
