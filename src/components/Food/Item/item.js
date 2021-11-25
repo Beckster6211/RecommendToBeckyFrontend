@@ -30,16 +30,7 @@ function Item({
   // const [eaten, setEaten] = useState(false);
 
   const { user } = useAuth0();
-  console.log(user);
-
-  // function seeIfWorks(user) {
-  //   if (user === undefined) {
-  //     console.log("It's undefined");
-  //   } else if (user.name === "Beckster") {
-  //     console.log("It's Becky");
-  //   }
-  // }
-  // seeIfWorks(user);
+  // console.log(user);
 
   function enableIfMe(user) {
     if (user === undefined) {
