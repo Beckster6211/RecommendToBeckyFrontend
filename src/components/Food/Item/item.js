@@ -59,7 +59,125 @@ function Item({
       <td>
         <textarea defaultValue={foodWhere} rows="3" readOnly></textarea>
       </td>
-      <td>
+      {user === undefined ? (
+        <td>
+          <input
+            className="checkBox"
+            type="checkbox"
+            // value={foodDone}
+            checked={foodDone}
+            // onChange={() => {
+            //   console.log("Thats just for me HaHa");
+            // }}
+            // onChange={() => {
+            //   tried(id, item);
+            // }}
+            disabled={enableIfMe(user)}
+          />
+        </td>
+      ) : (
+        <td>
+          <input
+            className="checkBox"
+            type="checkbox"
+            // value={foodDone}
+            checked={foodDone}
+            onChange={() => {
+              tried(id, item);
+            }}
+            // disabled={enableIfMe(user)}
+          />
+        </td>
+      )}
+      {user === undefined ? (
+        <td>
+          <p>{beckyOpinion}</p>
+          {/* not sure about buttons */}
+          <button
+            id="yesButton"
+            name="yes"
+            onClick={() => {
+              console.log("Thats just for me HaHa");
+            }}
+            // onClick={(event) => {
+            //   opinion(event, id, item);
+            // }}
+            // disabled={enableIfMe(user)}
+          >
+            😋
+          </button>
+          <button
+            name="alright"
+            onClick={() => {
+              console.log("Thats just for me HaHa");
+            }}
+            // onClick={(event) => {
+            //   opinion(event, id, item);
+            // }}
+            // disabled={enableIfMe(user)}
+          >
+            🤔
+          </button>
+          <button
+            name="no"
+            onClick={() => {
+              console.log("Thats just for me HaHa");
+            }}
+            // onClick={(event) => {
+            //   opinion(event, id, item);
+            // }}
+            // disabled={enableIfMe(user)}
+          >
+            🤮
+          </button>
+
+          {/* <select>
+          <option>Yes</option>
+          <option>No</option>
+          <option>Alright?</option>
+        </select> */}
+        </td>
+      ) : (
+        <td>
+          <p>{beckyOpinion}</p>
+          {/* not sure about buttons */}
+          <button
+            id="yesButton"
+            name="yes"
+            onClick={(event) => {
+              opinion(event, id, item);
+            }}
+            // disabled={enableIfMe(user)}
+          >
+            😋
+          </button>
+          <button
+            name="alright"
+            onClick={(event) => {
+              opinion(event, id, item);
+            }}
+            // disabled={enableIfMe(user)}
+          >
+            🤔
+          </button>
+          <button
+            name="no"
+            onClick={(event) => {
+              opinion(event, id, item);
+            }}
+            // disabled={enableIfMe(user)}
+          >
+            🤮
+          </button>
+
+          {/* <select>
+          <option>Yes</option>
+          <option>No</option>
+          <option>Alright?</option>
+        </select> */}
+        </td>
+      )}
+      {/* <td>
         <input
           className="checkBox"
           type="checkbox"
@@ -70,11 +188,11 @@ function Item({
           }}
           disabled={enableIfMe(user)}
         />
-      </td>
-      <td>
+      </td> */}
+      {/* <td>
         <p>{beckyOpinion}</p>
         {/* not sure about buttons */}
-        <button
+      {/* <button
           id="yesButton"
           name="yes"
           onClick={(event) => {
@@ -101,14 +219,14 @@ function Item({
           disabled={enableIfMe(user)}
         >
           🤮
-        </button>
+        </button> */}
 
-        {/* <select>
+      {/* <select>
           <option>Yes</option>
           <option>No</option>
           <option>Alright?</option>
         </select> */}
-      </td>
+      {/* </td> */}
       <td>
         <p>{recommendedBy}</p>
       </td>
