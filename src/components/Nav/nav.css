@@ -4,35 +4,52 @@
   margin: 1%;
   padding: 1%;
   background-color: lightcoral;
+  text-decoration: none;
 }
 
-#foodLink {
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.foodLink {
   margin: 1%;
   background-color: #00bfff; /*blue*/
   border: 2px solid black;
+  text-decoration: none;
+  color: black;
 }
 
-#cityLink {
+.cityLink {
   margin: 1%;
   border: 2px solid black;
+  text-decoration: none;
 }
 
-#countryLink {
+.countryLink {
   margin: 1%;
   border: 2px solid black;
+  text-decoration: none;
 }
 
-#bookLink {
+.bookLink {
   margin: 1%;
   border: 2px solid black;
+  text-decoration: none;
 }
 
-#teleLink {
+.teleLink {
   margin: 1%;
   border: 2px solid black;
+  text-decoration: none;
 }
 
-#filmLink {
+.filmLink {
   margin: 1%;
   border: 2px solid black;
+  text-decoration: none;
+}
+
+Link {
+  text-decoration: none;
 }

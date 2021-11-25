@@ -12,27 +12,27 @@ function Nav() {
     <Router>
       {/* <h3>hi</h3> */}
       <nav className="nav">
-        <div id="foodLink">
+        <div className="foodLink">
           <Link to="/food">Eat 🍴</Link>
         </div>
         {/* &nbsp; */}
-        <div id="cityLink">
+        <div className="cityLink">
           <Link to="/city">Visit 👀</Link>
         </div>
         {/* &nbsp; */}
-        <div id="countryLink">
+        <div className="countryLink">
           <Link to="/country">Stay ✈️</Link>
         </div>
         {/* &nbsp; */}
-        <div id="bookLink">
+        <div className="bookLink">
           <Link to="/book">Read 📚</Link>
         </div>
         {/* &nbsp; */}
-        <div id="teleLink">
+        <div className="teleLink">
           <Link to="/tele">Binge 📺</Link>
         </div>
         {/* &nbsp; */}
-        <div id="filmLink">
+        <div className="filmLink">
           <Link to="/film">Watch 🎬</Link>
         </div>
       </nav>
