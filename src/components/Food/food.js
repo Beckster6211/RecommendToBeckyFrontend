@@ -155,7 +155,7 @@ function Food() {
 
   async function handleSubmit(event) {
     // refreshes form, empties form inputs
-    window.location.reload();
+
     console.log("submit pressed");
     console.log(form);
     event.preventDefault();
@@ -171,6 +171,7 @@ function Food() {
     const data = await response.json();
     console.log(data);
     setUpdatePage(!updatePage);
+    window.location.reload();
   }
 
   async function removeFood(index, id) {

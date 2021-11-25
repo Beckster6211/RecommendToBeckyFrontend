@@ -59,7 +59,7 @@ function Item({
       <td>
         <textarea defaultValue={foodWhere} rows="3" readOnly></textarea>
       </td>
-      {user === undefined ? (
+      {/* {user === undefined ? (
         <td>
           <input
             className="checkBox"
@@ -88,11 +88,10 @@ function Item({
             // disabled={enableIfMe(user)}
           />
         </td>
-      )}
-      {user === undefined ? (
+      )} */}
+      {/* {user === undefined ? (
         <td>
           <p>{beckyOpinion}</p>
-          {/* not sure about buttons */}
           <button
             id="yesButton"
             name="yes"
@@ -130,17 +129,10 @@ function Item({
           >
             🤮
           </button>
-
-          {/* <select>
-          <option>Yes</option>
-          <option>No</option>
-          <option>Alright?</option>
-        </select> */}
         </td>
       ) : (
         <td>
           <p>{beckyOpinion}</p>
-          {/* not sure about buttons */}
           <button
             id="yesButton"
             name="yes"
@@ -169,15 +161,9 @@ function Item({
           >
             🤮
           </button>
-
-          {/* <select>
-          <option>Yes</option>
-          <option>No</option>
-          <option>Alright?</option>
-        </select> */}
         </td>
-      )}
-      {/* <td>
+      )} */}
+      <td>
         <input
           className="checkBox"
           type="checkbox"
@@ -188,11 +174,10 @@ function Item({
           }}
           disabled={enableIfMe(user)}
         />
-      </td> */}
-      {/* <td>
+      </td>
+      <td>
         <p>{beckyOpinion}</p>
-        {/* not sure about buttons */}
-      {/* <button
+        <button
           id="yesButton"
           name="yes"
           onClick={(event) => {
@@ -219,14 +204,14 @@ function Item({
           disabled={enableIfMe(user)}
         >
           🤮
-        </button> */}
+        </button>
 
-      {/* <select>
+        {/* <select>
           <option>Yes</option>
           <option>No</option>
           <option>Alright?</option>
         </select> */}
-      {/* </td> */}
+      </td>
       <td>
         <p>{recommendedBy}</p>
       </td>
