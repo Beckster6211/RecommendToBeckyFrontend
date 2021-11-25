@@ -7,10 +7,15 @@ function Login() {
   return (
     // <button id="loginButton" onClick={() => loginWithRedirect()}>
     <img
-      id="loginPic"
+      className="loginPic"
       src="./Capture.PNG"
       onClick={() => loginWithRedirect()}
     />
+    // <img
+    //   id="loginPic"
+    //   src="./Capture.PNG"
+    //   onClick={() => loginWithRedirect()}
+    // />
     // </button>
   );
 }

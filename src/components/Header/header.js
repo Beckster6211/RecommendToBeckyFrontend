@@ -9,6 +9,7 @@ import Logout from "../Logout/logout";
 
 function Header() {
   const { loginWithRedirect } = useAuth0();
+  const { logout } = useAuth0();
   return (
     <div>
       {/* <header>Header</header> */}
@@ -16,6 +17,7 @@ function Header() {
         <img
           className="loginPic"
           src="./Capture.PNG"
+          alt="SoC avatar"
           onClick={() => loginWithRedirect()}
         />
         {/* <Login /> */}
@@ -25,7 +27,8 @@ function Header() {
         <img
           className="logoutPic"
           src="./Capture1.PNG"
-          onClick={() => loginWithRedirect()}
+          alt="Quackers head"
+          onClick={() => logout({ returnTo: window.location.origin })}
         />
         {/* <Logout /> */}
       </header>
