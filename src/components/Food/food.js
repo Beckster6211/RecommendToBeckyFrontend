@@ -307,21 +307,49 @@ function Food() {
       {/* <h1>Food</h1> */}
       {/* <Input addToList={addFood} />
       <List food={food} deleteFood={removeFood} /> */}
-      <div className="foodPageParagraphDiv">
-        <p className="foodPageParagraph">
-          I'm getting better at being more adventurous with food <br />
-          <b>
+      <div className="foodPageLists">
+        <ul className="foodDislike">
+          <p>❌ Dislikes ❌</p>
+          <li className="foodDislikeItem">Peanuts</li>
+          <li className="foodDislikeItem">
+            Cheese<small>(when overpowering e.g burger)</small>
+          </li>
+          <li className="foodDislikeItem">
+            Chilli <small>(I don't like the beans)</small>
+          </li>
+          <li className="foodDislikeItem">
+            Spicy/Hot <small>(Not a fan)</small>
+          </li>
+          <li className="foodDislikeItem">Coconut</li>
+          <li className="foodDislikeItem">
+            Some fish <small>(tuna...)</small>
+          </li>
+        </ul>
+        <ul className="foodLike">
+          <p>✔️ Likes ✔️</p>
+          <li className="foodLikeItem">
+            Sweet over savory <small>(pancakes over full english)</small>
+          </li>
+          <li className="foodLikeItem">
+            Cheese <small>(on pizza & lasagne)</small>
+          </li>
+          <li className="foodLikeItem">
+            Meat eater <small>(open to alternatives)</small>
+          </li>
+          <li className="foodLikeItem">
+            More medium/mid well{" "}
             <small>
-              {" "}
-              Conversation from a lot of my childhood- <br />
-              <q>
-                I don't like it. Have you tried it? No. How do you know you
-                don't like it? I just don't.
-              </q>
+              (I like crispy{" "}
+              <strong>
+                Not Burnt <i>"CRISPY"</i>
+              </strong>
+              )
             </small>
-          </b>
-          <br /> although I'm not a fan of spicy food 🥵
-        </p>
+          </li>
+          <li className="foodLikeItem">
+            Some fish <small>(salmon, cod...)</small>
+          </li>
+        </ul>
       </div>
       <Form
         food={food}
