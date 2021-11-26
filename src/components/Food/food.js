@@ -312,7 +312,7 @@ function Food() {
           <p>❌ Dislikes ❌</p>
           <li className="foodDislikeItem">Peanuts</li>
           <li className="foodDislikeItem">
-            Cheese<small>(when overpowering e.g burger)</small>
+            Cheese <small>(when overpowering e.g burger)</small>
           </li>
           <li className="foodDislikeItem">
             Chilli <small>(I don't like the beans)</small>
@@ -324,11 +324,27 @@ function Food() {
           <li className="foodDislikeItem">
             Some fish <small>(tuna...)</small>
           </li>
+          <li className="foodDislikeItem">
+            Some fruit{" "}
+            <small>
+              (pineapple <i>shouldn't be near pizza</i>)
+            </small>
+          </li>
+          <li className="foodDislikeItem">
+            Marmite{" "}
+            <small>
+              (<strong>Disgusting</strong>
+            </small>
+            )
+          </li>
+          <li className="foodDislikeItem">
+            Alcohol (<small>unless you can't really taste it</small>)
+          </li>
         </ul>
         <ul className="foodLike">
           <p>✔️ Likes ✔️</p>
           <li className="foodLikeItem">
-            Sweet over savory <small>(pancakes over full english)</small>
+            Sweet > savory <small>(pancakes over full english)</small>
           </li>
           <li className="foodLikeItem">
             Cheese <small>(on pizza & lasagne)</small>
