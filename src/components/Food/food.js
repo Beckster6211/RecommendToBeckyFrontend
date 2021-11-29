@@ -309,7 +309,7 @@ function Food() {
       <List food={food} deleteFood={removeFood} /> */}
       <div className="foodPageLists">
         <ul className="foodDislike">
-          <p>❌ Dislikes ❌</p>
+          <p className="foodListParagraph">❌ Dislikes ❌</p>
           <li className="foodDislikeItem">Peanuts</li>
           <li className="foodDislikeItem">
             Cheese <small>(when overpowering e.g burger)</small>
@@ -342,9 +342,9 @@ function Food() {
           </li>
         </ul>
         <ul className="foodLike">
-          <p>✔️ Likes ✔️</p>
+          <p className="foodListParagraph">✔️ Likes ✔️</p>
           <li className="foodLikeItem">
-            Sweet > savory <small>(pancakes over full english)</small>
+            Sweet over savory <small>(pancakes over full english)</small>
           </li>
           <li className="foodLikeItem">
             Cheese <small>(on pizza & lasagne)</small>
@@ -367,6 +367,7 @@ function Food() {
           </li>
         </ul>
       </div>
+      {/* <p>hi</p> */}
       <Form
         food={food}
         handleChange={handleChange}

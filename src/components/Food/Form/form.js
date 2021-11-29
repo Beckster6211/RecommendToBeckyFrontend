@@ -17,7 +17,7 @@ function FoodForm({ handleChange, handleSubmit }) {
           handleSubmit(event);
         }}
       >
-        <p></p>
+        <p className="formSpace"></p>
         {/* <label>
             Food: &nbsp; */}
         <input
@@ -45,7 +45,7 @@ function FoodForm({ handleChange, handleSubmit }) {
             }}
           />
         </label> */}
-        <p></p>
+        <p className="formSpace"></p>
         {/* <label>
           Recommended By: &nbsp; */}
         <input
@@ -59,8 +59,8 @@ function FoodForm({ handleChange, handleSubmit }) {
           }}
         />
         {/* </label> */}
-        <p></p>
-        <p></p>
+        <p className="formSpace"></p>
+        <p className="formSpace"></p>
         {/* <label>
           Where/Recipe: &nbsp; */}
         <textarea
@@ -78,7 +78,7 @@ function FoodForm({ handleChange, handleSubmit }) {
         <button className="foodFormSubmit" type="submit">
           Submit
         </button>
-        <p></p>
+        <p className="formSpace"></p>
       </form>
     </div>
   );

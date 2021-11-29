@@ -54,7 +54,8 @@ ul {
   content: "✔️";
 }
 
-p {
+.foodListParagraph {
   text-align: center;
   text-decoration: underline;
+  margin: 1%;
 }

@@ -1,0 +1,22 @@
+.homePage {
+  border: solid black 2px;
+  margin: 2%;
+  padding: 1%;
+  background-color: lightgray;
+}
+
+.homeDescriptionWhy {
+  /* border: solid black 2px; */
+  font-size: 0.9em;
+  text-align: center;
+  /* background-color: blueviolet; */
+  margin: 1%;
+}
+
+.homeDescriptionHow {
+  /* border: solid black 2px; */
+  font-size: 0.9em;
+  text-align: center;
+  /* background-color: chartreuse; */
+  /* margin: 0; */
+}

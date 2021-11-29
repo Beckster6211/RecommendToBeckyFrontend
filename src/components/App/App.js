@@ -11,6 +11,9 @@ function App() {
     <div className="App">
       <Header />
       <Nav />
+      {/* <footer>
+        <h6>hi</h6>
+      </footer> */}
       {/* <Food /> */}
     </div>
   );
