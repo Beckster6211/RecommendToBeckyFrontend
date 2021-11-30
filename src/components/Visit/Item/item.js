@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import "./item.css";
+// import "./item.css";
 
 // // chakra
 // import {
@@ -15,9 +15,10 @@ import "./item.css";
 // } from "@chakra-ui/react";
 
 function Item({
-  foodName,
-  foodWhere,
-  foodDone,
+  visitWhat,
+  visitLocation,
+  visitWhy,
+  visited,
   recommendedBy,
   beckyOpinion,
   removeFood,
@@ -48,13 +49,17 @@ function Item({
         <p>hi</p>
       </td> */}
       <td>
-        <p>{foodName}</p>
+        <p>{visitWhat}</p>
+        {/* <textarea defaultValue={visitLocation} rows="3" readOnly></textarea> */}
+      </td>
+      <td>
+        <textarea defaultValue={visitLocation} rows="3" readOnly></textarea>
       </td>
       {/* <td>
         <p>{foodWhere}</p>
       </td> */}
       <td>
-        <textarea defaultValue={foodWhere} rows="3" readOnly></textarea>
+        <p>{visitWhy}</p>
       </td>
       {/* {user === undefined ? (
         <td>
@@ -62,7 +67,7 @@ function Item({
             className="checkBox"
             type="checkbox"
             // value={foodDone}
-            checked={foodDone}
+            checked={visited}
             // onChange={() => {
             //   console.log("Thats just for me HaHa");
             // }}
@@ -78,7 +83,7 @@ function Item({
             className="checkBox"
             type="checkbox"
             // value={foodDone}
-            checked={foodDone}
+            checked={visited}
             onChange={() => {
               tried(id, item);
             }}
@@ -88,19 +93,6 @@ function Item({
       )} */}
       {user === undefined ? (
         <td>
-          <input
-            className="checkBox foodBeckyOpinion"
-            type="checkbox"
-            // value={foodDone}
-            checked={foodDone}
-            // onChange={() => {
-            //   console.log("Thats just for me HaHa");
-            // }}
-            // onChange={() => {
-            //   tried(id, item);
-            // }}
-            disabled={enableIfMe(user)}
-          />
           <p className="foodBeckyOpinion">{beckyOpinion}</p>
           {/* not sure about buttons */}
           <button
@@ -140,7 +132,21 @@ function Item({
           >
             🤮
           </button>
-
+          <br />
+          <br />
+          <input
+            className="checkBox"
+            type="checkbox"
+            // value={foodDone}
+            checked={visited}
+            // onChange={() => {
+            //   console.log("Thats just for me HaHa");
+            // }}
+            // onChange={() => {
+            //   tried(id, item);
+            // }}
+            disabled={enableIfMe(user)}
+          />
           {/* <select>
           <option>Yes</option>
           <option>No</option>
@@ -149,17 +155,7 @@ function Item({
         </td>
       ) : (
         <td>
-          <input
-            className="checkBox foodBeckyOpinion"
-            type="checkbox"
-            // value={foodDone}
-            checked={foodDone}
-            onChange={() => {
-              tried(id, item);
-            }}
-            // disabled={enableIfMe(user)}
-          />
-          <p className="foodBeckyOpinion">{beckyOpinion}</p>
+          <p>{beckyOpinion}</p>
           {/* not sure about buttons */}
           <button
             id="yesButton"

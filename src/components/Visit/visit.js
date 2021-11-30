@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import VisitTable from "./Table/table";
 
 function Visit() {
   const [visit, setVisit] = useState([]);
@@ -20,6 +21,7 @@ function Visit() {
   return (
     <div>
       <h3>Visit</h3>
+      <VisitTable visit={visit} />
     </div>
   );
 }

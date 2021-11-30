@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./table.css";
+// import "./table.css";
 
 // // chakra
 // import {
@@ -20,17 +20,19 @@ import "./table.css";
 
 import Item from "../Item/item";
 
-function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
+function VisitTable({ visit }) {
   return (
-    <div className="foodTable">
+    <div>
       <table>
         <thead>
           <tr>
             {/* <th>hi</th> */}
-            <th>Food</th>
-            <th>Where/Recipe?</th>
+            <th>What?</th>
+            {/* <th>What? & Where?</th> */}
+            <th>Location?</th>
+            <th>Why?</th>
             {/* <th>Best place to get?</th> */}
-            {/* <th>Tried it</th> */}
+            {/* <th>Visited</th> */}
             <th>Becky opinion</th>
             <th>Who By</th>
             <th>Delete</th>
@@ -38,31 +40,33 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
         </thead>
         <tfoot>
           <tr>
-            <th>Food</th>
-            <th>Where/Recipe?</th>
+            {/* <th>hi</th> */}
+            <th>What? & Where?</th>
+            <th>Why?</th>
             {/* <th>Best place to get?</th> */}
-            {/* <th>Tried it</th> */}
+            {/* <th>Visited</th> */}
             <th>Becky opinion</th>
             <th>Who By</th>
             <th>Delete</th>
           </tr>
         </tfoot>
         <tbody>
-          {food.map((item, index) => {
+          {visit.map((item, index) => {
             return (
               <Item
                 item={item}
-                foodName={item.food}
-                foodWhere={item.recipe}
-                foodDone={item.isdone}
+                visitWhat={item.what}
+                visitLocation={item.location}
+                visitWhy={item.why}
+                visited={item.visited}
                 recommendedBy={item.recommendedby}
                 beckyOpinion={item.beckyopinion}
                 index={index}
                 id={item.id}
                 key={item.id}
-                removeFood={deleteFood}
-                tried={handleTried}
-                opinion={handleOpinion}
+                // removeFood={deleteFood}
+                // tried={handleTried}
+                // opinion={handleOpinion}
               />
             );
           })}
@@ -72,4 +76,4 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
   );
 }
 
-export default FoodTable;
+export default VisitTable;
