@@ -75,6 +75,7 @@ function FoodForm({ handleChange, handleSubmit }) {
           rows="2"
         />
         {/* </label> */}
+        <p className="formSpace"></p>
         <button className="foodFormSubmit" type="submit">
           Submit
         </button>

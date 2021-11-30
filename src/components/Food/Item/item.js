@@ -44,9 +44,15 @@ function Item({
 
   return (
     <tr className="item">
+      {/* <td>
+        <p>hi</p>
+      </td> */}
       <td>
         <p>{foodName}</p>
       </td>
+      {/* <td>
+        <p>{foodWhere}</p>
+      </td> */}
       <td>
         <textarea defaultValue={foodWhere} rows="3" readOnly></textarea>
       </td>
@@ -82,7 +88,7 @@ function Item({
       )}
       {user === undefined ? (
         <td>
-          <p>{beckyOpinion}</p>
+          <p className="foodBeckyOpinion">{beckyOpinion}</p>
           {/* not sure about buttons */}
           <button
             id="yesButton"

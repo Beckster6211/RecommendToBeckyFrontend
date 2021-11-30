@@ -8,7 +8,7 @@ function Home() {
       <p className="homeDescriptionWhy">
         🧰 I made this as I wanted to practice all the different aspects taught
         on School of Code 🔧 in particular backend and database work ⚙️ (which
-        really confused me whilst learning it 🤪) combining that with front end
+        really confused me whilst learning it 🤪) combining that with frontend
         work of React and connecting the two sides together 🤝 getting them to
         make friends 🧑‍🤝‍🧑
       </p>

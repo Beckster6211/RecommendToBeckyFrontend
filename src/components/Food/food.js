@@ -322,7 +322,7 @@ function Food() {
           </li>
           <li className="foodDislikeItem">Coconut</li>
           <li className="foodDislikeItem">
-            Some fish <small>(tuna...)</small>
+            Some fish <small>(prawns, tuna...)</small>
           </li>
           <li className="foodDislikeItem">
             Some fruit{" "}

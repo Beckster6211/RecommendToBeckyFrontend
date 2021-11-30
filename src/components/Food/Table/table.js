@@ -26,6 +26,7 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
       <table>
         <thead>
           <tr>
+            {/* <th>hi</th> */}
             <th>Food</th>
             <th>Where/Recipe?</th>
             {/* <th>Best place to get?</th> */}
