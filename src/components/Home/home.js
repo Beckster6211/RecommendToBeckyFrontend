@@ -18,15 +18,15 @@ function Home() {
       </p>
 
       <details>
-        <summary>Eat 🍴</summary>
-        <p>
+        <summary className="homeEatTitle">Eat 🍴</summary>
+        <p className="homeEatDescription">
           {" "}
           I'm getting better at being more adventurous with food, I quite like
           clashing things - lemon meringue{" "}
           <small>
             (It's kinda sour and sweet, its soft and crunchy LOVE IT ❤️)
           </small>
-          , chilli and chocolate, ice cream on pancakes etc etc
+          , chilli and chocolate, ice cream on pancakes etc
           <br />
           <b>
             <small>
@@ -41,7 +41,8 @@ function Home() {
           <br />
           On the food page there is a little chart of my likes ✔️ and dislikes
           ❌ although don't feel as though you have to keep within those. Maybe
-          your thinking 😋
+          your thinking 🤔
+          <br />
           <b>
             <small>
               <q>
@@ -51,13 +52,15 @@ function Home() {
             </small>
           </b>{" "}
           can't hurt to list it 🤷
+          <br /> In the Where/Recipe form section you could put a
+          shop/restaurant/url/recipe{" "}
+          <small>
+            Secret family recipe for a dish 🤫 you don't want share here 😉 you
+            can put your contact linkedin or email (or something) 🤫
+          </small>
         </p>
-        <small>
-          Secret family recipe for something 🤫 you don't want to make it public
-          you can put your contact linkedin or email (or something) 🤫
-        </small>
       </details>
-      <h3>Home</h3>
+      {/* <h3>Home</h3> */}
       {/* <Auth0 /> */}
       {/* <p className="foodPageParagraph">
         I'm getting better at being more adventurous with food <br />
