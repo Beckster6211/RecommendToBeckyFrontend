@@ -53,17 +53,6 @@ function Food() {
       });
   }, [updatePage]);
 
-  // useEffect(() => {
-  //   fetch("http://localhost:3001/food")
-  //     .then((response) => response.json())
-  //     .then((response) => {
-  //       setFood(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, [updatePage]);
-
   function handleChange(event) {
     let inputName = event.target.name;
     console.log({ inputName });
@@ -120,44 +109,6 @@ function Food() {
     setUpdatePage(!updatePage);
   }
 
-  // async function handleTried(id, object) {
-  //   console.log("checkbox ticked");
-  //   // setIsDone(!boolean);
-  //   // console.log(object);
-  //   // console.log(object.isdone);
-  //   // console.log({ ...object });
-  //   if (object.isdone === true) {
-  //     object.isdone = false;
-  //     console.log(object.isdone);
-  //     // console.log((object.isdone = false));
-  //     // return { ...object, isdone: false };
-  //   } else if (object.isdone === false) {
-  //     object.isdone = true;
-  //     console.log(object.isdone);
-  //     // console.log((object.isdone = true));
-  //     // return { ...object, isdone: true };
-  //   }
-  //   // return { ...object };
-  //   // console.log({ isDone });
-  //   // setIsDone(!isDone);
-  //   // console.log({ isDone });
-  //   const response = await fetch(`http://localhost:3001/food/${id}`, {
-  //     method: "PATCH",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify({
-  //       food: object.food,
-  //       recipe: object.recipe,
-  //       recommendedby: object.recommendedby,
-  //       beckyopinion: object.beckyopinion,
-  //       isdone: object.isdone,
-  //     }),
-  //   });
-  //   console.log(response);
-  //   const data = await response.json();
-  //   console.log(data);
-  //   setUpdatePage(!updatePage);
-  // }
-
   async function handleOpinion(event, id, object) {
     console.log("button clicked");
     console.log({ id });
@@ -196,44 +147,6 @@ function Food() {
     setUpdatePage(!updatePage);
   }
 
-  // async function handleOpinion(event, id, object) {
-  //   console.log("button clicked");
-  //   console.log({ id });
-  //   console.log({ object });
-  //   console.log(event);
-  //   if (event.target.name === "yes") {
-  //     console.log("yes button clicked");
-  //     console.log(object.beckyopinion);
-  //     object.beckyopinion = "😋";
-  //     console.log(object.beckyopinion);
-  //   } else if (event.target.name === "no") {
-  //     console.log("no button clicked");
-  //     console.log(object.beckyopinion);
-  //     object.beckyopinion = "🤮";
-  //     console.log(object.beckyopinion);
-  //   } else if (event.target.name === "alright") {
-  //     console.log("alright button clicked");
-  //     console.log(object.beckyopinion);
-  //     object.beckyopinion = "🤔";
-  //     console.log(object.beckyopinion);
-  //   }
-  //   const response = await fetch(`http://localhost:3001/food/${id}`, {
-  //     method: "PATCH",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify({
-  //       food: object.food,
-  //       recipe: object.recipe,
-  //       recommendedby: object.recommendedby,
-  //       beckyopinion: object.beckyopinion,
-  //       isdone: object.isdone,
-  //     }),
-  //   });
-  //   console.log(response);
-  //   const data = await response.json();
-  //   console.log(data);
-  //   setUpdatePage(!updatePage);
-  // }
-
   async function handleSubmit(event) {
     // refreshes form, empties form inputs
     window.location.reload();
@@ -251,23 +164,6 @@ function Food() {
     setUpdatePage(!updatePage);
   }
 
-  // async function handleSubmit(event) {
-  //   // refreshes form, empties form inputs
-  //   window.location.reload();
-  //   console.log("submit pressed");
-  //   console.log(form);
-  //   event.preventDefault();
-  //   const response = await fetch("http://localhost:3001/food", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify(form),
-  //   });
-  //   console.log(response);
-  //   const data = await response.json();
-  //   console.log(data);
-  //   setUpdatePage(!updatePage);
-  // }
-
   async function removeFood(index, id) {
     setFood([...food.slice(0, index), ...food.slice(index + 1)]);
     let response = await fetch(`http://localhost:3001/food/${id}`, {
@@ -278,17 +174,6 @@ function Food() {
     console.log({ data });
     console.log({ food });
   }
-
-  // async function removeFood(index, id) {
-  //   setFood([...food.slice(0, index), ...food.slice(index + 1)]);
-  //   let response = await fetch(`http://localhost:3001/food/${id}`, {
-  //     method: "DELETE",
-  //   });
-  //   let data = await response.json();
-  //   setUpdatePage(!updatePage);
-  //   console.log({ data });
-  //   console.log({ food });
-  // }
 
   return (
     <div className="foodPage">
