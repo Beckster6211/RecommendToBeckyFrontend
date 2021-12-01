@@ -1,11 +1,11 @@
-.foodTable {
+.visitTable {
   /* border: 2px solid black; */
   padding: 1%;
   margin: 1%;
   /* background-color: lightyellow; */
 }
 
-.tableFood {
+.tableVisit {
   /* border: 2px solid black; */
   table-layout: fixed;
   width: 100%;
@@ -14,20 +14,20 @@
   hyphens: auto;
 }
 
-.tableHeadFood {
+.tableHeadVisit {
   text-align: center;
   background-color: #b0c4de; /*lightsteelblue*/
   border: 2px solid black;
 }
 
-.tableBodyFood {
-  background-color: #6495ed; /*cornflowerblue*/
+.tableBodyVisit {
+  background-color: #3b7a57; /*amazon*/
 }
 
-.tableBodyFood tr:nth-child(even) {
-  background-color: #87cefa; /*lightskyblue*/
+.tableBodyVisit tr:nth-child(even) {
+  background-color: #98fb98; /*palegreen*/
 }
 
-.tableBodyFood tr:hover {
+.tableBodyVisit tr:hover {
   background-color: lightyellow;
 }

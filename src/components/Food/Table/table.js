@@ -23,31 +23,31 @@ import Item from "../Item/item";
 function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
   return (
     <div className="foodTable">
-      <table>
+      <table className="tableFood">
         <thead>
           <tr>
             {/* <th>hi</th> */}
-            <th>Food</th>
-            <th>Where/Recipe?</th>
+            <th className="tableHeadFood">Food</th>
+            <th className="tableHeadFood">Where/Recipe?</th>
             {/* <th>Best place to get?</th> */}
             {/* <th>Tried it</th> */}
-            <th>Becky opinion</th>
-            <th>Who By</th>
-            <th>Delete</th>
+            <th className="tableHeadFood">Becky opinion</th>
+            <th className="tableHeadFood">Who By</th>
+            <th className="tableHeadFood">Delete</th>
           </tr>
         </thead>
-        <tfoot>
+        <tfoot className="tableHeadFood">
           <tr>
-            <th>Food</th>
-            <th>Where/Recipe?</th>
+            <th className="tableHeadFood">Food</th>
+            <th className="tableHeadFood">Where/Recipe?</th>
             {/* <th>Best place to get?</th> */}
             {/* <th>Tried it</th> */}
-            <th>Becky opinion</th>
-            <th>Who By</th>
-            <th>Delete</th>
+            <th className="tableHeadFood">Becky opinion</th>
+            <th className="tableHeadFood">Who By</th>
+            <th className="tableHeadFood">Delete</th>
           </tr>
         </tfoot>
-        <tbody>
+        <tbody className="tableBodyFood">
           {food.map((item, index) => {
             return (
               <Item

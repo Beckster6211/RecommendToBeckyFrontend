@@ -1,4 +1,5 @@
 import React from "react";
+import "./table.css";
 
 // import "./table.css";
 
@@ -20,37 +21,39 @@ import React from "react";
 
 import Item from "../Item/item";
 
-function VisitTable({ visit }) {
+function VisitTable({ visit, handleTried, handleOpinion, deleteVisit }) {
   return (
-    <div>
-      <table>
+    <div className="visitTable">
+      <table className="tableVisit">
         <thead>
           <tr>
             {/* <th>hi</th> */}
-            <th>What?</th>
+            <th className="tableHeadVisit">What?</th>
             {/* <th>What? & Where?</th> */}
-            <th>Location?</th>
-            <th>Why?</th>
+            <th className="tableHeadVisit">Location?</th>
+            <th className="tableHeadVisit">Why?</th>
             {/* <th>Best place to get?</th> */}
             {/* <th>Visited</th> */}
-            <th>Becky opinion</th>
-            <th>Who By</th>
-            <th>Delete</th>
+            <th className="tableHeadVisit">Becky opinion</th>
+            <th className="tableHeadVisit">Who By</th>
+            <th className="tableHeadVisit">Delete</th>
           </tr>
         </thead>
         <tfoot>
           <tr>
             {/* <th>hi</th> */}
-            <th>What? & Where?</th>
-            <th>Why?</th>
+            <th className="tableHeadVisit">What?</th>
+            {/* <th>What? & Where?</th> */}
+            <th className="tableHeadVisit">Location?</th>
+            <th className="tableHeadVisit">Why?</th>
             {/* <th>Best place to get?</th> */}
             {/* <th>Visited</th> */}
-            <th>Becky opinion</th>
-            <th>Who By</th>
-            <th>Delete</th>
+            <th className="tableHeadVisit">Becky opinion</th>
+            <th className="tableHeadVisit">Who By</th>
+            <th className="tableHeadVisit">Delete</th>
           </tr>
         </tfoot>
-        <tbody>
+        <tbody className="tableBodyVisit">
           {visit.map((item, index) => {
             return (
               <Item
@@ -64,9 +67,9 @@ function VisitTable({ visit }) {
                 index={index}
                 id={item.id}
                 key={item.id}
-                // removeFood={deleteFood}
-                // tried={handleTried}
-                // opinion={handleOpinion}
+                removeVisit={deleteVisit}
+                tried={handleTried}
+                opinion={handleOpinion}
               />
             );
           })}

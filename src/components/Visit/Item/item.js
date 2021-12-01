@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-// import "./item.css";
+import "./item.css";
 
 // // chakra
 // import {
@@ -21,7 +21,7 @@ function Item({
   visited,
   recommendedBy,
   beckyOpinion,
-  removeFood,
+  removeVisit,
   index,
   id,
   item,
@@ -93,47 +93,6 @@ function Item({
       )} */}
       {user === undefined ? (
         <td>
-          <p className="foodBeckyOpinion">{beckyOpinion}</p>
-          {/* not sure about buttons */}
-          <button
-            id="yesButton"
-            name="yes"
-            onClick={() => {
-              console.log("Thats just for me HaHa");
-            }}
-            // onClick={(event) => {
-            //   opinion(event, id, item);
-            // }}
-            // disabled={enableIfMe(user)}
-          >
-            😋
-          </button>
-          <button
-            name="alright"
-            onClick={() => {
-              console.log("Thats just for me HaHa");
-            }}
-            // onClick={(event) => {
-            //   opinion(event, id, item);
-            // }}
-            // disabled={enableIfMe(user)}
-          >
-            🤔
-          </button>
-          <button
-            name="no"
-            onClick={() => {
-              console.log("Thats just for me HaHa");
-            }}
-            // onClick={(event) => {
-            //   opinion(event, id, item);
-            // }}
-            // disabled={enableIfMe(user)}
-          >
-            🤮
-          </button>
-          <br />
-          <br />
           <input
             className="checkBox"
             type="checkbox"
@@ -147,6 +106,45 @@ function Item({
             // }}
             disabled={enableIfMe(user)}
           />
+          <p className="visitBeckyOpinion">{beckyOpinion}</p>
+          {/* not sure about buttons */}
+          <button
+            id="yesButton"
+            name="yes"
+            onClick={() => {
+              console.log("Thats just for me HaHa");
+            }}
+            // onClick={(event) => {
+            //   opinion(event, id, item);
+            // }}
+            // disabled={enableIfMe(user)}
+          >
+            😃
+          </button>
+          <button
+            name="alright"
+            onClick={() => {
+              console.log("Thats just for me HaHa");
+            }}
+            // onClick={(event) => {
+            //   opinion(event, id, item);
+            // }}
+            // disabled={enableIfMe(user)}
+          >
+            🤔
+          </button>
+          <button
+            name="no"
+            onClick={() => {
+              console.log("Thats just for me HaHa");
+            }}
+            // onClick={(event) => {
+            //   opinion(event, id, item);
+            // }}
+            // disabled={enableIfMe(user)}
+          >
+            😩
+          </button>
           {/* <select>
           <option>Yes</option>
           <option>No</option>
@@ -155,6 +153,16 @@ function Item({
         </td>
       ) : (
         <td>
+          <input
+            className="checkBox foodBeckyOpinion"
+            type="checkbox"
+            // value={foodDone}
+            checked={visited}
+            onChange={() => {
+              tried(id, item);
+            }}
+            // disabled={enableIfMe(user)}
+          />
           <p>{beckyOpinion}</p>
           {/* not sure about buttons */}
           <button
@@ -165,7 +173,7 @@ function Item({
             }}
             // disabled={enableIfMe(user)}
           >
-            😋
+            😃
           </button>
           <button
             name="alright"
@@ -183,7 +191,7 @@ function Item({
             }}
             // disabled={enableIfMe(user)}
           >
-            🤮
+            😩
           </button>
 
           {/* <select>
@@ -249,7 +257,7 @@ function Item({
       <td>
         <button
           onClick={() => {
-            removeFood(index, id);
+            removeVisit(index, id);
           }}
         >
           🗑️
