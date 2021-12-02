@@ -3,7 +3,7 @@
   justify-content: space-evenly;
   margin: 1%;
   padding: 1%;
-  background-color: lightcoral;
+  background-color: #ff9999; /*lightpinksalmon*/
   text-decoration: none;
 }
 
@@ -31,6 +31,7 @@ a {
   margin: 1%;
   border: 2px solid black;
   text-decoration: none;
+  background-color: #ff4500;
 }
 
 .bookLink {

@@ -53,7 +53,7 @@ function Item({
         {/* <textarea defaultValue={visitLocation} rows="3" readOnly></textarea> */}
       </td>
       <td>
-        <textarea defaultValue={visitLocation} rows="3" readOnly></textarea>
+        <textarea defaultValue={visitLocation} rows="6" readOnly></textarea>
       </td>
       {/* <td>
         <p>{foodWhere}</p>
@@ -154,7 +154,7 @@ function Item({
       ) : (
         <td>
           <input
-            className="checkBox foodBeckyOpinion"
+            className="checkBox visitBeckyOpinion"
             type="checkbox"
             // value={foodDone}
             checked={visited}

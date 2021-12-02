@@ -1,0 +1,33 @@
+.StayTable {
+  /* border: 2px solid black; */
+  padding: 1%;
+  margin: 1%;
+  /* background-color: lightyellow; */
+}
+
+.tableStay {
+  /* border: 2px solid black; */
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.tableHeadStay {
+  text-align: center;
+  background-color: #b0c4de; /*lightsteelblue*/
+  border: 2px solid black;
+}
+
+.tableBodyStay {
+  background-color: #8b0000;
+}
+
+.tableBodyStay tr:nth-child(even) {
+  background-color: #fa8072;
+}
+
+.tableBodyStay tr:hover {
+  background-color: lightyellow;
+}
