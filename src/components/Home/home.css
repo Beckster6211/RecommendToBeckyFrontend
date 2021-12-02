@@ -27,5 +27,15 @@
 }
 
 .homeEatDescription {
+  margin: 1%;
+  font-size: 0.9em;
+}
+
+.homeVisitTitle {
+  background-color: #3cb371;
+}
+
+.homeVisitDescription {
+  margin: 1%;
   font-size: 0.9em;
 }
