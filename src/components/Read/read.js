@@ -11,7 +11,7 @@ function Read() {
   const [updatePage, setUpdatePage] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:3001/read")
+    fetch("https://recommend-to-becky.herokuapp.com/read")
       .then((response) => response.json())
       .then((response) => {
         setRead(response.data);
@@ -60,21 +60,24 @@ function Read() {
     // console.log({ isDone });
     // setIsDone(!isDone);
     // console.log({ isDone });
-    const response = await fetch(`http://localhost:3001/read/${id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        book: object.book,
-        author: object.author,
-        connected: object.connected,
-        genre: object.genre,
-        numberofbooks: object.numberofbooks,
-        description: object.description,
-        recommendedby: object.recommendedby,
-        beckyopinion: object.beckyopinion,
-        read: object.read,
-      }),
-    });
+    const response = await fetch(
+      `https://recommend-to-becky.herokuapp.com/read/${id}`,
+      {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          book: object.book,
+          author: object.author,
+          connected: object.connected,
+          genre: object.genre,
+          numberofbooks: object.numberofbooks,
+          description: object.description,
+          recommendedby: object.recommendedby,
+          beckyopinion: object.beckyopinion,
+          read: object.read,
+        }),
+      }
+    );
     console.log(response);
     const data = await response.json();
     console.log(data);
@@ -102,21 +105,24 @@ function Read() {
       object.beckyopinion = "🤔";
       console.log(object.beckyopinion);
     }
-    const response = await fetch(`http://localhost:3001/read/${id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        book: object.book,
-        author: object.author,
-        connected: object.connected,
-        genre: object.genre,
-        numberofbooks: object.numberofbooks,
-        description: object.description,
-        recommendedby: object.recommendedby,
-        beckyopinion: object.beckyopinion,
-        read: object.read,
-      }),
-    });
+    const response = await fetch(
+      `https://recommend-to-becky.herokuapp.com/read/${id}`,
+      {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          book: object.book,
+          author: object.author,
+          connected: object.connected,
+          genre: object.genre,
+          numberofbooks: object.numberofbooks,
+          description: object.description,
+          recommendedby: object.recommendedby,
+          beckyopinion: object.beckyopinion,
+          read: object.read,
+        }),
+      }
+    );
     console.log(response);
     const data = await response.json();
     console.log(data);
@@ -129,11 +135,14 @@ function Read() {
     console.log("submit pressed");
     console.log(form);
     event.preventDefault();
-    const response = await fetch("http://localhost:3001/read", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
+    const response = await fetch(
+      "https://recommend-to-becky.herokuapp.com/read",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      }
+    );
     console.log(response);
     const data = await response.json();
     console.log(data);
@@ -142,9 +151,12 @@ function Read() {
 
   async function removeRead(index, id) {
     setRead([...read.slice(0, index), ...read.slice(index + 1)]);
-    let response = await fetch(`http://localhost:3001/read/${id}`, {
-      method: "DELETE",
-    });
+    let response = await fetch(
+      `https://recommend-to-becky.herokuapp.com/read/${id}`,
+      {
+        method: "DELETE",
+      }
+    );
     let data = await response.json();
     setUpdatePage(!updatePage);
     console.log({ data });

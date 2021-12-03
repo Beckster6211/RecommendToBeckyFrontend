@@ -11,7 +11,7 @@ function Stay() {
   const [updatePage, setUpdatePage] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:3001/stay")
+    fetch("https://recommend-to-becky.herokuapp.com/stay")
       .then((response) => response.json())
       .then((response) => {
         setStay(response.data);
@@ -60,18 +60,21 @@ function Stay() {
     // console.log({ isDone });
     // setIsDone(!isDone);
     // console.log({ isDone });
-    const response = await fetch(`http://localhost:3001/stay/${id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        what: object.what,
-        location: object.location,
-        details: object.details,
-        recommendedby: object.recommendedby,
-        beckyopinion: object.beckyopinion,
-        stayed: object.stayed,
-      }),
-    });
+    const response = await fetch(
+      `https://recommend-to-becky.herokuapp.com/${id}`,
+      {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          what: object.what,
+          location: object.location,
+          details: object.details,
+          recommendedby: object.recommendedby,
+          beckyopinion: object.beckyopinion,
+          stayed: object.stayed,
+        }),
+      }
+    );
     console.log(response);
     const data = await response.json();
     console.log(data);
@@ -99,18 +102,21 @@ function Stay() {
       object.beckyopinion = "🤔";
       console.log(object.beckyopinion);
     }
-    const response = await fetch(`http://localhost:3001/stay/${id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        what: object.what,
-        location: object.location,
-        details: object.details,
-        recommendedby: object.recommendedby,
-        beckyopinion: object.beckyopinion,
-        stayed: object.stayed,
-      }),
-    });
+    const response = await fetch(
+      `https://recommend-to-becky.herokuapp.com/stay/${id}`,
+      {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          what: object.what,
+          location: object.location,
+          details: object.details,
+          recommendedby: object.recommendedby,
+          beckyopinion: object.beckyopinion,
+          stayed: object.stayed,
+        }),
+      }
+    );
     console.log(response);
     const data = await response.json();
     console.log(data);
@@ -123,11 +129,14 @@ function Stay() {
     console.log("submit pressed");
     console.log(form);
     event.preventDefault();
-    const response = await fetch("http://localhost:3001/stay", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
+    const response = await fetch(
+      "https://recommend-to-becky.herokuapp.com/stay",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      }
+    );
     console.log(response);
     const data = await response.json();
     console.log(data);
@@ -136,9 +145,12 @@ function Stay() {
 
   async function removeStay(index, id) {
     setStay([...stay.slice(0, index), ...stay.slice(index + 1)]);
-    let response = await fetch(`http://localhost:3001/stay/${id}`, {
-      method: "DELETE",
-    });
+    let response = await fetch(
+      `https://recommend-to-becky.herokuapp.com/stay/${id}`,
+      {
+        method: "DELETE",
+      }
+    );
     let data = await response.json();
     setUpdatePage(!updatePage);
     console.log({ data });

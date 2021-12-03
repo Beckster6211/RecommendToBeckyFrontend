@@ -11,7 +11,7 @@ function Visit() {
   const [updatePage, setUpdatePage] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:3001/visit")
+    fetch("https://recommend-to-becky.herokuapp.com/visit")
       .then((response) => response.json())
       .then((response) => {
         setVisit(response.data);
@@ -60,18 +60,21 @@ function Visit() {
     // console.log({ isDone });
     // setIsDone(!isDone);
     // console.log({ isDone });
-    const response = await fetch(`http://localhost:3001/visit/${id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        what: object.what,
-        location: object.location,
-        why: object.why,
-        recommendedby: object.recommendedby,
-        beckyopinion: object.beckyopinion,
-        visited: object.visited,
-      }),
-    });
+    const response = await fetch(
+      `https://recommend-to-becky.herokuapp.com/visit/${id}`,
+      {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          what: object.what,
+          location: object.location,
+          why: object.why,
+          recommendedby: object.recommendedby,
+          beckyopinion: object.beckyopinion,
+          visited: object.visited,
+        }),
+      }
+    );
     console.log(response);
     const data = await response.json();
     console.log(data);
@@ -99,18 +102,21 @@ function Visit() {
       object.beckyopinion = "🤔";
       console.log(object.beckyopinion);
     }
-    const response = await fetch(`http://localhost:3001/visit/${id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        what: object.what,
-        location: object.location,
-        why: object.why,
-        recommendedby: object.recommendedby,
-        beckyopinion: object.beckyopinion,
-        visited: object.visited,
-      }),
-    });
+    const response = await fetch(
+      `https://recommend-to-becky.herokuapp.com/visit/${id}`,
+      {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          what: object.what,
+          location: object.location,
+          why: object.why,
+          recommendedby: object.recommendedby,
+          beckyopinion: object.beckyopinion,
+          visited: object.visited,
+        }),
+      }
+    );
     console.log(response);
     const data = await response.json();
     console.log(data);
@@ -123,11 +129,14 @@ function Visit() {
     console.log("submit pressed");
     console.log(form);
     event.preventDefault();
-    const response = await fetch("http://localhost:3001/visit", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
+    const response = await fetch(
+      "https://recommend-to-becky.herokuapp.com/visit",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      }
+    );
     console.log(response);
     const data = await response.json();
     console.log(data);
@@ -136,9 +145,12 @@ function Visit() {
 
   async function removeVisit(index, id) {
     setVisit([...visit.slice(0, index), ...visit.slice(index + 1)]);
-    let response = await fetch(`http://localhost:3001/visit/${id}`, {
-      method: "DELETE",
-    });
+    let response = await fetch(
+      `https://recommend-to-becky.herokuapp.com/visit/${id}`,
+      {
+        method: "DELETE",
+      }
+    );
     let data = await response.json();
     setUpdatePage(!updatePage);
     console.log({ data });
