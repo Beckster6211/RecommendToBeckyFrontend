@@ -39,3 +39,21 @@
   margin: 1%;
   font-size: 0.9em;
 }
+
+.homeStayTitle {
+  background-color: #ff4500;
+}
+
+.homeStayDescription {
+  margin: 1%;
+  font-size: 0.9em;
+}
+
+.homeReadTitle {
+  background-color: #ff4500;
+}
+
+.homeReadDescription {
+  margin: 1%;
+  font-size: 0.9em;
+}

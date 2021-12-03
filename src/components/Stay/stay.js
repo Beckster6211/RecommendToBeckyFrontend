@@ -147,6 +147,12 @@ function Stay() {
 
   return (
     <div className="stayPage">
+      {/* <div>
+        <details>
+          <summary>Stay Video</summary>
+          <video></video>
+        </details>
+      </div> */}
       {/* <h3>Stay</h3> */}
       <div className="stayPageLists">
         <ul className="stayDislike">

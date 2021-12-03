@@ -147,6 +147,12 @@ function Visit() {
 
   return (
     <div className="visitPage">
+      {/* <div>
+        <details>
+          <summary>Visit Video</summary>
+          <video></video>
+        </details>
+      </div> */}
       {/* <h3>Visit</h3> */}
       <div className="visitPageLists">
         <ul className="visitDislike">

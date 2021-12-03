@@ -177,6 +177,12 @@ function Food() {
 
   return (
     <div className="foodPage">
+      {/* <div>
+        <details>
+          <summary>Eat Video</summary>
+          <video></video>
+        </details>
+      </div> */}
       {/* <h1>Food</h1> */}
       {/* <Input addToList={addFood} />
       <List food={food} deleteFood={removeFood} /> */}
