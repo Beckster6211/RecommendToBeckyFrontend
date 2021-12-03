@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReadTable from "./Table/table";
-// import StayForm from "./Form/form";
+import ReadForm from "./Form/form";
 
 import "./read.css";
 
@@ -213,7 +213,7 @@ function Read() {
           </li>
         </ul>
       </div> */}
-      {/* <StayForm handleChange={handleChange} handleSubmit={handleSubmit} /> */}
+      <ReadForm handleChange={handleChange} handleSubmit={handleSubmit} />
       <ReadTable
         read={read}
         handleTried={handleTried}

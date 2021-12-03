@@ -53,7 +53,7 @@ function Item({
       </td> */}
       <td>
         <p>
-          {readBook} ({readNumberOfBooks}) books
+          {readBook} <br />({readNumberOfBooks})
         </p>
         <p>{readAuthor}</p>
       </td>
