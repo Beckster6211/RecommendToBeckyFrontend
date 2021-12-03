@@ -4,6 +4,7 @@ import "./nav.css";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
+import ReadForm from "../Read/read";
 import StayForm from "../Stay/stay";
 import VisitForm from "../Visit/visit";
 import FoodForm from "../Food/food";
@@ -27,7 +28,7 @@ function Nav() {
         </div>
         {/* &nbsp; */}
         <div className="bookLink">
-          <Link to="/book">Read 📚</Link>
+          <Link to="/read">Read 📚</Link>
         </div>
         {/* &nbsp; */}
         <div className="teleLink">
@@ -39,9 +40,10 @@ function Nav() {
         </div>
       </nav>
       <Routes>
-        <Route path="/visit" element={<VisitForm />} />
         <Route path="/food" element={<FoodForm />} />
+        <Route path="/visit" element={<VisitForm />} />
         <Route path="/stay" element={<StayForm />} />
+        <Route path="/read" element={<ReadForm />} />
         {/* <Food />
           </Route> */}
         <Route path="/" element={<Home />} />

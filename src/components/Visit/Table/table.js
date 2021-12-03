@@ -28,9 +28,9 @@ function VisitTable({ visit, handleTried, handleOpinion, deleteVisit }) {
         <thead>
           <tr>
             {/* <th>hi</th> */}
-            <th className="tableHeadVisit">What?</th>
-            {/* <th>What? & Where?</th> */}
-            <th className="tableHeadVisit">Location?</th>
+            {/* <th className="tableHeadVisit">What?</th> */}
+            <th className="tableHeadVisit">What? & Location?</th>
+            {/* <th className="tableHeadVisit">Location?</th> */}
             <th className="tableHeadVisit">Why?</th>
             {/* <th>Best place to get?</th> */}
             {/* <th>Visited</th> */}
@@ -42,9 +42,9 @@ function VisitTable({ visit, handleTried, handleOpinion, deleteVisit }) {
         <tfoot>
           <tr>
             {/* <th>hi</th> */}
-            <th className="tableHeadVisit">What?</th>
-            {/* <th>What? & Where?</th> */}
-            <th className="tableHeadVisit">Location?</th>
+            {/* <th className="tableHeadVisit">What?</th> */}
+            <th className="tableHeadVisit">What? & Location?</th>
+            {/* <th className="tableHeadVisit">Location?</th> */}
             <th className="tableHeadVisit">Why?</th>
             {/* <th>Best place to get?</th> */}
             {/* <th>Visited</th> */}

@@ -15,13 +15,16 @@ import "./item.css";
 // } from "@chakra-ui/react";
 
 function Item({
-  visitWhat,
-  visitLocation,
-  visitWhy,
-  visited,
+  readBook,
+  readAuthor,
+  readConnected,
+  readGenre,
+  readNumberOfBooks,
+  readDescription,
+  read,
   recommendedBy,
   beckyOpinion,
-  removeVisit,
+  removeRead,
   index,
   id,
   item,
@@ -49,16 +52,22 @@ function Item({
         <p>hi</p>
       </td> */}
       <td>
-        <p>{visitWhat}</p>
-        {/* <p>{visitLocation}</p> */}
-        <textarea defaultValue={visitLocation} rows="3" readOnly></textarea>
+        <p>
+          {readBook} ({readNumberOfBooks}) books
+        </p>
+        <p>{readAuthor}</p>
       </td>
       {/* <td>
-        <textarea defaultValue={visitLocation} rows="6" readOnly></textarea>
+        <textarea defaultValue={stayLocation} rows="3" readOnly></textarea>
+      </td> */}
+      {/* <td>
+        <p>{foodWhere}</p>
       </td> */}
       <td>
-        {/* <textarea defaultValue={visitWhy} rows="7" readOnly></textarea> */}
-        <p>{visitWhy}</p>
+        <textarea defaultValue={readConnected} rows="6" readOnly></textarea>
+      </td>
+      <td>
+        <textarea defaultValue={readDescription} rows="6" readOnly></textarea>
       </td>
       {/* {user === undefined ? (
         <td>
@@ -96,7 +105,7 @@ function Item({
             className="checkBox"
             type="checkbox"
             // value={foodDone}
-            checked={visited}
+            checked={read}
             // onChange={() => {
             //   console.log("Thats just for me HaHa");
             // }}
@@ -153,10 +162,10 @@ function Item({
       ) : (
         <td>
           <input
-            className="checkBox visitBeckyOpinion"
+            className="checkBox foodBeckyOpinion"
             type="checkbox"
             // value={foodDone}
-            checked={visited}
+            checked={read}
             onChange={() => {
               tried(id, item);
             }}
@@ -256,7 +265,7 @@ function Item({
       <td>
         <button
           onClick={() => {
-            removeVisit(index, id);
+            removeRead(index, id);
           }}
         >
           🗑️
