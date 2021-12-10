@@ -1,0 +1,33 @@
+.readTable {
+  /* border: 2px solid black; */
+  padding: 1%;
+  margin: 1%;
+  /* background-color: lightyellow; */
+}
+
+.tableRead {
+  /* border: 2px solid black; */
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.tableHeadRead {
+  text-align: center;
+  background-color: #b0c4de; /*lightsteelblue*/
+  border: 2px solid black;
+}
+
+.tableBodyRead {
+  background-color: #9932cc; /*amazon*/
+}
+
+.tableBodyRead tr:nth-child(even) {
+  background-color: #e0b0ff; /*palegreen*/
+}
+
+.tableBodyRead tr:hover {
+  background-color: lightyellow;
+}

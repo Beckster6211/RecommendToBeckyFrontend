@@ -165,7 +165,7 @@ function Read() {
 
   return (
     <div className="readPage">
-      <h3>Read</h3>
+      {/* <h3>Read</h3> */}
       {/* <div>
         <details>
           <summary>Stay Video</summary>
@@ -173,46 +173,46 @@ function Read() {
         </details>
       </div> */}
 
-      {/*       
-      <div className="stayPageLists">
-        <ul className="stayDislike">
-          <p className="stayListParagraph">❌ Careful ❌</p>
-          <li className="stayDislikeItem">
-            Travel sick <small>(worse in cars and coaches)</small>
-          </li>
-          <li className="stayDislikeItem">
-            <strong>HATE SPIDERS</strong>
-          </li>
-          <li className="stayDislikeItem">
-            No car or ability to drive <small>(yet...)</small>
-          </li>
-          <li className="stayDislikeItem">
-            Activities welcome{" "}
+      <div className="readPageLists">
+        <ul className="readDislike">
+          <p className="readListParagraph">❌ No ❌</p>
+          <li className="readDislikeItem">
+            Try not to be too indepth
             <small>
-              (but please don't physically kill me, no Everest base camp)
+              (why I didn't read Harry Potter as a child{" "}
+              <small>too thick).</small>
             </small>
           </li>
-          <li className="stayDislikeItem">
-            Small budget{" "}
+          <li className="readDislikeItem">Too heavy and I'll drift off </li>
+          <li className="readDislikeItem">
+            If in a collection, detail all{" "}
+            <small>or my OCD will go nuts from disorder</small>
+          </li>
+          {/* <li className="readDislikeItem"></li>
+          <li className="readDislikeItem"></li> */}
+        </ul>
+        <ul className="readLike">
+          <p className="readListParagraph">✔️ Yes ✔️</p>
+          <li className="readLikeItem">
+            I like fiction and non-fiction
             <small>
-              (saving to buy Disney...<small>I wish</small>)
+              (If it's got some supernatural/magic in, fine with that)
             </small>
           </li>
+          <li className="readLikeItem">I enjoy dystopian type novels</li>
+          <li className="readLikeItem">
+            I like books based/from film or tv{" "}
+            <small>I enjoy seeing how portray certain things</small>
+          </li>
+          <li className="readLikeItem">
+            I watch the tv/film before the book{" "}
+            <small>I compare the book to the after the watch</small>
+          </li>
+          <li className="readLikeItem">
+            I like mythology <small>Greek, Roman, Norse, Egyptian...</small>
+          </li>
         </ul>
-        <ul className="stayLike">
-          <p className="stayListParagraph">✔️ Okay ✔️</p>
-          <li className="stayLikeItem">
-            Travel sick <small>(Not on boats and planes at all)</small>
-          </li>
-          <li className="stayLikeItem">Have a passport</li>
-          <li className="stayLikeItem">
-            Open to experiences <small>(always wanted to parachute jump)</small>
-          </li>
-          <li className="stayLikeItem">
-            Don't mind roughing it travel/stay wise<small>(sensibly)</small>
-          </li>
-        </ul>
-      </div> */}
+      </div>
       <ReadForm handleChange={handleChange} handleSubmit={handleSubmit} />
       <ReadTable
         read={read}

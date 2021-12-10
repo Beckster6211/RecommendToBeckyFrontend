@@ -45,22 +45,10 @@ function FoodForm({ handleChange, handleSubmit }) {
             }}
           />
         </label> */}
-        <p className="formSpace"></p>
-        {/* <label>
-          Recommended By: &nbsp; */}
-        <input
-          className="recommendedByInput"
-          type="text"
-          name="recommendedBy"
-          id="recommendedBy"
-          placeholder="Recommended By..."
-          onChange={(event) => {
-            handleChange(event);
-          }}
-        />
+
         {/* </label> */}
         <p className="formSpace"></p>
-        <p className="formSpace"></p>
+        {/* <p className="formSpace"></p> */}
         {/* <label>
           Where/Recipe: &nbsp; */}
         <textarea
@@ -75,6 +63,19 @@ function FoodForm({ handleChange, handleSubmit }) {
           rows="2"
         />
         {/* </label> */}
+        {/* <p className="formSpace"></p> */}
+        {/* <label>
+          Recommended By: &nbsp; */}
+        <input
+          className="recommendedByInput"
+          type="text"
+          name="recommendedBy"
+          id="recommendedBy"
+          placeholder="Recommended By..."
+          onChange={(event) => {
+            handleChange(event);
+          }}
+        />
         <p className="formSpace"></p>
         <button className="foodFormSubmit" type="submit">
           Submit

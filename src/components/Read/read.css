@@ -5,7 +5,7 @@
   /* border: 2px solid black; */
 }
 
-.stayPageLists {
+.readPageLists {
   /* margin: 1%;
         padding: 1%; */
   /* background-color: lightgreen; */
@@ -16,7 +16,7 @@
   display: flex;
 }
 
-.stayPageParagraph {
+.readPageParagraph {
   margin-top: 1%;
   margin-bottom: 1%;
   /* text-align: center; */
@@ -30,7 +30,7 @@ ul {
   /* display: inline-block; */
 }
 
-.stayDislike {
+.readDislike {
   background-color: lightcoral;
   /* display: inline-block; */
   margin: 1%;
@@ -38,7 +38,7 @@ ul {
   width: 50%;
 }
 
-.stayLike {
+.readLike {
   background-color: green;
   /* display: inline-block; */
   margin: 1%;
@@ -46,15 +46,15 @@ ul {
   width: 50%;
 }
 
-.stayDislikeItem:before {
+.readDislikeItem:before {
   content: "❌";
 }
 
-.stayLikeItem:before {
+.readLikeItem:before {
   content: "✔️";
 }
 
-.stayListParagraph {
+.readListParagraph {
   text-align: center;
   text-decoration: underline;
   margin: 1%;

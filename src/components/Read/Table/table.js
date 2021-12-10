@@ -21,29 +21,29 @@ import Item from "../Item/item";
 
 function ReadTable({ read, handleTried, handleOpinion, deleteRead }) {
   return (
-    <div className="stayTable">
-      <table className="tableStay">
+    <div className="readTable">
+      <table className="tableRead">
         <thead>
           <tr>
-            <th className="tableHeadStay">Book? & Author?</th>
-            <th className="tableHeadStay">Connected with?</th>
-            <th className="tableHeadStay">Description?</th>
-            <th className="tableHeadStay">Becky opinion</th>
-            <th className="tableHeadStay">Who By</th>
-            <th className="tableHeadStay">Delete</th>
+            <th className="tableHeadRead">Book? & Author?</th>
+            <th className="tableHeadRead">Connected with?</th>
+            <th className="tableHeadRead">Description?</th>
+            <th className="tableHeadRead">Becky opinion</th>
+            <th className="tableHeadRead">Who By</th>
+            <th className="tableHeadRead">Delete</th>
           </tr>
         </thead>
         <tfoot>
           <tr>
-            <th className="tableHeadStay">Book? & Author?</th>
-            <th className="tableHeadStay">Connected?</th>
-            <th className="tableHeadStay">Description?</th>
-            <th className="tableHeadStay">Becky opinion</th>
-            <th className="tableHeadStay">Who By</th>
-            <th className="tableHeadStay">Delete</th>
+            <th className="tableHeadRead">Book? & Author?</th>
+            <th className="tableHeadRead">Connected?</th>
+            <th className="tableHeadRead">Description?</th>
+            <th className="tableHeadRead">Becky opinion</th>
+            <th className="tableHeadRead">Who By</th>
+            <th className="tableHeadRead">Delete</th>
           </tr>
         </tfoot>
-        <tbody className="tableBodyStay">
+        <tbody className="tableBodyRead">
           {read.map((item, index) => {
             return (
               <Item
