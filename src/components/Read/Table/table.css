@@ -21,11 +21,11 @@
 }
 
 .tableBodyRead {
-  background-color: #9932cc; /*amazon*/
+  background-color: #9932cc; /*darkorchid*/
 }
 
 .tableBodyRead tr:nth-child(even) {
-  background-color: #e0b0ff; /*palegreen*/
+  background-color: #e0b0ff; /*mauve*/
 }
 
 .tableBodyRead tr:hover {

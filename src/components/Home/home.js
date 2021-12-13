@@ -18,7 +18,7 @@ function Home() {
       </p>
 
       <details>
-        <summary className="homeEatTitle">Eat 🍴</summary>
+        <summary className="homeEatTitle">🍴 Eat 🍴</summary>
         <p className="homeEatDescription">
           I'm getting better at being more adventurous with food, I like
           clashing things{" "}
@@ -76,7 +76,7 @@ function Home() {
       </details>
       <br />
       <details>
-        <summary className="homeVisitTitle">Visit 👀</summary>
+        <summary className="homeVisitTitle">👀 Visit 👀</summary>
         <p className="homeVisitDescription">
           I would like to see and do more, check some boxes in life experiences.
           Bucket list kind of things.
@@ -140,7 +140,7 @@ function Home() {
       </details>
       <br />
       <details>
-        <summary className="homeStayTitle">Stay ✈️</summary>
+        <summary className="homeStayTitle">✈️ Stay ✈️</summary>
         <p className="homeStayDescription">
           I would like get more miles under my belt (stamps in my new passport{" "}
           <small>if thats still a thing</small>). This page is set up in a
@@ -191,45 +191,82 @@ function Home() {
       </details>
       <br />
       <details>
-        <summary className="homeReadTitle">Read 📚</summary>
+        <summary className="homeReadTitle">📚 Read 📚</summary>
         <p className="homeReadDescription">
-          I would like get more miles under my belt (stamps in my new passport{" "}
-          <small>if thats still a thing</small>). This page is set up in a
-          simular way to the Visit page but if it helps think of Visit as city
-          and Stay as country.
+          I would like to read more, I don't have anything against reading but
+          sometimes it takes me a while to get into a book so it has to grab me
+          from the start{" "}
         </p>
         <p className="homeReadDescription">
-          The idea behind Read is
-          <br />
           <strong>
-            <q>I can't narrow this place down, all/any of it</q>
+            <q>This is such as good read. Couldn't put it down.</q>
           </strong>{" "}
           or{" "}
           <strong>
-            <q>This is a whole holiday.</q>
+            <q>
+              This book(s) goes with this film/tv series and both are great.
+            </q>
           </strong>
           <br />
         </p>
         <p className="homeReadDescription">
-          On the Read page there is a chart of okay✔️ and careful❌ although
-          don't feel as though you have to keep within those. Maybe you're
-          thinking 🤔
+          On the Read page there is a chart of Yes✔️ and No❌ although don't
+          feel as though you have to keep within those. Maybe you're thinking 🤔
           <br />
           <b>
             <small>
-              <q>I went on holiday here it's a hidden gem</q>
+              <q>
+                This book is pretty thick but don't let that put you off, stay
+                with it... Ending comes out of nowhere <small>Spoilers</small>.
+              </q>
             </small>
           </b>
         </p>
         <p className="homeReadDescription">
-          In What input section you could add a country{" "}
-          <small>e.g Canada</small> or a city <small>e.g California</small>
+          In Book input section you could add the general book title{" "}
+          <small>(if there are a lot)</small>
+          <small>e.g Harry Potter</small> or specific book title{" "}
+          <small>
+            e.g What you see is what you get - Lord Sugar autobiography
+          </small>
           <br />
-          In Where input section you could put a full address or general
-          location, country or city connected with the What.
+          In Author input section the author/writer of the book(s)
           <br />
-          In Details input section could put why, what is there to see or why go
-          to the area.
+          In Number of Books input section put the number of books that are in
+          the collection{" "}
+          <small>
+            (if just 1 then 1, the number appears in brackets for me)
+          </small>
+          .
+          <br />
+          In Genre input section put what kind of book it is could be as simple
+          fiction/non-fiction or be more specific fantasy/crime/autobiography{" "}
+          <strong>
+            <small>
+              currently there is no genre column on the table but there is in
+              the database, so if you could please put something for when I do
+              add it (even if it's just fiction or non-fiction).
+            </small>
+          </strong>
+          <br />
+          In Connected With input section detail if it's connected with
+          something like a TV series, a show, film(s) or another book collection{" "}
+          <small>
+            such as Lord Alan Sugar autobiography has connection with the TV
+            show The Apprentice (UK)
+          </small>
+          <br />
+          In Description input section could add a Googled description of the
+          read, the description from the book itself or even go maverick and add
+          your own.{" "}
+          <strong>
+            <small>
+              <q>
+                I have the perfect way to descript this read, how to make it
+                tantalizing but with no spoilers
+              </q>
+            </small>
+          </strong>
           <br />
           In Recommended By input section could put your name/nickname, an
           email, linkedIn
