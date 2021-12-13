@@ -45,12 +45,14 @@ a {
   margin: 1%;
   border: 2px solid black;
   text-decoration: none;
+  background-color: #ffa500;
 }
 
 .filmLink {
   margin: 1%;
   border: 2px solid black;
   text-decoration: none;
+  background-color: #d2691e;
 }
 
 Link {

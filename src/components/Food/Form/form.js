@@ -56,7 +56,7 @@ function FoodForm({ handleChange, handleSubmit }) {
           type="text"
           name="where"
           id="recipe"
-          placeholder="Where/Recipe..."
+          placeholder="Where/Recipe(Ingredients)..."
           onChange={(event) => {
             handleChange(event);
           }}

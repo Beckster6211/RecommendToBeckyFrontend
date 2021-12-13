@@ -4,6 +4,7 @@ import "./nav.css";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
+import TeleForm from "../Tele/tele.js";
 import ReadForm from "../Read/read";
 import StayForm from "../Stay/stay";
 import VisitForm from "../Visit/visit";
@@ -44,6 +45,7 @@ function Nav() {
         <Route path="/visit" element={<VisitForm />} />
         <Route path="/stay" element={<StayForm />} />
         <Route path="/read" element={<ReadForm />} />
+        <Route path="/tele" element={<TeleForm />} />
         {/* <Food />
           </Route> */}
         <Route path="/" element={<Home />} />

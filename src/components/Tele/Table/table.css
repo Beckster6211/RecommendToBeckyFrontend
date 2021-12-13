@@ -1,0 +1,33 @@
+.teleTable {
+  /* border: 2px solid black; */
+  padding: 1%;
+  margin: 1%;
+  /* background-color: lightyellow; */
+}
+
+.tableTele {
+  /* border: 2px solid black; */
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.tableHeadTele {
+  text-align: center;
+  background-color: #b0c4de; /*lightsteelblue*/
+  border: 2px solid black;
+}
+
+.tableBodyTele {
+  background-color: #9932cc; /*darkorchid*/
+}
+
+.tableBodyTele tr:nth-child(even) {
+  background-color: #e0b0ff; /*mauve*/
+}
+
+.tableBodyTele tr:hover {
+  background-color: lightyellow;
+}
