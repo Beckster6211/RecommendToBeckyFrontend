@@ -57,3 +57,21 @@
   margin: 1%;
   font-size: 0.9em;
 }
+
+.homeTeleTitle {
+  background-color: #ffa500;
+}
+
+.homeTeleDescription {
+  margin: 1%;
+  font-size: 0.9em;
+}
+
+.homeFilmTitle {
+  background-color: #d2691e;
+}
+
+.homeFilmDescription {
+  margin: 1%;
+  font-size: 0.9em;
+}

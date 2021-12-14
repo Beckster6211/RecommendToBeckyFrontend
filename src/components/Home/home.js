@@ -210,7 +210,7 @@ function Home() {
           <br />
         </p>
         <p className="homeReadDescription">
-          On the Read page there is a chart of Yes✔️ and No❌ although don't
+          On the Read page there is a chart of Do✔️ and Don't❌ although don't
           feel as though you have to keep within those. Maybe you're thinking 🤔
           <br />
           <b>
@@ -267,6 +267,175 @@ function Home() {
               </q>
             </small>
           </strong>
+          <br />
+          In Recommended By input section could put your name/nickname, an
+          email, linkedIn
+          <small>
+            {" "}
+            I may like to contact you about your recommendation. You could also
+            put where you are from, I might know you from somewhere.
+          </small>
+        </p>
+      </details>
+      <br />
+      <details>
+        <summary className="homeTeleTitle">📺 Binge 📺</summary>
+        <p className="homeTeleDescription">
+          The kind of television I like are a lot of American shows. I am not
+          adverse to shows that have spin off shows themselves, but I have to be
+          careful as my slight OCD can mean I am caught in a web (at the moment
+          I am in a vicious Arrowverse saga).
+        </p>
+        <p className="homeTeleDescription">
+          <strong>
+            <q>
+              If you don't like this show after episode 6 season 1 give up, save
+              your OCD.
+            </q>
+          </strong>{" "}
+          <small>
+            Otherwise I will stay with it to the end (mercy I didn't start
+            watching LOST)
+          </small>{" "}
+          or{" "}
+          <strong>
+            <q>
+              This program shows a whole new light on this event/person, eye
+              opening.
+            </q>
+          </strong>
+          <br />
+        </p>
+        <p className="homeTeleDescription">
+          On the Binge page there is a chart of Yes✔️ and No❌ although don't
+          feel as though you have to keep within those. Maybe you're thinking 🤔
+          <br />
+          <b>
+            <small>
+              <q>
+                This show is pretty graphic at the start but don't shy away,
+                stay with it... You will be gripped by the first cliff hanger{" "}
+                <small>Spoilers</small>.
+              </q>
+            </small>
+          </b>
+        </p>
+        <p className="homeTeleDescription">
+          In TV Show input section add the shows title name <br />
+          In Provider input section add who makes/broadcasts the show/where to
+          find it{" "}
+          <small>
+            e.g Channel 4, Amazon Prime, Netflix, Disney+, etc useful to know if
+            I have to bug a family member...
+          </small>
+          <br />
+          In Number of Series input section put the number of series that are in
+          the collection{" "}
+          <small>
+            (if the show is still being made then the current number it has, or
+            just 1)
+          </small>
+          .
+          <br />
+          In Genre input section put what kind of show it is could be as simple
+          fiction/non-fiction or be more specific fantasy/crime/autobiography{" "}
+          <strong>
+            <small>
+              currently there is no genre column on the table but there is in
+              the database, so if you could please put something for when I do
+              add it (even if it's just fiction or non-fiction).
+            </small>
+          </strong>
+          <br />
+          In Connected With input section detail if it's connected with
+          something like another TV series, book(s), film(s){" "}
+          <small>
+            such as Young Sheldon has connection with the TV show Big Bang
+            Theory.
+          </small>
+          <br />
+          In Description input section could add a Googled description of the
+          show, the description from the show itself or even go maverick and add
+          your own.{" "}
+          <strong>
+            <small>
+              <q>
+                I have the perfect way to describe this show, how to make it
+                tantalizing but with no spoilers
+              </q>
+            </small>
+          </strong>{" "}
+          <br />
+          In Recommended By input section could put your name/nickname, an
+          email, linkedIn
+          <small>
+            {" "}
+            I may like to contact you about your recommendation. You could also
+            put where you are from, I might know you from somewhere.
+          </small>
+        </p>
+      </details>
+      <br />
+      <details>
+        <summary className="homeFilmTitle">🎬 Watch 🎬</summary>
+        <p className="homeFilmDescription">
+          My favourite kind of films are animated actually{" "}
+          <small>(if that doesn't make me sound like a child)</small>. I have a
+          pretty varied taste, I like sciencey (Star Trek), factual based
+          (Hacksaw Ridge), action (Kingsman)...{" "}
+          <small>enough badgering I'll give a try</small>
+        </p>
+
+        <p className="homeFilmDescription">
+          On the Watch page there is a chart of Yes✔️ and No❌ although don't
+          feel as though you have to keep within those. Maybe you're thinking 🤔
+          <br />
+          <b>
+            <small>
+              <q>
+                This film is a little bit scary, a couple of jump out your seat
+                moments but in a great way. You'll enjoy it.
+              </q>
+            </small>
+          </b>
+        </p>
+        <p className="homeTeleDescription">
+          In Film input section add the film title name <br />
+          In Provider input section add who makes/broadcasts the film/where to
+          find it{" "}
+          <small>
+            e.g Amazon Prime, Netflix, Disney+, etc useful to know if I have to
+            bug a family member...
+          </small>
+          <br />
+          In Genre input section put what kind of film it is could be as simple
+          fiction/non-fiction or be more specific fantasy/crime/autobiography{" "}
+          <strong>
+            <small>
+              currently there is no genre column on the table but there is in
+              the database, so if you could please put something for when I do
+              add it (even if it's just fiction or non-fiction).
+            </small>
+          </strong>
+          <br />
+          In Connected With input section detail if it's connected with
+          something like a TV series, book(s), or anotherfilm(s){" "}
+          <small>
+            such as Cruella is connected with 101 Dalmatians films (animated and
+            live action) and adapted from Dodie Smith book.
+          </small>
+          <br />
+          In Description input section could add a Googled description of the
+          film, the description from the film itself or even go maverick and add
+          your own.{" "}
+          <strong>
+            <small>
+              <q>
+                I have the perfect way to describe this film, how to make it
+                tantalizing but with no spoilers
+              </q>
+            </small>
+          </strong>{" "}
           <br />
           In Recommended By input section could put your name/nickname, an
           email, linkedIn
