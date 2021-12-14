@@ -23,9 +23,9 @@ function FilmForm({ handleChange, handleSubmit }) {
         <input
           className="whatInput"
           type="text"
-          name="tvShow"
-          id="tvShow"
-          placeholder="TV Show..."
+          name="film"
+          id="film"
+          placeholder="Film..."
           // value={food}
           onChange={(event) => {
             handleChange(event);
@@ -59,21 +59,6 @@ function FilmForm({ handleChange, handleSubmit }) {
             }}
           />
         </label> */}
-        <p className="formSpace"></p>
-
-        {/* <label>
-          Recommended By: &nbsp; */}
-        <input
-          className="locationInput"
-          type="number"
-          name="numberOfSeries"
-          id="numberOfSeries"
-          min="1"
-          placeholder="Number of Series(currently)..."
-          onChange={(event) => {
-            handleChange(event);
-          }}
-        />
         <p className="formSpace"></p>
         <textarea
           className="whyInput"

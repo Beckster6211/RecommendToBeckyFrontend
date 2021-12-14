@@ -1,13 +1,13 @@
-.telePage {
+.filmPage {
   margin: 2%;
-  background-color: #ffa500;
+  background-color: #d2691e;
   padding: 1%;
   /* border: 2px solid black; */
 }
 
-.telePageLists {
+.filmPageLists {
   /* margin: 1%;
-          padding: 1%; */
+            padding: 1%; */
   /* background-color: lightgreen; */
   /* background-color: white; */
   font-size: 0.8em;
@@ -16,7 +16,7 @@
   display: flex;
 }
 
-.telePageParagraph {
+.filmPageParagraph {
   margin-top: 1%;
   margin-bottom: 1%;
   /* text-align: center; */
@@ -30,7 +30,7 @@ ul {
   /* display: inline-block; */
 }
 
-.teleDislike {
+.filmDislike {
   background-color: lightcoral;
   /* display: inline-block; */
   margin: 1%;
@@ -38,7 +38,7 @@ ul {
   width: 50%;
 }
 
-.teleLike {
+.filmLike {
   background-color: green;
   /* display: inline-block; */
   margin: 1%;
@@ -46,15 +46,15 @@ ul {
   width: 50%;
 }
 
-.teleDislikeItem:before {
+.filmDislikeItem:before {
   content: "❌";
 }
 
-.teleLikeItem:before {
+.filmLikeItem:before {
   content: "✔️";
 }
 
-.teleListParagraph {
+.filmListParagraph {
   text-align: center;
   text-decoration: underline;
   margin: 1%;

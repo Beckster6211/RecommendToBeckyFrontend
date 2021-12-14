@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
-import TeleTable from "./Table/table";
-import TeleForm from "./Form/form";
+import FilmTable from "./Table/table";
+import FilmForm from "./Form/form";
 
-import "./tele.css";
+import "./film.css";
 
-function Tele() {
-  const [tele, setTele] = useState([]);
-  console.log({ tele });
+function Film() {
+  const [film, setFilm] = useState([]);
+  console.log({ film });
   const [form, setForm] = useState({});
   const [updatePage, setUpdatePage] = useState(false);
 
   useEffect(() => {
-    fetch("https://recommend-to-becky.herokuapp.com/tele")
+    fetch("https://recommend-to-becky.herokuapp.com/film")
       .then((response) => response.json())
       .then((response) => {
-        setTele(response.data);
+        setFilm(response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -45,14 +45,14 @@ function Tele() {
     console.log(object);
     // console.log(object.isdone);
     // console.log({ ...object });
-    if (object.binged === true) {
-      object.binged = false;
-      console.log(object.binged);
+    if (object.watched === true) {
+      object.watched = false;
+      console.log(object.watched);
       // console.log((object.isdone = false));
       // return { ...object, isdone: false };
-    } else if (object.binged === false) {
-      object.binged = true;
-      console.log(object.binged);
+    } else if (object.watched === false) {
+      object.watched = true;
+      console.log(object.watched);
       // console.log((object.isdone = true));
       // return { ...object, isdone: true };
     }
@@ -61,20 +61,19 @@ function Tele() {
     // setIsDone(!isDone);
     // console.log({ isDone });
     const response = await fetch(
-      `https://recommend-to-becky.herokuapp.com/tele/${id}`,
+      `https://recommend-to-becky.herokuapp.com/film/${id}`,
       {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          tvShow: object.tvshow,
+          film: object.film,
           provider: object.provider,
           connected: object.connected,
           genre: object.genre,
-          numberOfSeries: object.numberofseries,
           description: object.description,
           recommendedBy: object.recommendedby,
           beckyOpinion: object.beckyopinion,
-          binged: object.binged,
+          watched: object.watched,
         }),
       }
     );
@@ -106,20 +105,19 @@ function Tele() {
       console.log(object.beckyopinion);
     }
     const response = await fetch(
-      `https://recommend-to-becky.herokuapp.com/tele/${id}`,
+      `https://recommend-to-becky.herokuapp.com/film/${id}`,
       {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          tvShow: object.tvshow,
+          film: object.film,
           provider: object.provider,
           connected: object.connected,
           genre: object.genre,
-          numberOfSeries: object.numberofseries,
           description: object.description,
           recommendedBy: object.recommendedby,
           beckyOpinion: object.beckyopinion,
-          binged: object.binged,
+          watched: object.watched,
         }),
       }
     );
@@ -136,7 +134,7 @@ function Tele() {
     console.log(form);
     event.preventDefault();
     const response = await fetch(
-      "https://recommend-to-becky.herokuapp.com/tele",
+      "https://recommend-to-becky.herokuapp.com/film",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -149,10 +147,10 @@ function Tele() {
     setUpdatePage(!updatePage);
   }
 
-  async function removeTele(index, id) {
-    setTele([...tele.slice(0, index), ...tele.slice(index + 1)]);
+  async function removeFilm(index, id) {
+    setFilm([...film.slice(0, index), ...film.slice(index + 1)]);
     let response = await fetch(
-      `https://recommend-to-becky.herokuapp.com/tele/${id}`,
+      `https://recommend-to-becky.herokuapp.com/film/${id}`,
       {
         method: "DELETE",
       }
@@ -160,12 +158,12 @@ function Tele() {
     let data = await response.json();
     setUpdatePage(!updatePage);
     console.log({ data });
-    console.log({ tele });
+    console.log({ film });
   }
 
   return (
-    <div className="telePage">
-      {/* <h3>Binge</h3> */}
+    <div className="filmPage">
+      {/* <h3>Film</h3> */}
       {/* <div>
         <details>
           <summary>Stay Video</summary>
@@ -173,54 +171,53 @@ function Tele() {
         </details>
       </div> */}
 
-      <div className="telePageLists">
-        <ul className="teleDislike">
-          <p className="teleListParagraph">❌ No ❌</p>
-          <li className="teleDislikeItem">
+      <div className="filmPageLists">
+        <ul className="filmDislike">
+          <p className="filmListParagraph">❌ No ❌</p>
+          <li className="filmDislikeItem">
             Try not to be too indepth
             <small>
               (why I didn't read Harry Potter as a child{" "}
               <small>too thick).</small>
             </small>
           </li>
-          <li className="teleDislikeItem">Too heavy and I'll drift off </li>
-          <li className="teleDislikeItem">
+          <li className="filmDislikeItem">Too heavy and I'll drift off </li>
+          <li className="filmDislikeItem">
             If in a collection, detail all{" "}
             <small>or my OCD will go nuts from disorder</small>
           </li>
         </ul>
-        <ul className="teleLike">
-          <p className="teleListParagraph">✔️ Yes ✔️</p>
-          <li className="teleLikeItem">
+        <ul className="filmLike">
+          <p className="filmListParagraph">✔️ Yes ✔️</p>
+          <li className="filmLikeItem">
             I like fiction and non-fiction
             <small>
               (If it's got some supernatural/magic in, fine with that)
             </small>
           </li>
-          <li className="teleLikeItem">I enjoy dystopian type novels</li>
-          <li className="teleLikeItem">
+          <li className="filmLikeItem">I enjoy dystopian type novels</li>
+          <li className="filmLikeItem">
             I like books based/from film or tv{" "}
             <small>I enjoy seeing how portray certain things</small>
           </li>
-          <li className="teleLikeItem">
+          <li className="filmLikeItem">
             I watch the tv/film before the book{" "}
             <small>I compare the book to the after the watch</small>
           </li>
-          <li className="teleLikeItem">
+          <li className="filmLikeItem">
             I like mythology <small>Greek, Roman, Norse, Egyptian...</small>
           </li>
         </ul>
       </div>
-
-      <TeleForm handleChange={handleChange} handleSubmit={handleSubmit} />
-      <TeleTable
-        tele={tele}
+      <FilmForm handleChange={handleChange} handleSubmit={handleSubmit} />
+      <FilmTable
+        film={film}
         handleTried={handleTried}
         handleOpinion={handleOpinion}
-        deleteTele={removeTele}
+        deleteFilm={removeFilm}
       />
     </div>
   );
 }
 
-export default Tele;
+export default Film;
