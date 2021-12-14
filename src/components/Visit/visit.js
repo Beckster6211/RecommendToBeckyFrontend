@@ -89,17 +89,17 @@ function Visit() {
     if (event.target.name === "yes") {
       console.log("yes button clicked");
       console.log(object.beckyopinion);
-      object.beckyopinion = "😃";
+      object.beckyopinion = "👍";
       console.log(object.beckyopinion);
     } else if (event.target.name === "no") {
       console.log("no button clicked");
       console.log(object.beckyopinion);
-      object.beckyopinion = "😩";
+      object.beckyopinion = "👎";
       console.log(object.beckyopinion);
     } else if (event.target.name === "alright") {
       console.log("alright button clicked");
       console.log(object.beckyopinion);
-      object.beckyopinion = "🤔";
+      object.beckyopinion = "🤙";
       console.log(object.beckyopinion);
     }
     const response = await fetch(

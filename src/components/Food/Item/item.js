@@ -126,7 +126,7 @@ function Item({
             // }}
             // disabled={enableIfMe(user)}
           >
-            🤔
+            🤫
           </button>
           <button
             name="no"
@@ -178,7 +178,7 @@ function Item({
             }}
             // disabled={enableIfMe(user)}
           >
-            🤔
+            🤫
           </button>
           <button
             name="no"

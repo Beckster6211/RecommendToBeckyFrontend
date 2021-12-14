@@ -119,7 +119,7 @@ function Item({
             // }}
             // disabled={enableIfMe(user)}
           >
-            😃
+            😁
           </button>
           <button
             name="alright"
@@ -131,7 +131,7 @@ function Item({
             // }}
             // disabled={enableIfMe(user)}
           >
-            🤔
+            😑
           </button>
           <button
             name="no"
@@ -143,7 +143,7 @@ function Item({
             // }}
             // disabled={enableIfMe(user)}
           >
-            😩
+            😫
           </button>
           {/* <select>
           <option>Yes</option>
@@ -173,7 +173,7 @@ function Item({
             }}
             // disabled={enableIfMe(user)}
           >
-            😃
+            😁
           </button>
           <button
             name="alright"
@@ -182,7 +182,7 @@ function Item({
             }}
             // disabled={enableIfMe(user)}
           >
-            🤔
+            😑
           </button>
           <button
             name="no"
@@ -191,7 +191,7 @@ function Item({
             }}
             // disabled={enableIfMe(user)}
           >
-            😩
+            😫
           </button>
 
           {/* <select>

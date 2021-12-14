@@ -130,7 +130,7 @@ function Food() {
     } else if (event.target.name === "alright") {
       console.log("alright button clicked");
       console.log(object.beckyopinion);
-      object.beckyopinion = "🤔";
+      object.beckyopinion = "🤫";
       console.log(object.beckyopinion);
     }
     const response = await fetch(
