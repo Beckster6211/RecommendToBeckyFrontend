@@ -21,11 +21,11 @@
 }
 
 .tableBodyTele {
-  background-color: #9932cc; /*darkorchid*/
+  background-color: #ff4500; /*darkorchid*/
 }
 
 .tableBodyTele tr:nth-child(even) {
-  background-color: #e0b0ff; /*mauve*/
+  background-color: #ff7f50; /*mauve*/
 }
 
 .tableBodyTele tr:hover {
