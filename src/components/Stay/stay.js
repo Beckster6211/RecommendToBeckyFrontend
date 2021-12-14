@@ -45,14 +45,14 @@ function Stay() {
     console.log(object);
     // console.log(object.isdone);
     // console.log({ ...object });
-    if (object.visited === true) {
-      object.visited = false;
-      console.log(object.visited);
+    if (object.stayed === true) {
+      object.stayed = false;
+      console.log(object.stayed);
       // console.log((object.isdone = false));
       // return { ...object, isdone: false };
-    } else if (object.visited === false) {
-      object.visited = true;
-      console.log(object.visited);
+    } else if (object.stayed === false) {
+      object.stayed = true;
+      console.log(object.stayed);
       // console.log((object.isdone = true));
       // return { ...object, isdone: true };
     }
@@ -61,7 +61,7 @@ function Stay() {
     // setIsDone(!isDone);
     // console.log({ isDone });
     const response = await fetch(
-      `https://recommend-to-becky.herokuapp.com/${id}`,
+      `https://recommend-to-becky.herokuapp.com/stay/${id}`,
       {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
