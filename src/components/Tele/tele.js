@@ -38,6 +38,7 @@ function Tele() {
     // setForm({ [inputName]: vl, isdone: false, [inputName]: "someone" });
     // console.log({ form });
   }
+*/
 
   async function handleTried(id, object) {
     console.log("checkbox ticked");
@@ -45,14 +46,14 @@ function Tele() {
     console.log(object);
     // console.log(object.isdone);
     // console.log({ ...object });
-    if (object.read === true) {
-      object.read = false;
-      console.log(object.read);
+    if (object.binged === true) {
+      object.binged = false;
+      console.log(object.binged);
       // console.log((object.isdone = false));
       // return { ...object, isdone: false };
-    } else if (object.read === false) {
-      object.read = true;
-      console.log(object.read);
+    } else if (object.binged === false) {
+      object.binged = true;
+      console.log(object.binged);
       // console.log((object.isdone = true));
       // return { ...object, isdone: true };
     }
@@ -61,20 +62,20 @@ function Tele() {
     // setIsDone(!isDone);
     // console.log({ isDone });
     const response = await fetch(
-      `https://recommend-to-becky.herokuapp.com/read/${id}`,
+      `https://recommend-to-becky.herokuapp.com/tele/${id}`,
       {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          book: object.book,
-          author: object.author,
+          tvShow: object.tvshow,
+          provider: object.provider,
           connected: object.connected,
           genre: object.genre,
-          numberofbooks: object.numberofbooks,
+          numberOfSeries: object.numberofseries,
           description: object.description,
-          recommendedby: object.recommendedby,
-          beckyopinion: object.beckyopinion,
-          read: object.read,
+          recommendedBy: object.recommendedby,
+          beckyOpinion: object.beckyopinion,
+          binged: object.binged,
         }),
       }
     );
@@ -83,8 +84,7 @@ function Tele() {
     console.log(data);
     setUpdatePage(!updatePage);
   }
-  */
-  /*
+
   async function handleOpinion(event, id, object) {
     // console.log("button clicked");
     console.log({ id });
@@ -112,14 +112,14 @@ function Tele() {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          tvshow: object.tvshow,
+          tvShow: object.tvshow,
           provider: object.provider,
           connected: object.connected,
           genre: object.genre,
-          numberofseries: object.numberofseries,
+          numberOfSeries: object.numberofseries,
           description: object.description,
-          recommendedby: object.recommendedby,
-          beckyopinion: object.beckyopinion,
+          recommendedBy: object.recommendedby,
+          beckyOpinion: object.beckyopinion,
           binged: object.binged,
         }),
       }
@@ -129,7 +129,7 @@ function Tele() {
     console.log(data);
     setUpdatePage(!updatePage);
   }
-  */
+
   /*
   async function handleSubmit(event) {
     // refreshes form, empties form inputs
@@ -151,7 +151,7 @@ function Tele() {
     setUpdatePage(!updatePage);
   }
 */
-  /*
+
   async function removeTele(index, id) {
     setTele([...tele.slice(0, index), ...tele.slice(index + 1)]);
     let response = await fetch(
@@ -165,7 +165,7 @@ function Tele() {
     console.log({ data });
     console.log({ tele });
   }
-*/
+
   return (
     <div className="telePage">
       <h3>Binge</h3>
@@ -219,9 +219,9 @@ function Tele() {
       {/* <ReadForm handleChange={handleChange} handleSubmit={handleSubmit} /> */}
       <TeleTable
         tele={tele}
-        //   handleTried={handleTried}
-        // handleOpinion={handleOpinion}
-        // deleteTele={removeTele}
+        handleTried={handleTried}
+        handleOpinion={handleOpinion}
+        deleteTele={removeTele}
       />
     </div>
   );

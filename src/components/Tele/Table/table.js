@@ -61,7 +61,7 @@ function TeleTable({ tele, handleTried, handleOpinion, deleteTele }) {
                 id={item.id}
                 key={item.id}
                 removeTele={deleteTele}
-                // tried={handleTried}
+                tried={handleTried}
                 opinion={handleOpinion}
               />
             );
