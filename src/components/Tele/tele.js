@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import TeleTable from "./Table/table";
-// import ReadForm from "./Form/form";
+import TeleForm from "./Form/form";
 
 import "./tele.css";
 
 function Tele() {
   const [tele, setTele] = useState([]);
   console.log({ tele });
-  //   const [form, setForm] = useState({});
+  const [form, setForm] = useState({});
   const [updatePage, setUpdatePage] = useState(false);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ function Tele() {
         console.log(error);
       });
   }, [updatePage]);
-  /*
+
   function handleChange(event) {
     let inputName = event.target.name;
     console.log({ inputName });
@@ -38,7 +38,6 @@ function Tele() {
     // setForm({ [inputName]: vl, isdone: false, [inputName]: "someone" });
     // console.log({ form });
   }
-*/
 
   async function handleTried(id, object) {
     console.log("checkbox ticked");
@@ -130,7 +129,6 @@ function Tele() {
     setUpdatePage(!updatePage);
   }
 
-  /*
   async function handleSubmit(event) {
     // refreshes form, empties form inputs
     window.location.reload();
@@ -138,7 +136,7 @@ function Tele() {
     console.log(form);
     event.preventDefault();
     const response = await fetch(
-      "https://recommend-to-becky.herokuapp.com/read",
+      "https://recommend-to-becky.herokuapp.com/tele",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -150,7 +148,6 @@ function Tele() {
     console.log(data);
     setUpdatePage(!updatePage);
   }
-*/
 
   async function removeTele(index, id) {
     setTele([...tele.slice(0, index), ...tele.slice(index + 1)]);
@@ -216,7 +213,7 @@ function Tele() {
         </ul>
       </div>
       */}
-      {/* <ReadForm handleChange={handleChange} handleSubmit={handleSubmit} /> */}
+      <TeleForm handleChange={handleChange} handleSubmit={handleSubmit} />
       <TeleTable
         tele={tele}
         handleTried={handleTried}
