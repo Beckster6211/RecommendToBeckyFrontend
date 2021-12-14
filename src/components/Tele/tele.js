@@ -182,7 +182,7 @@ function Tele() {
           </li>
           <li className="teleDislikeItem">
             I can be a bit of a wuss{" "}
-            <small>A Quiet Place 1 is as scary as I'll go.</small>
+            <small>I stopped watching Constantine after 6 minutes.</small>
           </li>
           <li className="teleDislikeItem">
             I don't like pointless blood and guts{" "}

@@ -175,16 +175,25 @@ function Film() {
         <ul className="filmDislike">
           <p className="filmListParagraph">❌ No ❌</p>
           <li className="filmDislikeItem">
-            Try not to be too indepth
-            <small>
-              (why I didn't read Harry Potter as a child{" "}
-              <small>too thick).</small>
-            </small>
+            I don't like horror or scary{" "}
+            <small>I like my heart beating inside my body</small>
           </li>
-          <li className="filmDislikeItem">Too heavy and I'll drift off </li>
           <li className="filmDislikeItem">
-            If in a collection, detail all{" "}
-            <small>or my OCD will go nuts from disorder</small>
+            I can be a bit of a wuss{" "}
+            <small>A Quiet Place 1 is as scary as I'll go.</small>
+          </li>
+          <li className="filmDislikeItem">
+            I don't like pointless blood and guts{" "}
+            <small>
+              I'm not squeamish I just don't enjoy pointless ones{" "}
+              <strong>
+                <q>Let's see how many different ways can kill each</q>
+              </strong>{" "}
+            </small>
+            No thank you
+          </li>
+          <li className="filmDislikeItem">
+            Arachnophobic <strong>I DON'T LIKE SPIDERS</strong>
           </li>
         </ul>
         <ul className="filmLike">
@@ -195,17 +204,21 @@ function Film() {
               (If it's got some supernatural/magic in, fine with that)
             </small>
           </li>
-          <li className="filmLikeItem">I enjoy dystopian type novels</li>
+          <li className="filmLikeItem">I enjoy dystopian</li>
           <li className="filmLikeItem">
-            I like books based/from film or tv{" "}
-            <small>I enjoy seeing how portray certain things</small>
+            I enjoy some films based on true events or people{" "}
+            <small>
+              Sometimes surprisingly like war or space race or political
+            </small>
           </li>
           <li className="filmLikeItem">
-            I watch the tv/film before the book{" "}
-            <small>I compare the book to the after the watch</small>
+            I watch before read{" "}
+            <small>I compare the book after the watch</small>
           </li>
           <li className="filmLikeItem">
-            I like mythology <small>Greek, Roman, Norse, Egyptian...</small>
+            I'm not a girly girl{" "}
+            <small> my brothers got me into superhero stuff</small>{" "}
+            <strong>No 1 Black Widow</strong>
           </li>
         </ul>
       </div>

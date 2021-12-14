@@ -21,11 +21,11 @@
 }
 
 .tableBodyFilm {
-  background-color: #9932cc; /*darkorchid*/
+  background-color: #8b4513; /*darkorchid*/
 }
 
 .tableBodyFilm tr:nth-child(even) {
-  background-color: #e0b0ff; /*mauve*/
+  background-color: #f4a460; /*mauve*/
 }
 
 .tableBodyFilm tr:hover {
