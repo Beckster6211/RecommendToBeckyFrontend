@@ -175,7 +175,7 @@ function Read() {
 
       <div className="readPageLists">
         <ul className="readDislike">
-          <p className="readListParagraph">❌ No ❌</p>
+          <p className="readListParagraph">❌ Don't ❌</p>
           <li className="readDislikeItem">
             Try not to be too indepth
             <small>
@@ -192,7 +192,7 @@ function Read() {
           <li className="readDislikeItem"></li> */}
         </ul>
         <ul className="readLike">
-          <p className="readListParagraph">✔️ Yes ✔️</p>
+          <p className="readListParagraph">✔️ Do ✔️</p>
           <li className="readLikeItem">
             I like fiction and non-fiction
             <small>
@@ -206,7 +206,7 @@ function Read() {
           </li>
           <li className="readLikeItem">
             I watch the tv/film before the book{" "}
-            <small>I compare the book to the after the watch</small>
+            <small>I compare the book the after the watch</small>
           </li>
           <li className="readLikeItem">
             I like mythology <small>Greek, Roman, Norse, Egyptian...</small>
