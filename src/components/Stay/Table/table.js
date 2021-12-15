@@ -1,23 +1,6 @@
 import React from "react";
+
 import "./table.css";
-
-// import "./table.css";
-
-// // chakra
-// import {
-//   Table,
-//   Thead,
-//   Tbody,
-//   Tfoot,
-//   Tr,
-//   Th,
-//   Td,
-//   TableCaption,
-// } from "@chakra-ui/react";
-// import { Center, Square, Circle } from "@chakra-ui/react";
-// import { Box } from "@chakra-ui/react";
-// import { Container } from "@chakra-ui/react";
-// import { Stack, HStack, VStack } from "@chakra-ui/react";
 
 import Item from "../Item/item";
 
@@ -27,13 +10,8 @@ function StayTable({ stay, handleTried, handleOpinion, deleteStay }) {
       <table className="tableStay">
         <thead>
           <tr>
-            {/* <th>hi</th> */}
-            {/* <th className="tableHeadStay">What?</th> */}
             <th className="tableHeadStay">What? & Where?</th>
-            {/* <th className="tableHeadStay">Location?</th> */}
             <th className="tableHeadStay">Details?</th>
-            {/* <th>Best place to get?</th> */}
-            {/* <th>Visited</th> */}
             <th className="tableHeadStay">Becky opinion</th>
             <th className="tableHeadStay">Who By</th>
             <th className="tableHeadStay">Delete</th>
@@ -41,13 +19,8 @@ function StayTable({ stay, handleTried, handleOpinion, deleteStay }) {
         </thead>
         <tfoot>
           <tr>
-            {/* <th>hi</th> */}
-            {/* <th className="tableHeadStay">What?</th> */}
             <th className="tableHeadStay">What? & Where?</th>
-            {/* <th className="tableHeadStay">Location?</th> */}
             <th className="tableHeadStay">Details?</th>
-            {/* <th>Best place to get?</th> */}
-            {/* <th>Visited</th> */}
             <th className="tableHeadStay">Becky opinion</th>
             <th className="tableHeadStay">Who By</th>
             <th className="tableHeadStay">Delete</th>

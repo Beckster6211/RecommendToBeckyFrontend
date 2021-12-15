@@ -1,25 +1,20 @@
 import React from "react";
+
 import "./form.css";
 
 function StayForm({ handleChange, handleSubmit }) {
-  // const [form, setForm] = useState({});
-  //   console.log({ food });
-  // console.log({ form });
-
   return (
-    <div className="visitForm">
+    <div className="stayForm">
       {/* <h3>Form</h3> */}
       <form
-        className="visitFoodForm"
+        className="stayForm"
         // autocomplete stops drop down of previous entered options
         autoComplete="off"
         onSubmit={(event) => {
           handleSubmit(event);
         }}
       >
-        <p className="formSpace"></p>
-        {/* <label>
-            Food: &nbsp; */}
+        <p className="stayFormSpace"></p>
         <input
           className="whatInput"
           type="text"
@@ -31,26 +26,9 @@ function StayForm({ handleChange, handleSubmit }) {
             handleChange(event);
           }}
         />
-        {/* </label> */}
-        {/* <br />
-        <label style={{ display: "none" }}>
-          Tried: &nbsp;
-          <input
-            type="checkbox"
-            checked="checked"
-            name="tried"
-            id="tried"
-            onChange={(event) => {
-              handleChange(event);
-            }}
-          />
-        </label> */}
-        <p className="formSpace"></p>
-
-        {/* <label>
-          Recommended By: &nbsp; */}
+        <p className="stayFormSpace"></p>
         <input
-          className="locationInput"
+          className="whereInput"
           type="text"
           name="location"
           id="location"
@@ -59,9 +37,9 @@ function StayForm({ handleChange, handleSubmit }) {
             handleChange(event);
           }}
         />
-        <p className="formSpace"></p>
+        <p className="stayFormSpace"></p>
         <textarea
-          className="whyInput"
+          className="detailsInput"
           type="text"
           name="details"
           id="details"
@@ -71,8 +49,7 @@ function StayForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        {/* </label> */}
-        {/* <p className="formSpace"></p> */}
+        {/* <p className="stayFormSpace"></p> */}
         <input
           className="recommendedByInput"
           type="text"
@@ -83,15 +60,11 @@ function StayForm({ handleChange, handleSubmit }) {
             handleChange(event);
           }}
         />
-        {/* <label>
-          Where/Recipe: &nbsp; */}
-
-        {/* </label> */}
-        <p className="formSpace"></p>
-        <button className="visitFormSubmit" type="submit">
+        <p className="stayFormSpace"></p>
+        <button className="stayFormSubmit" type="submit">
           Submit
         </button>
-        <p className="formSpace"></p>
+        <p className="stayFormSpace"></p>
       </form>
     </div>
   );

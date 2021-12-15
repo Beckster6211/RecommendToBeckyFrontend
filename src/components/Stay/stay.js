@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
+
+import "./stay.css";
+
 import StayTable from "./Table/table";
 import StayForm from "./Form/form";
 import YesNo from "./YesNo/yesNo";
-
-import "./stay.css";
 
 function Stay() {
   const [stay, setStay] = useState([]);
@@ -25,42 +26,24 @@ function Stay() {
   function handleChange(event) {
     let inputName = event.target.name;
     console.log({ inputName });
-    // setFoodName(inputName);
-    // console.log({ foodName });
     let vl = event.target.value;
     console.log({ vl });
     console.log(`${inputName}: ${vl}`);
-    // setFoodValue(fdvl);
-    // console.log({ foodValue });
-    // console.log(`${foodValue}`);
-    // setNewFood({ foodName: foodValue, isdone: false });
     setForm({ ...form, [event.target.id]: event.target.value });
     console.log({ form });
-    // setForm({ [inputName]: vl, isdone: false, [inputName]: "someone" });
-    // console.log({ form });
   }
 
   async function handleTried(id, object) {
     console.log("checkbox ticked");
-    // setIsDone(!boolean);
     console.log(object);
-    // console.log(object.isdone);
-    // console.log({ ...object });
+    console.log(object.stayed);
     if (object.stayed === true) {
       object.stayed = false;
       console.log(object.stayed);
-      // console.log((object.isdone = false));
-      // return { ...object, isdone: false };
     } else if (object.stayed === false) {
       object.stayed = true;
       console.log(object.stayed);
-      // console.log((object.isdone = true));
-      // return { ...object, isdone: true };
     }
-    // return { ...object };
-    // console.log({ isDone });
-    // setIsDone(!isDone);
-    // console.log({ isDone });
     const response = await fetch(
       `https://recommend-to-becky.herokuapp.com/stay/${id}`,
       {
@@ -70,8 +53,8 @@ function Stay() {
           what: object.what,
           location: object.location,
           details: object.details,
-          recommendedby: object.recommendedby,
-          beckyopinion: object.beckyopinion,
+          recommendedBy: object.recommendedby,
+          beckyOpinion: object.beckyopinion,
           stayed: object.stayed,
         }),
       }
@@ -83,9 +66,9 @@ function Stay() {
   }
 
   async function handleOpinion(event, id, object) {
-    // console.log("button clicked");
+    console.log("button clicked");
     console.log({ id });
-    // console.log({ object });
+    console.log({ object });
     console.log(event);
     if (event.target.name === "yes") {
       console.log("yes button clicked");
@@ -112,8 +95,8 @@ function Stay() {
           what: object.what,
           location: object.location,
           details: object.details,
-          recommendedby: object.recommendedby,
-          beckyopinion: object.beckyopinion,
+          recommendedBy: object.recommendedby,
+          beckyOpinion: object.beckyopinion,
           stayed: object.stayed,
         }),
       }
@@ -160,51 +143,12 @@ function Stay() {
 
   return (
     <div className="stayPage">
+      {/* <h3>Stay</h3> */}
       {/* <div>
         <details>
           <summary>Stay Video</summary>
           <video></video>
         </details>
-      </div> */}
-      {/* <h3>Stay</h3> */}
-      {/* <div className="stayPageLists">
-        <ul className="stayDislike">
-          <p className="stayListParagraph">❌ Careful ❌</p>
-          <li className="stayDislikeItem">
-            Travel sick <small>(worse in cars and coaches)</small>
-          </li>
-          <li className="stayDislikeItem">
-            <strong>HATE SPIDERS</strong>
-          </li>
-          <li className="stayDislikeItem">
-            No car or ability to drive <small>(yet...)</small>
-          </li>
-          <li className="stayDislikeItem">
-            Activities welcome{" "}
-            <small>
-              (but please don't physically kill me, no Everest base camp)
-            </small>
-          </li>
-          <li className="stayDislikeItem">
-            Small budget{" "}
-            <small>
-              (saving to buy Disney...<small>I wish</small>)
-            </small>
-          </li>
-        </ul>
-        <ul className="stayLike">
-          <p className="stayListParagraph">✔️ Okay ✔️</p>
-          <li className="stayLikeItem">
-            Travel sick <small>(Not on boats and planes at all)</small>
-          </li>
-          <li className="stayLikeItem">Have a passport</li>
-          <li className="stayLikeItem">
-            Open to experiences <small>(always wanted to parachute jump)</small>
-          </li>
-          <li className="stayLikeItem">
-            Don't mind roughing it travel/stay wise<small>(sensibly)</small>
-          </li>
-        </ul>
       </div> */}
       <YesNo />
       <StayForm handleChange={handleChange} handleSubmit={handleSubmit} />

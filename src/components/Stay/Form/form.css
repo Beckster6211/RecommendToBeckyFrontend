@@ -1,0 +1,48 @@
+.stayForm {
+  /* background-color: lightskyblue; */
+  /* padding: 1%; */
+  /* margin: 1%; */
+  /* border: 2px solid black; */
+}
+
+.stayFormSpace {
+  margin: 2%;
+}
+
+.whatInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.whereInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.detailsInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.recommendedByInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.stayFormSubmit {
+  border-radius: 5px;
+  border: 2px solid black;
+}

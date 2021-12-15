@@ -7,7 +7,7 @@ function VisitForm({ handleChange, handleSubmit }) {
     <div className="visitForm">
       {/* <h3>Form</h3> */}
       <form
-        className="visitFoodForm"
+        className="visitForm"
         // autocomplete stops drop down of previous entered options
         autoComplete="off"
         onSubmit={(event) => {
