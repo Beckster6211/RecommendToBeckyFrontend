@@ -18,6 +18,7 @@ a {
   border: 2px solid black;
   text-decoration: none;
   color: black;
+  font-size: 1em;
 }
 
 .cityLink {
@@ -25,6 +26,7 @@ a {
   border: 2px solid black;
   text-decoration: none;
   background-color: #3cb371; /*medimumseagreen*/
+  font-size: 1em;
 }
 
 .countryLink {
@@ -32,6 +34,7 @@ a {
   border: 2px solid black;
   text-decoration: none;
   background-color: #ff4500;
+  font-size: 1em;
 }
 
 .bookLink {
@@ -39,6 +42,7 @@ a {
   border: 2px solid black;
   text-decoration: none;
   background-color: #9370db;
+  font-size: 1em;
 }
 
 .teleLink {
@@ -46,6 +50,7 @@ a {
   border: 2px solid black;
   text-decoration: none;
   background-color: #ffa500;
+  font-size: 1em;
 }
 
 .filmLink {
@@ -53,8 +58,78 @@ a {
   border: 2px solid black;
   text-decoration: none;
   background-color: #d2691e;
+  font-size: 1em;
 }
 
 Link {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1%;
+    padding: 1%;
+    background-color: #ff9999; /*lightpinksalmon*/
+    text-decoration: none;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .foodLink {
+    margin: 1%;
+    background-color: #00bfff; /*blue*/
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+  }
+
+  .cityLink {
+    margin: 1%;
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: #3cb371; /*medimumseagreen*/
+    font-size: 2em;
+  }
+
+  .countryLink {
+    margin: 1%;
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: #ff4500;
+    font-size: 2em;
+  }
+
+  .bookLink {
+    margin: 1%;
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: #9370db;
+    font-size: 2em;
+  }
+
+  .teleLink {
+    margin: 1%;
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: #ffa500;
+    font-size: 2em;
+  }
+
+  .filmLink {
+    margin: 1%;
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: #d2691e;
+    font-size: 2em;
+  }
+
+  Link {
+    text-decoration: none;
+  }
 }

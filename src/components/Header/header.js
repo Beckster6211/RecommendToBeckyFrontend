@@ -5,14 +5,11 @@ import "./header.css";
 import Login from "../Login/login";
 import Logout from "../Logout/logout";
 
-// import { Heading } from "@chakra-ui/react";
-
 function Header() {
   // const { loginWithRedirect } = useAuth0();
   // const { logout } = useAuth0();
   return (
     <div>
-      {/* <header>Header</header> */}
       <header className="header">
         {/* <img
           className="loginPic"

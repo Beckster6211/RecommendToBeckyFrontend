@@ -1,7 +1,6 @@
 .header {
   display: flex;
   justify-content: space-evenly;
-
   /* margin: 1%; */
   padding: 2%;
   background-color: lightyellow;
@@ -24,3 +23,28 @@
   width: 20%;
   border-radius: 35px;
 } */
+
+@media only screen and (min-width: 992px) {
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 1%; */
+    /* padding: 1%; */
+    background-color: lightyellow;
+    /* border: solid black 5px; */
+  }
+
+  .headerText {
+    font-size: 3em;
+    padding-top: 3%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
