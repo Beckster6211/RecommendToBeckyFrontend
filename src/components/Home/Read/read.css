@@ -1,5 +1,6 @@
 .readTitle {
   background-color: #9370db;
+  font-size: 1em;
 }
 
 .readDescription {
@@ -10,6 +11,7 @@
 @media only screen and (min-width: 992px) {
   .readTitle {
     background-color: #9370db;
+    font-size: 1.1em;
   }
 
   .readDescription {

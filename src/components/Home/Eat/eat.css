@@ -1,5 +1,6 @@
 .eatTitle {
   background-color: #00bfff;
+  font-size: 1em;
 }
 
 .eatDescription {
@@ -9,6 +10,7 @@
 @media only screen and (min-width: 992px) {
   .eatTitle {
     background-color: #00bfff;
+    font-size: 1.1em;
   }
 
   .eatDescription {
