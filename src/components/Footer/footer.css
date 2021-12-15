@@ -15,6 +15,11 @@
   color: black;
 }
 
+.loginPic {
+  width: 20%;
+  border-radius: 35px;
+}
+
 /* .loginPic {
     width: 20%;
     border-radius: 35px;

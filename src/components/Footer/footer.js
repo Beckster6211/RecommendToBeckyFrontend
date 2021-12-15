@@ -20,7 +20,8 @@ function Footer() {
           alt="SoC avatar"
           onClick={() => loginWithRedirect()}
         /> */}
-        <Login />
+        <img className="logoutPic" src="./Capture1.PNG" alt="Quackers head" />
+        {/* <Login /> */}
         <a className="footerText" href="/">
           Becky Recommends
         </a>
@@ -30,7 +31,8 @@ function Footer() {
           alt="Quackers head"
           onClick={() => logout({ returnTo: window.location.origin })}
         /> */}
-        <Logout />
+        {/* <Logout /> */}
+        <img className="loginPic" src="./Capture.PNG" alt="SoC avatar" />
       </footer>
     </div>
   );

@@ -50,7 +50,7 @@ function Nav() {
         <Route path="/film" element={<FilmForm />} />
         {/* <Food />
           </Route> */}
-        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Home />} />
         {/* <Home />
           </Route> */}
       </Routes>

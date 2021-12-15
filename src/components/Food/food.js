@@ -100,9 +100,9 @@ function Food() {
         body: JSON.stringify({
           food: object.food,
           recipe: object.recipe,
-          recommendedby: object.recommendedby,
-          beckyopinion: object.beckyopinion,
-          isdone: object.isdone,
+          recommendedBy: object.recommendedby,
+          beckyOpinion: object.beckyopinion,
+          isDone: object.isdone,
         }),
       }
     );
@@ -141,9 +141,9 @@ function Food() {
         body: JSON.stringify({
           food: object.food,
           recipe: object.recipe,
-          recommendedby: object.recommendedby,
-          beckyopinion: object.beckyopinion,
-          isdone: object.isdone,
+          recommendedBy: object.recommendedby,
+          beckyOpinion: object.beckyopinion,
+          isDone: object.isdone,
         }),
       }
     );
