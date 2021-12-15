@@ -2,69 +2,42 @@ import React from "react";
 import "./form.css";
 
 function FilmForm({ handleChange, handleSubmit }) {
-  // const [form, setForm] = useState({});
-  //   console.log({ food });
-  // console.log({ form });
-
   return (
     <div className="teleForm">
       {/* <h3>Form</h3> */}
       <form
-        className="teleFormForm"
+        className="teleForm"
         // autocomplete stops drop down of previous entered options
         autoComplete="off"
         onSubmit={(event) => {
           handleSubmit(event);
         }}
       >
-        <p className="formSpace"></p>
-        {/* <label>
-            Food: &nbsp; */}
+        <p className="teleFormSpace"></p>
         <input
-          className="whatInput"
+          className="tvShowInput"
           type="text"
           name="tvShow"
           id="tvShow"
           placeholder="TV Show..."
-          // value={food}
           onChange={(event) => {
             handleChange(event);
           }}
         />
-        <p className="formSpace"></p>
-        {/* <label>
-            Food: &nbsp; */}
+        <p className="teleFormSpace"></p>
         <input
-          className="whatInput"
+          className="providerInput"
           type="text"
           name="provider"
           id="provider"
           placeholder="Provider..."
-          // value={food}
           onChange={(event) => {
             handleChange(event);
           }}
         />
-        {/* </label> */}
-        {/* <br />
-        <label style={{ display: "none" }}>
-          Tried: &nbsp;
-          <input
-            type="checkbox"
-            checked="checked"
-            name="tried"
-            id="tried"
-            onChange={(event) => {
-              handleChange(event);
-            }}
-          />
-        </label> */}
-        <p className="formSpace"></p>
-
-        {/* <label>
-          Recommended By: &nbsp; */}
+        <p className="teleFormSpace"></p>
         <input
-          className="locationInput"
+          className="noOfSeriesInput"
           type="number"
           name="numberOfSeries"
           id="numberOfSeries"
@@ -74,9 +47,9 @@ function FilmForm({ handleChange, handleSubmit }) {
             handleChange(event);
           }}
         />
-        <p className="formSpace"></p>
+        <p className="teleFormSpace"></p>
         <textarea
-          className="whyInput"
+          className="genreInput"
           type="text"
           name="genre"
           id="genre"
@@ -86,9 +59,9 @@ function FilmForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        <p className="formSpace"></p>
+        {/* <p className="teleFormSpace"></p> */}
         <textarea
-          className="whyInput"
+          className="connectedInput"
           type="text"
           name="connected"
           id="connected"
@@ -98,9 +71,9 @@ function FilmForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        <p className="formSpace"></p>
+        {/* <p className="teleFormSpace"></p> */}
         <textarea
-          className="whyInput"
+          className="detailsInput"
           type="text"
           name="description"
           id="description"
@@ -110,8 +83,7 @@ function FilmForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        {/* </label> */}
-        <p className="formSpace"></p>
+        {/* <p className="teleFormSpace"></p> */}
         <input
           className="recommendedByInput"
           type="text"
@@ -122,15 +94,11 @@ function FilmForm({ handleChange, handleSubmit }) {
             handleChange(event);
           }}
         />
-        {/* <label>
-          Where/Recipe: &nbsp; */}
-
-        {/* </label> */}
-        <p className="formSpace"></p>
+        <p className="teleFormSpace"></p>
         <button className="visitFormSubmit" type="submit">
           Submit
         </button>
-        <p className="formSpace"></p>
+        <p className="teleFormSpace"></p>
       </form>
     </div>
   );

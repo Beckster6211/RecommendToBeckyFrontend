@@ -1,0 +1,73 @@
+.teleForm {
+  /* background-color: lightskyblue; */
+  /* padding: 1%; */
+  /* margin: 1%; */
+  /* border: 2px solid black; */
+}
+
+.teleFormSpace {
+  margin: 2%;
+}
+
+.tvShowInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.providerInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.noOfSeriesInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.genreInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.connectedInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.detailsInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.recommendedByInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.stayFormSubmit {
+  border-radius: 5px;
+  border: 2px solid black;
+}
