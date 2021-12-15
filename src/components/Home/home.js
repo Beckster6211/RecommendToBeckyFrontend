@@ -446,6 +446,7 @@ function Home() {
           </small>
         </p>
       </details>
+      <br />
     </div>
   );
 }

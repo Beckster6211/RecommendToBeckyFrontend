@@ -3,7 +3,7 @@
   margin: 2%;
   padding: 1%;
   background-color: lightYellow;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   text-align: center;
   font-size: 0.9em;
 }
