@@ -6,8 +6,6 @@ import Header from "../Header/header";
 import Home from "../Home/home";
 import Footer from "../Footer/footer";
 
-// import Food from "../Food/food";
-
 function App() {
   return (
     <div className="App">

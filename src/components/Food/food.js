@@ -2,19 +2,9 @@ import React, { useState, useEffect } from "react";
 // import { useAuth0 } from "@auth0/auth0-react";
 import "./food.css";
 
-// // chakra
-// import { Box } from "@chakra-ui/react";
-
 import FoodTable from "./Table/table";
 import Form from "./Form/form";
 import YesNo from "./YesNo/yesNo";
-
-///// when was a list
-// import List from "./List/list";
-// import FoodList from "../../food";
-// import Input from "./Input/input";
-
-// console.log({ FoodList });
 
 function Food() {
   // const { user } = useAuth0();
@@ -23,10 +13,6 @@ function Food() {
   console.log({ food });
   const [form, setForm] = useState({});
   const [updatePage, setUpdatePage] = useState(false);
-  // const [foodName, setFoodName] = useState("");
-  // const [foodValue, setFoodValue] = useState("");
-  // const [newFood, setNewFood] = useState({});
-  // const [isDone, setIsDone] = useState(false);
 
   ////// this doesnt allow the page to refresh when changes made
   // useEffect(() => {
@@ -57,42 +43,26 @@ function Food() {
   function handleChange(event) {
     let inputName = event.target.name;
     console.log({ inputName });
-    // setFoodName(inputName);
-    // console.log({ foodName });
     let vl = event.target.value;
     console.log({ vl });
     console.log(`${inputName}: ${vl}`);
-    // setFoodValue(fdvl);
-    // console.log({ foodValue });
-    // console.log(`${foodValue}`);
-    // setNewFood({ foodName: foodValue, isdone: false });
     setForm({ ...form, [event.target.id]: event.target.value });
     console.log({ form });
-    // setForm({ [inputName]: vl, isdone: false, [inputName]: "someone" });
-    // console.log({ form });
   }
 
   async function handleTried(id, object) {
     console.log("checkbox ticked");
-    // setIsDone(!boolean);
-    // console.log(object);
-    // console.log(object.isdone);
-    // console.log({ ...object });
+    console.log(object);
+    console.log(object.isdone);
     if (object.isdone === true) {
       object.isdone = false;
       console.log(object.isdone);
       // console.log((object.isdone = false));
-      // return { ...object, isdone: false };
     } else if (object.isdone === false) {
       object.isdone = true;
       console.log(object.isdone);
       // console.log((object.isdone = true));
-      // return { ...object, isdone: true };
     }
-    // return { ...object };
-    // console.log({ isDone });
-    // setIsDone(!isDone);
-    // console.log({ isDone });
     const response = await fetch(
       `https://recommend-to-becky.herokuapp.com/food/${id}`,
       {
@@ -190,76 +160,13 @@ function Food() {
 
   return (
     <div className="foodPage">
+      {/* <h1>Food</h1> */}
       {/* <div>
         <details>
           <summary>Eat Video</summary>
           <video></video>
         </details>
       </div> */}
-      {/* <h1>Food</h1> */}
-      {/* <Input addToList={addFood} />
-      <List food={food} deleteFood={removeFood} /> */}
-      {/* <div className="foodPageLists">
-        <ul className="foodDislike">
-          <p className="foodListParagraph">❌ Dislikes ❌</p>
-          <li className="foodDislikeItem">Peanuts</li>
-          <li className="foodDislikeItem">
-            Cheese <small>(when overpowering e.g burger)</small>
-          </li>
-          <li className="foodDislikeItem">
-            Chilli <small>(I don't like the beans)</small>
-          </li>
-          <li className="foodDislikeItem">
-            Spicy/Hot <small>(Not a fan)</small>
-          </li>
-          <li className="foodDislikeItem">Coconut</li>
-          <li className="foodDislikeItem">
-            Some fish <small>(prawns, tuna...)</small>
-          </li>
-          <li className="foodDislikeItem">
-            Some fruit{" "}
-            <small>
-              (pineapple <i>shouldn't be near pizza</i>)
-            </small>
-          </li>
-          <li className="foodDislikeItem">
-            Marmite{" "}
-            <small>
-              (<strong>Disgusting</strong>
-            </small>
-            )
-          </li>
-          <li className="foodDislikeItem">
-            Alcohol (<small>unless you can't really taste it</small>)
-          </li>
-        </ul>
-        <ul className="foodLike">
-          <p className="foodListParagraph">✔️ Likes ✔️</p>
-          <li className="foodLikeItem">
-            Sweet over savory <small>(pancakes over full english)</small>
-          </li>
-          <li className="foodLikeItem">
-            Cheese <small>(on pizza & lasagne)</small>
-          </li>
-          <li className="foodLikeItem">
-            Meat eater <small>(open to meat alternatives)</small>
-          </li>
-          <li className="foodLikeItem">
-            More medium/mid well{" "}
-            <small>
-              (I like crispy{" "}
-              <strong>
-                Not Burnt <i>"CRISPY"</i>
-              </strong>
-              )
-            </small>
-          </li>
-          <li className="foodLikeItem">
-            Some fish <small>(salmon, cod...)</small>
-          </li>
-        </ul>
-      </div> */}
-      {/* <p>hi</p> */}
       <YesNo />
       <Form
         food={food}

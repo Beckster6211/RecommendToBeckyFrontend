@@ -2,22 +2,6 @@ import React from "react";
 
 import "./table.css";
 
-// // chakra
-// import {
-//   Table,
-//   Thead,
-//   Tbody,
-//   Tfoot,
-//   Tr,
-//   Th,
-//   Td,
-//   TableCaption,
-// } from "@chakra-ui/react";
-// import { Center, Square, Circle } from "@chakra-ui/react";
-// import { Box } from "@chakra-ui/react";
-// import { Container } from "@chakra-ui/react";
-// import { Stack, HStack, VStack } from "@chakra-ui/react";
-
 import Item from "../Item/item";
 
 function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
@@ -26,11 +10,8 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
       <table className="tableFood">
         <thead>
           <tr>
-            {/* <th>hi</th> */}
             <th className="tableHeadFood">Food</th>
             <th className="tableHeadFood">Where/Recipe?</th>
-            {/* <th>Best place to get?</th> */}
-            {/* <th>Tried it</th> */}
             <th className="tableHeadFood">Becky opinion</th>
             <th className="tableHeadFood">Who By</th>
             <th className="tableHeadFood">Delete</th>
@@ -40,8 +21,6 @@ function FoodTable({ food, deleteFood, handleTried, handleOpinion }) {
           <tr>
             <th className="tableHeadFood">Food</th>
             <th className="tableHeadFood">Where/Recipe?</th>
-            {/* <th>Best place to get?</th> */}
-            {/* <th>Tried it</th> */}
             <th className="tableHeadFood">Becky opinion</th>
             <th className="tableHeadFood">Who By</th>
             <th className="tableHeadFood">Delete</th>

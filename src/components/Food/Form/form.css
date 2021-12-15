@@ -5,23 +5,11 @@
   /* border: 2px solid black; */
 }
 
-/* .formFoodForm {
-} */
-
-.formSpace {
+.foodFormSpace {
   margin: 2%;
 }
 
 .foodInput {
-  width: 95%;
-  font-size: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid black;
-  border-radius: 5px;
-}
-
-.recommendedByInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -39,9 +27,14 @@
   border-radius: 5px;
 }
 
-/* ::placeholder {
-  color: black;
-} */
+.recommendedByInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+}
 
 .foodFormSubmit {
   border-radius: 5px;

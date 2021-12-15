@@ -2,10 +2,6 @@ import React from "react";
 import "./form.css";
 
 function FoodForm({ handleChange, handleSubmit }) {
-  // const [form, setForm] = useState({});
-  //   console.log({ food });
-  // console.log({ form });
-
   return (
     <div className="foodForm">
       {/* <h3>Form</h3> */}
@@ -17,9 +13,7 @@ function FoodForm({ handleChange, handleSubmit }) {
           handleSubmit(event);
         }}
       >
-        <p className="formSpace"></p>
-        {/* <label>
-            Food: &nbsp; */}
+        <p className="foodFormSpace"></p>
         <input
           className="foodInput"
           type="text"
@@ -31,26 +25,7 @@ function FoodForm({ handleChange, handleSubmit }) {
             handleChange(event);
           }}
         />
-        {/* </label> */}
-        {/* <br />
-        <label style={{ display: "none" }}>
-          Tried: &nbsp;
-          <input
-            type="checkbox"
-            checked="checked"
-            name="tried"
-            id="tried"
-            onChange={(event) => {
-              handleChange(event);
-            }}
-          />
-        </label> */}
-
-        {/* </label> */}
-        <p className="formSpace"></p>
-        {/* <p className="formSpace"></p> */}
-        {/* <label>
-          Where/Recipe: &nbsp; */}
+        <p className="foodFormSpace"></p>
         <textarea
           className="whereInput"
           type="text"
@@ -62,10 +37,7 @@ function FoodForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        {/* </label> */}
-        {/* <p className="formSpace"></p> */}
-        {/* <label>
-          Recommended By: &nbsp; */}
+        {/* <p className="foodFormSpace"></p> */}
         <input
           className="recommendedByInput"
           type="text"
@@ -76,11 +48,11 @@ function FoodForm({ handleChange, handleSubmit }) {
             handleChange(event);
           }}
         />
-        <p className="formSpace"></p>
+        <p className="foodFormSpace"></p>
         <button className="foodFormSubmit" type="submit">
           Submit
         </button>
-        <p className="formSpace"></p>
+        <p className="foodFormSpace"></p>
       </form>
     </div>
   );
