@@ -2,69 +2,42 @@ import React from "react";
 import "./form.css";
 
 function ReadForm({ handleChange, handleSubmit }) {
-  // const [form, setForm] = useState({});
-  //   console.log({ food });
-  // console.log({ form });
-
   return (
-    <div className="visitForm">
+    <div className="readForm">
       {/* <h3>Form</h3> */}
       <form
-        className="visitFoodForm"
+        className="readForm"
         // autocomplete stops drop down of previous entered options
         autoComplete="off"
         onSubmit={(event) => {
           handleSubmit(event);
         }}
       >
-        <p className="formSpace"></p>
-        {/* <label>
-            Food: &nbsp; */}
+        <p className="readFormSpace"></p>
         <input
-          className="whatInput"
+          className="bookInput"
           type="text"
           name="book"
           id="book"
           placeholder="Book..."
-          // value={food}
           onChange={(event) => {
             handleChange(event);
           }}
         />
-        <p className="formSpace"></p>
-        {/* <label>
-            Food: &nbsp; */}
+        <p className="readFormSpace"></p>
         <input
-          className="whatInput"
+          className="authorInput"
           type="text"
           name="author"
           id="author"
           placeholder="Author..."
-          // value={food}
           onChange={(event) => {
             handleChange(event);
           }}
         />
-        {/* </label> */}
-        {/* <br />
-        <label style={{ display: "none" }}>
-          Tried: &nbsp;
-          <input
-            type="checkbox"
-            checked="checked"
-            name="tried"
-            id="tried"
-            onChange={(event) => {
-              handleChange(event);
-            }}
-          />
-        </label> */}
-        <p className="formSpace"></p>
-
-        {/* <label>
-          Recommended By: &nbsp; */}
+        <p className="readFormSpace"></p>
         <input
-          className="locationInput"
+          className="noOfBooksInput"
           type="number"
           name="numberOfBooks"
           id="numberOfBooks"
@@ -74,9 +47,9 @@ function ReadForm({ handleChange, handleSubmit }) {
             handleChange(event);
           }}
         />
-        <p className="formSpace"></p>
+        <p className="readFormSpace"></p>
         <textarea
-          className="whyInput"
+          className="genreInput"
           type="text"
           name="genre"
           id="genre"
@@ -86,9 +59,9 @@ function ReadForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        <p className="formSpace"></p>
+        {/* <p className="readFormSpace"></p> */}
         <textarea
-          className="whyInput"
+          className="connectedInput"
           type="text"
           name="connected"
           id="connected"
@@ -98,9 +71,9 @@ function ReadForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        <p className="formSpace"></p>
+        {/* <p className="readFormSpace"></p> */}
         <textarea
-          className="whyInput"
+          className="detailsInput"
           type="text"
           name="description"
           id="description"
@@ -110,8 +83,7 @@ function ReadForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        {/* </label> */}
-        <p className="formSpace"></p>
+        {/* <p className="readFormSpace"></p> */}
         <input
           className="recommendedByInput"
           type="text"
@@ -122,15 +94,11 @@ function ReadForm({ handleChange, handleSubmit }) {
             handleChange(event);
           }}
         />
-        {/* <label>
-          Where/Recipe: &nbsp; */}
-
-        {/* </label> */}
-        <p className="formSpace"></p>
-        <button className="visitFormSubmit" type="submit">
+        <p className="readFormSpace"></p>
+        <button className="readFormSubmit" type="submit">
           Submit
         </button>
-        <p className="formSpace"></p>
+        <p className="readFormSpace"></p>
       </form>
     </div>
   );

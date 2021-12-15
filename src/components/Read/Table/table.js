@@ -1,22 +1,6 @@
 import React from "react";
 import "./table.css";
 
-// // chakra
-// import {
-//   Table,
-//   Thead,
-//   Tbody,
-//   Tfoot,
-//   Tr,
-//   Th,
-//   Td,
-//   TableCaption,
-// } from "@chakra-ui/react";
-// import { Center, Square, Circle } from "@chakra-ui/react";
-// import { Box } from "@chakra-ui/react";
-// import { Container } from "@chakra-ui/react";
-// import { Stack, HStack, VStack } from "@chakra-ui/react";
-
 import Item from "../Item/item";
 
 function ReadTable({ read, handleTried, handleOpinion, deleteRead }) {
