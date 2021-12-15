@@ -84,7 +84,7 @@ function Item({
               tried(id, item);
             }}
           />
-          <p>{beckyOpinion}</p>
+          <p className="stayBeckyOpinion">{beckyOpinion}</p>
           <button
             id="yesButton"
             name="yes"
