@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReadTable from "./Table/table";
 import ReadForm from "./Form/form";
+import YesNo from "./YesNo/yesNo";
 
 import "./read.css";
 
@@ -173,7 +174,7 @@ function Read() {
         </details>
       </div> */}
 
-      <div className="readPageLists">
+      {/* <div className="readPageLists">
         <ul className="readDislike">
           <p className="readListParagraph">❌ Don't ❌</p>
           <li className="readDislikeItem">
@@ -187,10 +188,10 @@ function Read() {
           <li className="readDislikeItem">
             If in a collection, detail all{" "}
             <small>or my OCD will go nuts from disorder</small>
-          </li>
-          {/* <li className="readDislikeItem"></li>
+          </li> */}
+      {/* <li className="readDislikeItem"></li>
           <li className="readDislikeItem"></li> */}
-        </ul>
+      {/* </ul>
         <ul className="readLike">
           <p className="readListParagraph">✔️ Do ✔️</p>
           <li className="readLikeItem">
@@ -212,7 +213,8 @@ function Read() {
             I like mythology <small>Greek, Roman, Norse, Egyptian...</small>
           </li>
         </ul>
-      </div>
+      </div> */}
+      <YesNo />
       <ReadForm handleChange={handleChange} handleSubmit={handleSubmit} />
       <ReadTable
         read={read}

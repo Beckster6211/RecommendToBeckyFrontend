@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FilmTable from "./Table/table";
 import FilmForm from "./Form/form";
+import YesNo from "./YesNo/yesNo";
 
 import "./film.css";
 
@@ -171,7 +172,7 @@ function Film() {
         </details>
       </div> */}
 
-      <div className="filmPageLists">
+      {/* <div className="filmPageLists">
         <ul className="filmDislike">
           <p className="filmListParagraph">❌ No ❌</p>
           <li className="filmDislikeItem">
@@ -221,7 +222,8 @@ function Film() {
             <strong>No 1 Black Widow</strong>
           </li>
         </ul>
-      </div>
+      </div> */}
+      <YesNo />
       <FilmForm handleChange={handleChange} handleSubmit={handleSubmit} />
       <FilmTable
         film={film}

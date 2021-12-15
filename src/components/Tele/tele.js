@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TeleTable from "./Table/table";
 import TeleForm from "./Form/form";
+import YesNo from "./YesNo/yesNo";
 
 import "./tele.css";
 
@@ -173,7 +174,7 @@ function Tele() {
         </details>
       </div> */}
 
-      <div className="telePageLists">
+      {/* <div className="telePageLists">
         <ul className="teleDislike">
           <p className="teleListParagraph">❌ No ❌</p>
           <li className="teleDislikeItem">
@@ -227,8 +228,8 @@ function Tele() {
             </small>
           </li>
         </ul>
-      </div>
-
+      </div> */}
+      <YesNo />
       <TeleForm handleChange={handleChange} handleSubmit={handleSubmit} />
       <TeleTable
         tele={tele}

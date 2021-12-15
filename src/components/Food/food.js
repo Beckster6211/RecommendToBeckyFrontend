@@ -7,6 +7,7 @@ import "./food.css";
 
 import FoodTable from "./Table/table";
 import Form from "./Form/form";
+import YesNo from "./YesNo/yesNo";
 
 ///// when was a list
 // import List from "./List/list";
@@ -198,7 +199,7 @@ function Food() {
       {/* <h1>Food</h1> */}
       {/* <Input addToList={addFood} />
       <List food={food} deleteFood={removeFood} /> */}
-      <div className="foodPageLists">
+      {/* <div className="foodPageLists">
         <ul className="foodDislike">
           <p className="foodListParagraph">❌ Dislikes ❌</p>
           <li className="foodDislikeItem">Peanuts</li>
@@ -257,8 +258,9 @@ function Food() {
             Some fish <small>(salmon, cod...)</small>
           </li>
         </ul>
-      </div>
+      </div> */}
       {/* <p>hi</p> */}
+      <YesNo />
       <Form
         food={food}
         handleChange={handleChange}

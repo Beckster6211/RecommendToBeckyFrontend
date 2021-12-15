@@ -1,0 +1,54 @@
+.foodPageLists {
+  /* margin: 1%;
+    padding: 1%; */
+  /* background-color: lightgreen; */
+  /* background-color: white; */
+  font-size: 0.8em;
+  /* text-align: left; */
+  /* border: 2px solid black; */
+  display: flex;
+}
+
+.foodPageParagraph {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  /* text-align: center; */
+  /* display: inline-block; */
+}
+
+ul {
+  /* border: 2px solid black; */
+  list-style-type: none;
+  text-align: left;
+  /* display: inline-block; */
+}
+
+.foodDislike {
+  background-color: lightcoral;
+  /* display: inline-block; */
+  margin: 1%;
+  padding: 1%;
+  width: 50%;
+}
+
+.foodLike {
+  background-color: green;
+  /* display: inline-block; */
+  margin: 1%;
+  padding: 1%;
+  width: 50%;
+}
+
+.foodDislikeItem:before {
+  content: "❌";
+}
+
+.foodLikeItem:before {
+  content: "✔️";
+}
+
+.foodListParagraph {
+  text-align: center;
+  text-decoration: underline;
+  margin: 1%;
+}

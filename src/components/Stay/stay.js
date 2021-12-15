@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import StayTable from "./Table/table";
 import StayForm from "./Form/form";
+import YesNo from "./YesNo/yesNo";
 
 import "./stay.css";
 
@@ -166,7 +167,7 @@ function Stay() {
         </details>
       </div> */}
       {/* <h3>Stay</h3> */}
-      <div className="stayPageLists">
+      {/* <div className="stayPageLists">
         <ul className="stayDislike">
           <p className="stayListParagraph">❌ Careful ❌</p>
           <li className="stayDislikeItem">
@@ -204,7 +205,8 @@ function Stay() {
             Don't mind roughing it travel/stay wise<small>(sensibly)</small>
           </li>
         </ul>
-      </div>
+      </div> */}
+      <YesNo />
       <StayForm handleChange={handleChange} handleSubmit={handleSubmit} />
       <StayTable
         stay={stay}

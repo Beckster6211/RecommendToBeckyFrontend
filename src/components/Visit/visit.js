@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import VisitTable from "./Table/table";
 import VisitForm from "./Form/form";
+import YesNo from "./YesNo/yesNo";
 
 import "./visit.css";
 
@@ -166,7 +167,7 @@ function Visit() {
         </details>
       </div> */}
       {/* <h3>Visit</h3> */}
-      <div className="visitPageLists">
+      {/* <div className="visitPageLists">
         <ul className="visitDislike">
           <p className="visitListParagraph">❌ Careful ❌</p>
           <li className="visitDislikeItem">
@@ -204,7 +205,8 @@ function Visit() {
             Don't mind roughing it travel/stay wise<small>(sensibly)</small>
           </li>
         </ul>
-      </div>
+      </div> */}
+      <YesNo />
       <VisitForm handleChange={handleChange} handleSubmit={handleSubmit} />
       <VisitTable
         visit={visit}
