@@ -1,11 +1,8 @@
 import React from "react";
+
 import "./form.css";
 
 function VisitForm({ handleChange, handleSubmit }) {
-  // const [form, setForm] = useState({});
-  //   console.log({ food });
-  // console.log({ form });
-
   return (
     <div className="visitForm">
       {/* <h3>Form</h3> */}
@@ -17,9 +14,7 @@ function VisitForm({ handleChange, handleSubmit }) {
           handleSubmit(event);
         }}
       >
-        <p className="formSpace"></p>
-        {/* <label>
-            Food: &nbsp; */}
+        <p className="visitFormSpace"></p>
         <input
           className="whatInput"
           type="text"
@@ -31,21 +26,7 @@ function VisitForm({ handleChange, handleSubmit }) {
             handleChange(event);
           }}
         />
-        {/* </label> */}
-        {/* <br />
-        <label style={{ display: "none" }}>
-          Tried: &nbsp;
-          <input
-            type="checkbox"
-            checked="checked"
-            name="tried"
-            id="tried"
-            onChange={(event) => {
-              handleChange(event);
-            }}
-          />
-        </label> */}
-        <p className="formSpace"></p>
+        <p className="visitFormSpace"></p>
         <textarea
           className="locationInput"
           type="text"
@@ -57,8 +38,7 @@ function VisitForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        {/* <label>
-          Recommended By: &nbsp; */}
+        {/* <p className="visitFormSpace"></p> */}
         <input
           className="whyInput"
           type="text"
@@ -69,9 +49,7 @@ function VisitForm({ handleChange, handleSubmit }) {
             handleChange(event);
           }}
         />
-        {/* </label> */}
-        <p className="formSpace"></p>
-        <p className="formSpace"></p>
+        <p className="visitFormSpace"></p>
         <input
           className="recommendedByInput"
           type="text"
@@ -82,15 +60,11 @@ function VisitForm({ handleChange, handleSubmit }) {
             handleChange(event);
           }}
         />
-        {/* <label>
-          Where/Recipe: &nbsp; */}
-
-        {/* </label> */}
-        <p className="formSpace"></p>
+        <p className="visitFormSpace"></p>
         <button className="visitFormSubmit" type="submit">
           Submit
         </button>
-        <p className="formSpace"></p>
+        <p className="visitFormSpace"></p>
       </form>
     </div>
   );

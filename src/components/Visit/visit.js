@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
+
+import "./visit.css";
+
 import VisitTable from "./Table/table";
 import VisitForm from "./Form/form";
 import YesNo from "./YesNo/yesNo";
-
-import "./visit.css";
 
 function Visit() {
   const [visit, setVisit] = useState([]);
@@ -25,42 +26,24 @@ function Visit() {
   function handleChange(event) {
     let inputName = event.target.name;
     console.log({ inputName });
-    // setFoodName(inputName);
-    // console.log({ foodName });
     let vl = event.target.value;
     console.log({ vl });
     console.log(`${inputName}: ${vl}`);
-    // setFoodValue(fdvl);
-    // console.log({ foodValue });
-    // console.log(`${foodValue}`);
-    // setNewFood({ foodName: foodValue, isdone: false });
     setForm({ ...form, [event.target.id]: event.target.value });
     console.log({ form });
-    // setForm({ [inputName]: vl, isdone: false, [inputName]: "someone" });
-    // console.log({ form });
   }
 
   async function handleTried(id, object) {
     console.log("checkbox ticked");
-    // setIsDone(!boolean);
     console.log(object);
-    // console.log(object.isdone);
-    // console.log({ ...object });
+    console.log(object.visited);
     if (object.visited === true) {
       object.visited = false;
       console.log(object.visited);
-      // console.log((object.isdone = false));
-      // return { ...object, isdone: false };
     } else if (object.visited === false) {
       object.visited = true;
       console.log(object.visited);
-      // console.log((object.isdone = true));
-      // return { ...object, isdone: true };
     }
-    // return { ...object };
-    // console.log({ isDone });
-    // setIsDone(!isDone);
-    // console.log({ isDone });
     const response = await fetch(
       `https://recommend-to-becky.herokuapp.com/visit/${id}`,
       {
@@ -70,8 +53,8 @@ function Visit() {
           what: object.what,
           location: object.location,
           why: object.why,
-          recommendedby: object.recommendedby,
-          beckyopinion: object.beckyopinion,
+          recommendedBy: object.recommendedby,
+          beckyOpinion: object.beckyopinion,
           visited: object.visited,
         }),
       }
@@ -83,9 +66,9 @@ function Visit() {
   }
 
   async function handleOpinion(event, id, object) {
-    // console.log("button clicked");
+    console.log("button clicked");
     console.log({ id });
-    // console.log({ object });
+    console.log({ object });
     console.log(event);
     if (event.target.name === "yes") {
       console.log("yes button clicked");
@@ -112,8 +95,8 @@ function Visit() {
           what: object.what,
           location: object.location,
           why: object.why,
-          recommendedby: object.recommendedby,
-          beckyopinion: object.beckyopinion,
+          recommendedBy: object.recommendedby,
+          beckyOpinion: object.beckyopinion,
           visited: object.visited,
         }),
       }
@@ -160,51 +143,12 @@ function Visit() {
 
   return (
     <div className="visitPage">
+      {/* <h3>Visit</h3> */}
       {/* <div>
         <details>
           <summary>Visit Video</summary>
           <video></video>
         </details>
-      </div> */}
-      {/* <h3>Visit</h3> */}
-      {/* <div className="visitPageLists">
-        <ul className="visitDislike">
-          <p className="visitListParagraph">❌ Careful ❌</p>
-          <li className="visitDislikeItem">
-            Travel sick <small>(worse in cars and coaches)</small>
-          </li>
-          <li className="visitDislikeItem">
-            <strong>HATE SPIDERS</strong>
-          </li>
-          <li className="visitDislikeItem">
-            No car or ability to drive <small>(yet...)</small>
-          </li>
-          <li className="visitDislikeItem">
-            Activities welcome{" "}
-            <small>
-              (but please don't physically kill me, no Everest base camp)
-            </small>
-          </li>
-          <li className="visitDislikeItem">
-            Small budget{" "}
-            <small>
-              (saving to buy Disney...<small>I wish</small>)
-            </small>
-          </li>
-        </ul>
-        <ul className="visitLike">
-          <p className="visitListParagraph">✔️ Okay ✔️</p>
-          <li className="visitLikeItem">
-            Travel sick <small>(Not on boats and planes at all)</small>
-          </li>
-          <li className="visitLikeItem">Have a passport</li>
-          <li className="visitLikeItem">
-            Open to experiences <small>(always wanted to parachute jump)</small>
-          </li>
-          <li className="visitLikeItem">
-            Don't mind roughing it travel/stay wise<small>(sensibly)</small>
-          </li>
-        </ul>
       </div> */}
       <YesNo />
       <VisitForm handleChange={handleChange} handleSubmit={handleSubmit} />

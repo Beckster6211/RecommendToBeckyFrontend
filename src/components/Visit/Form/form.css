@@ -5,7 +5,7 @@
   /* border: 2px solid black; */
 }
 
-.formSpace {
+.visitFormSpace {
   margin: 2%;
 }
 
@@ -17,8 +17,7 @@
   border: 2px solid black;
   border-radius: 5px;
 }
-
-.recommendedByInput {
+.locationInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -26,7 +25,6 @@
   border: 2px solid black;
   border-radius: 5px;
 }
-
 .whyInput {
   width: 95%;
   font-size: 1em;
@@ -35,8 +33,7 @@
   border: 2px solid black;
   border-radius: 5px;
 }
-
-.locationInput {
+.recommendedByInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
