@@ -23,7 +23,10 @@ function Footer() {
         <img className="logoutPic" src="./Capture1.PNG" alt="Quackers head" />
         {/* <Login /> */}
         <a className="footerText" href="/">
-          Becky Recommends
+          Becky Recommends <br />
+          <small>
+            <small>To You</small>
+          </small>
         </a>
         {/* <img
           className="logoutPic"

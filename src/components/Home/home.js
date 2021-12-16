@@ -9,6 +9,8 @@ import ReadDescription from "./Read/read";
 import TeleDescription from "./Tele/tele";
 import FilmDescription from "./Film/film";
 
+// import Footer from "../Footer/footer";
+
 function Home() {
   return (
     <div className="homePage">
@@ -35,6 +37,7 @@ function Home() {
       <br />
       <FilmDescription />
       <br />
+      {/* <Footer /> */}
     </div>
   );
 }
