@@ -49,7 +49,7 @@ function StayForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        {/* <p className="stayFormSpace"></p> */}
+        <p className="stayFormSpace"></p>
         <input
           className="recommendedByInput"
           type="text"

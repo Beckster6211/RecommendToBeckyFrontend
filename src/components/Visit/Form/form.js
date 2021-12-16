@@ -38,7 +38,7 @@ function VisitForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        {/* <p className="visitFormSpace"></p> */}
+        <p className="visitFormSpace"></p>
         <input
           className="whyInput"
           type="text"

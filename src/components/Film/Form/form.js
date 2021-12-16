@@ -47,7 +47,7 @@ function FilmForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        {/* <p className="filmFormSpace"></p> */}
+        <p className="filmFormSpace"></p>
         <textarea
           className="connectedInput"
           type="text"
@@ -59,7 +59,7 @@ function FilmForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        {/* <p className="filmFormSpace"></p> */}
+        <p className="filmFormSpace"></p>
         <textarea
           className="detailsInput"
           type="text"
@@ -71,7 +71,7 @@ function FilmForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        {/* <p className="filmFormSpace"></p> */}
+        <p className="filmFormSpace"></p>
         <input
           className="recommendedByInput"
           type="text"

@@ -59,7 +59,7 @@ function ReadForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        {/* <p className="readFormSpace"></p> */}
+        <p className="readFormSpace"></p>
         <textarea
           className="connectedInput"
           type="text"
@@ -71,7 +71,7 @@ function ReadForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        {/* <p className="readFormSpace"></p> */}
+        <p className="readFormSpace"></p>
         <textarea
           className="detailsInput"
           type="text"
@@ -83,7 +83,7 @@ function ReadForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        {/* <p className="readFormSpace"></p> */}
+        <p className="readFormSpace"></p>
         <input
           className="recommendedByInput"
           type="text"
