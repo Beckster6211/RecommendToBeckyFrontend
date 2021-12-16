@@ -46,7 +46,7 @@ function YesNo() {
         <li className="teleLikeItem">
           I watch before read <small>I compare the book after the watch</small>
         </li>
-        <li className="teleLikeItem">I watched quite a lot of US tele </li>
+        <li className="teleLikeItem">I watch quite a lot of US tele </li>
         <li className="teleLikeItem">
           I'm not a girly girl{" "}
           <small>
