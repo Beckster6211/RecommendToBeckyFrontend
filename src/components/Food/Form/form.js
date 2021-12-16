@@ -37,7 +37,7 @@ function FoodForm({ handleChange, handleSubmit }) {
           }}
           rows="2"
         />
-        {/* <p className="foodFormSpace"></p> */}
+        <p className="foodFormSpace"></p>
         <input
           className="recommendedByInput"
           type="text"
