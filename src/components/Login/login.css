@@ -1,26 +1,46 @@
-/* #loginButton {
-  background-color: white;
-  /* width: 20%; */
-/* background-image: url("./Capture.PNG");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain; */
-/* width: 200px; */
-/* color: rgba(0, 0, 0, 0); */
-/* width: 10%;
-  padding: 1%; */
-/* } */
-
 .loginPic {
   width: 20%;
   border-radius: 35px;
 }
 
-@media only screen and (min-width: 992px) {
-  #pictureForLogin {
-    width: 11%;
-    /* height: 10%; */
-    border-radius: 70px;
-    /* border: solid black 5px; */
+@media only screen and (max-width: 320) {
+  .loginPic {
+    width: 20%;
+    border-radius: 35px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .loginPic {
+    /* width: 20%; */
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .loginPic {
+    /* width: 20%; */
+    border-radius: 35px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .loginPic {
+    width: 13%;
+    border-radius: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .loginPic {
+    width: 15%;
+    border-radius: 50px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .loginPic {
+    width: 12%;
+    border-radius: 50px;
   }
 }

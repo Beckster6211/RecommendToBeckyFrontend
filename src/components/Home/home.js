@@ -1,5 +1,4 @@
 import React from "react";
-// import Auth0 from "../Auth0/auth0";
 import "./home.css";
 
 import EatDescription from "./Eat/eat";
@@ -8,8 +7,6 @@ import StayDescription from "./Stay/stay";
 import ReadDescription from "./Read/read";
 import TeleDescription from "./Tele/tele";
 import FilmDescription from "./Film/film";
-
-// import Footer from "../Footer/footer";
 
 function Home() {
   return (
@@ -25,19 +22,32 @@ function Home() {
         There is a little description about each of the pages if you need help
         as how to navigate and use them 👍
       </p>
-      <EatDescription />
-      <br />
-      <VisitDescription />
-      <br />
-      <StayDescription />
-      <br />
-      <ReadDescription />
-      <br />
-      <TeleDescription />
-      <br />
-      <FilmDescription />
-      <br />
-      {/* <Footer /> */}
+      <div className="descriptions">
+        <div className="des">
+          <EatDescription />
+        </div>
+        {/* <br /> */}
+        <div className="des">
+          <VisitDescription />
+        </div>
+        {/* <br /> */}
+        <div className="des">
+          <StayDescription />
+        </div>
+        {/* <br /> */}
+        <div className="des">
+          <ReadDescription />
+        </div>
+        {/* <br /> */}
+        <div className="des">
+          <TeleDescription />
+        </div>
+        {/* <br /> */}
+        <div className="des">
+          <FilmDescription />
+        </div>
+        {/* <br /> */}
+      </div>
     </div>
   );
 }

@@ -9,21 +9,15 @@
   display: flex;
 }
 
-.filmPageParagraph {
-  margin-top: 1%;
-  margin-bottom: 1%;
-  /* text-align: center; */
-  /* display: inline-block; */
+.filmListParagraph {
+  text-align: center;
+  text-decoration: underline;
+  margin: 1%;
+  font-size: 1em;
 }
-
-ul {
-  /* border: 2px solid black; */
+.filmDislike {
   list-style-type: none;
   text-align: left;
-  /* display: inline-block; */
-}
-
-.filmDislike {
   background-color: lightcoral;
   /* display: inline-block; */
   margin: 1%;
@@ -32,11 +26,21 @@ ul {
 }
 
 .filmLike {
+  list-style-type: none;
+  text-align: left;
   background-color: green;
   /* display: inline-block; */
   margin: 1%;
   padding: 1%;
   width: 50%;
+}
+
+.filmDislikeItem {
+  font-size: 1em;
+}
+
+.filmLikeItem {
+  font-size: 1em;
 }
 
 .filmDislikeItem:before {
@@ -47,8 +51,4 @@ ul {
   content: "✔️";
 }
 
-.filmListParagraph {
-  text-align: center;
-  text-decoration: underline;
-  margin: 1%;
-}
+/* @media only screen and (min-width: 768px){} */

@@ -5,17 +5,11 @@
 
 .teleDescription {
   margin: 1%;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .teleTitle {
-    background-color: #ffa500;
-    font-size: 1.1em;
-  }
-
-  .teleDescription {
-    margin: 1%;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }

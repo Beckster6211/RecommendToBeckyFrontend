@@ -5,7 +5,6 @@ import "./login.css";
 function Login() {
   const { loginWithRedirect } = useAuth0();
   return (
-    // <button id="loginButton" onClick={() => loginWithRedirect()}>
     <img
       id="pictureForLogin"
       className="loginPic"
@@ -13,12 +12,6 @@ function Login() {
       alt="SoC avatar"
       onClick={() => loginWithRedirect()}
     />
-    // <img
-    //   id="loginPic"
-    //   src="./Capture.PNG"
-    //   onClick={() => loginWithRedirect()}
-    // />
-    // </button>
   );
 }
 

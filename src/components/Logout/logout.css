@@ -2,10 +2,45 @@
   width: 20%;
   border-radius: 35px;
 }
-@media only screen and (min-width: 992px) {
+
+@media only screen and (max-width: 320) {
   .logoutPic {
-    width: 10%;
-    /* height: 10%; */
-    border-radius: 60px;
+    width: 20%;
+    border-radius: 35px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .logoutPic {
+    /* width: 20%; */
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .logoutPic {
+    /* width: 20%; */
+    border-radius: 35px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .logoutPic {
+    width: 13%;
+    border-radius: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .logoutPic {
+    width: 15%;
+    border-radius: 50px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .logoutPic {
+    width: 12%;
+    border-radius: 50px;
   }
 }

@@ -1,10 +1,14 @@
 .footer {
+  background-color: lightYellow;
   display: flex;
   justify-content: space-evenly;
-
   /* margin: 1%; */
   padding: 2%;
-  background-color: lightyellow;
+}
+
+.footerPics {
+  width: 20%;
+  border-radius: 25px;
 }
 
 .footerText {
@@ -15,17 +19,87 @@
   color: black;
 }
 
-.loginPic {
-  width: 20%;
-  border-radius: 35px;
+@media only screen and (max-width: 320px) {
+  .footerPics {
+    width: 20%;
+    border-radius: 25px;
+  }
+
+  .footerText {
+    font-size: 1.4em;
+    padding-top: 2%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
 }
 
-/* .loginPic {
-    width: 20%;
-    border-radius: 35px;
-  } */
+@media only screen and (min-width: 375px) {
+  .footerPics {
+    /* width: 20%; */
+    border-radius: 30px;
+  }
+  .footerText {
+    font-size: 1.6em;
+    /* padding-top: 2%;
+    text-align: center;
+    text-decoration: none;
+    color: black; */
+  }
+}
 
-/* .logoutPic {
-    width: 20%;
+@media only screen and (min-width: 425px) {
+  .footerPics {
+    /* width: 20%; */
     border-radius: 35px;
-  } */
+  }
+  .footerText {
+    font-size: 1.7em;
+    /* padding-top: 2%;
+    text-align: center;
+    text-decoration: none;
+    color: black; */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footerPics {
+    width: 13%;
+    border-radius: 40px;
+  }
+  .footerText {
+    font-size: 2em;
+    /* padding-top: 2%;
+    text-align: center;
+    text-decoration: none;
+    color: black; */
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footerPics {
+    width: 15%;
+    border-radius: 50px;
+  }
+  .footerText {
+    font-size: 2.5em;
+    /* padding-top: 2%;
+    text-align: center;
+    text-decoration: none;
+    color: black; */
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footerPics {
+    width: 12%;
+    border-radius: 50px;
+  }
+  .footerText {
+    font-size: 3em;
+    /* padding-top: 2%;
+    text-align: center;
+    text-decoration: none;
+    color: black; */
+  }
+}

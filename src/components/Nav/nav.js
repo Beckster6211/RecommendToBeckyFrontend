@@ -5,11 +5,13 @@ import "./nav.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import FilmForm from "../Film/film";
-import TeleForm from "../Tele/tele";
+import FoodForm from "../Food/food";
 import ReadForm from "../Read/read";
 import StayForm from "../Stay/stay";
+import TeleForm from "../Tele/tele";
+
 import VisitForm from "../Visit/visit";
-import FoodForm from "../Food/food";
+
 import Home from "../Home/home";
 
 function Nav() {
@@ -42,12 +44,13 @@ function Nav() {
         </div>
       </nav>
       <Routes>
-        <Route path="/food" element={<FoodForm />} />
-        <Route path="/visit" element={<VisitForm />} />
-        <Route path="/stay" element={<StayForm />} />
-        <Route path="/read" element={<ReadForm />} />
-        <Route path="/tele" element={<TeleForm />} />
         <Route path="/film" element={<FilmForm />} />
+        <Route path="/food" element={<FoodForm />} />
+        <Route path="/read" element={<ReadForm />} />
+        <Route path="/stay" element={<StayForm />} />
+        <Route path="/tele" element={<TeleForm />} />
+        <Route path="/visit" element={<VisitForm />} />
+
         {/* <Food />
           </Route> */}
         <Route path="/" element={<Home />} />

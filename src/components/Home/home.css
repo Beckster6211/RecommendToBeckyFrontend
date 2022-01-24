@@ -5,45 +5,39 @@
   background-color: lightYellow;
   /* min-height: 100vh; */
   text-align: center;
-  font-size: 0.9em;
+  /* font-size: 0.9em; */
 }
 
 .homeDescriptionWhy {
   /* border: solid black 2px; */
-  font-size: 0.9em;
+  font-size: 0.8em;
   /* background-color: blueviolet; */
   margin: 1%;
 }
 
 .homeDescriptionHow {
   /* border: solid black 2px; */
-  font-size: 0.9em;
+  font-size: 0.8em;
   /* background-color: chartreuse; */
   /* margin: 0; */
 }
 
-@media only screen and (min-width: 992px) {
-  .homePage {
-    border: solid black 2px;
-    margin: 2%;
-    padding: 1%;
-    background-color: lightYellow;
-    /* min-height: 100vh; */
-    text-align: center;
-    font-size: 1em;
-  }
+.des {
+  margin: 1.5%;
+  font-size: 0.8em;
+  /* border: solid black 2px; */
+}
 
+@media only screen and (min-width: 768px) {
   .homeDescriptionWhy {
-    /* border: solid black 2px; */
-    font-size: 1em;
-    /* background-color: blueviolet; */
-    margin: 1%;
+    font-size: 0.9em;
   }
 
   .homeDescriptionHow {
-    /* border: solid black 2px; */
-    font-size: 1em;
-    /* background-color: chartreuse; */
-    /* margin: 0; */
+    font-size: 0.9em;
+  }
+
+  .des {
+    font-size: 0.9em;
   }
 }

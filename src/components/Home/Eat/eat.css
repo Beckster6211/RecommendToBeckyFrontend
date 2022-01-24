@@ -5,16 +5,10 @@
 
 .eatDescription {
   margin: 1%;
-  font-size: 0.9em;
+  font-size: 1em;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .eatTitle {
-    background-color: #00bfff;
-    font-size: 1.1em;
-  }
-
-  .eatDescription {
-    margin: 1%;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }

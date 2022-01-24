@@ -5,57 +5,10 @@
   /* border: 2px solid black; */
 }
 
-.filmPageLists {
-  /* margin: 1%;
-            padding: 1%; */
-  /* background-color: lightgreen; */
-  /* background-color: white; */
-  font-size: 0.8em;
-  /* text-align: left; */
-  /* border: 2px solid black; */
-  display: flex;
-}
+/* .filmPageParagraph { */
 
-.filmPageParagraph {
-  margin-top: 1%;
-  margin-bottom: 1%;
-  /* text-align: center; */
-  /* display: inline-block; */
-}
-
-ul {
-  /* border: 2px solid black; */
-  list-style-type: none;
-  text-align: left;
-  /* display: inline-block; */
-}
-
-.filmDislike {
-  background-color: lightcoral;
-  /* display: inline-block; */
-  margin: 1%;
-  padding: 1%;
-  width: 50%;
-}
-
-.filmLike {
-  background-color: green;
-  /* display: inline-block; */
-  margin: 1%;
-  padding: 1%;
-  width: 50%;
-}
-
-.filmDislikeItem:before {
-  content: "❌";
-}
-
-.filmLikeItem:before {
-  content: "✔️";
-}
-
-.filmListParagraph {
-  text-align: center;
-  text-decoration: underline;
-  margin: 1%;
-}
+/* margin-top: 1%;
+  margin-bottom: 1%; */
+/* text-align: center; */
+/* display: inline-block; */
+/* } */
