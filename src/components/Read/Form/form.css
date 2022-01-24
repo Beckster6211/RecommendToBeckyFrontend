@@ -9,7 +9,7 @@
   margin: 1%;
 }
 
-.bookInput {
+.readBookInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -18,7 +18,7 @@
   border-radius: 5px;
 }
 
-.authorInput {
+.readAuthorInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -27,7 +27,7 @@
   border-radius: 5px;
 }
 
-.noOfBooksInput {
+.readNoOfBooksInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -36,32 +36,41 @@
   border-radius: 5px;
 }
 
-.genreInput {
+.readGenreInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
   margin-right: auto;
   border: 2px solid black;
   border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
-.connectedInput {
+.readConnectedInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
   margin-right: auto;
   border: 2px solid black;
   border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
-.detailsInput {
+.readDetailsInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
   margin-right: auto;
   border: 2px solid black;
   border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
-.recommendedByInput {
+.readRecommendedByInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -73,4 +82,31 @@
 .readFormSubmit {
   border-radius: 5px;
   border: 2px solid black;
+}
+
+@media only screen and (min-width: 1024px) {
+  .readBookInput {
+    font-size: 1.1em;
+  }
+  .readAuthorInput {
+    font-size: 1.1em;
+  }
+  .readNoOfBooksInput {
+    font-size: 1.1em;
+  }
+  .readGenreInput {
+    font-size: 1.1em;
+  }
+  .readConnectedInput {
+    font-size: 1.1em;
+  }
+  .readDetailsInput {
+    font-size: 1.1em;
+  }
+  .readRecommendedByInput {
+    font-size: 1.1em;
+  }
+  .filmFormSubmit {
+    font-size: 1.1em;
+  }
 }

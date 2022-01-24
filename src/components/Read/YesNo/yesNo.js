@@ -3,43 +3,29 @@ import "./yesNo.css";
 
 function YesNo() {
   return (
-    <div className="stayPageLists">
-      <ul className="stayDislike">
-        <p className="stayListParagraph">❌ Careful ❌</p>
-        <li className="stayDislikeItem">
-          Travel sick <small>(worse in cars and coaches)</small>
+    <div className="readPageLists">
+      <ul className="readDislike">
+        <p className="readListParagraph">❌ Maybe Not ❌</p>
+        <li className="readDislikeItem">
+          I don't like stuff thats too heavy (or in depth)
         </li>
-        <li className="stayDislikeItem">
-          <strong>HATE SPIDERS</strong>
-        </li>
-        <li className="stayDislikeItem">
-          No car or ability to drive <small>(yet...)</small>
-        </li>
-        <li className="stayDislikeItem">
-          Activities welcome{" "}
-          <small>
-            (but please don't physically kill me, no Everest base camp)
-          </small>
-        </li>
-        <li className="stayDislikeItem">
-          Small budget{" "}
-          <small>
-            (saving to buy Disney...<small>I wish</small>)
-          </small>
+        <li className="readDislikeItem">
+          I need something gripping straight away
         </li>
       </ul>
-      <ul className="stayLike">
-        <p className="stayListParagraph">✔️ Okay ✔️</p>
-        <li className="stayLikeItem">
-          Travel sick <small>(Not on boats and planes at all)</small>
+      <ul className="readLike">
+        <p className="readListParagraph">✔️ Maybe ✔️</p>
+        <li className="readLikeItem">
+          I like books based/inspired by a tv series or film
         </li>
-        <li className="stayLikeItem">Have a passport</li>
-        <li className="stayLikeItem">
-          Open to experiences <small>(always wanted to parachute jump)</small>
+        <li className="readLikeItem">
+          I like mythology{" "}
+          <small>
+            I enjoy stories of why things are named as they are, alot traced to
+            myth
+          </small>
         </li>
-        <li className="stayLikeItem">
-          Don't mind roughing it travel/stay wise<small>(sensibly)</small>
-        </li>
+        <li className="readLikeItem">Open to different genres</li>
       </ul>
     </div>
   );

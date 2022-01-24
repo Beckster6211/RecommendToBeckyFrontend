@@ -8,19 +8,11 @@
   /* border: 2px solid black; */
   display: flex;
 }
-
-.readPageParagraph {
-  margin-top: 1%;
-  margin-bottom: 1%;
-  /* text-align: center; */
-  /* display: inline-block; */
-}
-
-ul {
-  /* border: 2px solid black; */
-  list-style-type: none;
-  text-align: left;
-  /* display: inline-block; */
+.readListParagraph {
+  text-align: center;
+  text-decoration: underline;
+  margin: 1%;
+  font-size: 1em;
 }
 
 .readDislike {
@@ -29,6 +21,8 @@ ul {
   margin: 1%;
   padding: 1%;
   width: 50%;
+  list-style-type: none;
+  text-align: left;
 }
 
 .readLike {
@@ -37,6 +31,16 @@ ul {
   margin: 1%;
   padding: 1%;
   width: 50%;
+  list-style-type: none;
+  text-align: left;
+}
+
+.readDislikeItem {
+  font-size: 1em;
+}
+
+.readLikeItem {
+  font-size: 1em;
 }
 
 .readDislikeItem:before {
@@ -47,8 +51,34 @@ ul {
   content: "✔️";
 }
 
-.readListParagraph {
-  text-align: center;
-  text-decoration: underline;
-  margin: 1%;
+@media only screen and (max-width: 320px) {
+  .readPageLists {
+    font-size: 0.8em;
+  }
+
+  .readListParagraph {
+    font-size: 1em;
+  }
+
+  .readDislikeItem {
+    font-size: 1em;
+  }
+
+  .readLikeItem {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .readListParagraph {
+    font-size: 1.2em;
+  }
+
+  .readDislikeItem {
+    font-size: 1.1em;
+  }
+
+  .readLikeItem {
+    font-size: 1.1em;
+  }
 }

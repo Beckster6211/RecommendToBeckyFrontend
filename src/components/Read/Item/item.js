@@ -35,22 +35,32 @@ function Item({
   return (
     <tr className="item">
       <td>
-        <p>
+        <p className="readItem">
           {readBook} <br />({readNumberOfBooks})
         </p>
-        <p>{readAuthor}</p>
+        <p className="readItem">{readAuthor}</p>
       </td>
       <td>
-        <textarea defaultValue={readConnected} rows="6" readOnly></textarea>
+        <textarea
+          className="readItemTextarea"
+          defaultValue={readConnected}
+          rows="6"
+          readOnly
+        ></textarea>
       </td>
       <td>
-        <textarea defaultValue={readDescription} rows="6" readOnly></textarea>
+        <textarea
+          className="readItemTextarea"
+          defaultValue={readDescription}
+          rows="6"
+          readOnly
+        ></textarea>
       </td>
 
       {user === undefined ? (
         <td>
           <input
-            className="checkBox readBeckyOpinion"
+            className="readCheckBox"
             type="checkbox"
             checked={read}
             disabled={enableIfMe(user)}
@@ -66,6 +76,7 @@ function Item({
             🤓
           </button>
           <button
+            id="alrightButton"
             name="alright"
             onClick={() => {
               console.log("Thats just for me HaHa");
@@ -74,6 +85,7 @@ function Item({
             😶
           </button>
           <button
+            id="noButton"
             name="no"
             onClick={() => {
               console.log("Thats just for me HaHa");
@@ -85,7 +97,7 @@ function Item({
       ) : (
         <td>
           <input
-            className="checkBox readBeckyOpinion"
+            className="readCheckBox"
             type="checkbox"
             checked={read}
             onChange={() => {
@@ -103,6 +115,7 @@ function Item({
             🤓
           </button>
           <button
+            id="alrightButton"
             name="alright"
             onClick={(event) => {
               opinion(event, id, item);
@@ -111,6 +124,7 @@ function Item({
             😶
           </button>
           <button
+            id="noButton"
             name="no"
             onClick={(event) => {
               opinion(event, id, item);
@@ -121,10 +135,11 @@ function Item({
         </td>
       )}
       <td>
-        <p>{recommendedBy}</p>
+        <p className="readItem">{recommendedBy}</p>
       </td>
       <td>
         <button
+          id="readDelete"
           onClick={() => {
             removeRead(index, id);
           }}

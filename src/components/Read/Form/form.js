@@ -15,7 +15,7 @@ function ReadForm({ handleChange, handleSubmit }) {
       >
         <p className="readFormSpace"></p>
         <input
-          className="bookInput"
+          className="readBookInput"
           type="text"
           name="book"
           id="book"
@@ -26,7 +26,7 @@ function ReadForm({ handleChange, handleSubmit }) {
         />
         <p className="readFormSpace"></p>
         <input
-          className="authorInput"
+          className="readAuthorInput"
           type="text"
           name="author"
           id="author"
@@ -37,7 +37,7 @@ function ReadForm({ handleChange, handleSubmit }) {
         />
         <p className="readFormSpace"></p>
         <input
-          className="noOfBooksInput"
+          className="readNoOfBooksInput"
           type="number"
           name="numberOfBooks"
           id="numberOfBooks"
@@ -49,7 +49,7 @@ function ReadForm({ handleChange, handleSubmit }) {
         />
         <p className="readFormSpace"></p>
         <textarea
-          className="genreInput"
+          className="readGenreInput"
           type="text"
           name="genre"
           id="genre"
@@ -61,7 +61,7 @@ function ReadForm({ handleChange, handleSubmit }) {
         />
         <p className="readFormSpace"></p>
         <textarea
-          className="connectedInput"
+          className="readConnectedInput"
           type="text"
           name="connected"
           id="connected"
@@ -73,7 +73,7 @@ function ReadForm({ handleChange, handleSubmit }) {
         />
         <p className="readFormSpace"></p>
         <textarea
-          className="detailsInput"
+          className="readDetailsInput"
           type="text"
           name="description"
           id="description"
@@ -85,7 +85,7 @@ function ReadForm({ handleChange, handleSubmit }) {
         />
         <p className="readFormSpace"></p>
         <input
-          className="recommendedByInput"
+          className="readRecommendedByInput"
           type="text"
           name="recommendedBy"
           id="recommendedBy"
