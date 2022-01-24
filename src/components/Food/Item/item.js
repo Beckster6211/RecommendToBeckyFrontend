@@ -31,15 +31,20 @@ function Item({
   return (
     <tr className="item">
       <td>
-        <p>{foodName}</p>
+        <p className="foodItem">{foodName}</p>
       </td>
       <td>
-        <textarea defaultValue={foodWhere} rows="6" readOnly></textarea>
+        <textarea
+          className="foodItemTextarea"
+          defaultValue={foodWhere}
+          rows="6"
+          readOnly
+        ></textarea>
       </td>
       {user === undefined ? (
         <td>
           <input
-            className="checkBox foodBeckyOpinion"
+            className="foodCheckBox"
             type="checkbox"
             checked={foodDone}
             disabled={enableIfMe(user)}
@@ -55,6 +60,7 @@ function Item({
             😋
           </button>
           <button
+            id="alrightButton"
             name="alright"
             onClick={() => {
               console.log("Thats just for me HaHa");
@@ -63,6 +69,7 @@ function Item({
             🤫
           </button>
           <button
+            id="noButton"
             name="no"
             onClick={() => {
               console.log("Thats just for me HaHa");
@@ -74,7 +81,7 @@ function Item({
       ) : (
         <td>
           <input
-            className="checkBox foodBeckyOpinion"
+            className="foodCheckBox"
             type="checkbox"
             checked={foodDone}
             onChange={() => {
@@ -93,6 +100,7 @@ function Item({
             😋
           </button>
           <button
+            id="alrightButton"
             name="alright"
             onClick={(event) => {
               opinion(event, id, item);
@@ -101,6 +109,7 @@ function Item({
             🤫
           </button>
           <button
+            id="noButton"
             name="no"
             onClick={(event) => {
               opinion(event, id, item);
@@ -111,10 +120,11 @@ function Item({
         </td>
       )}
       <td>
-        <p>{recommendedBy}</p>
+        <p className="foodItem">{recommendedBy}</p>
       </td>
       <td>
         <button
+          id="foodDelete"
           onClick={() => {
             removeFood(index, id);
           }}

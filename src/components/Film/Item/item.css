@@ -94,6 +94,10 @@ td {
 }
 
 @media only screen and (min-width: 1024px) {
+  .filmItem {
+    font-size: 1em;
+  }
+
   #yesButton,
   #alrightButton,
   #noButton {

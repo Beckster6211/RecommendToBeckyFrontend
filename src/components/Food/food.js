@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { useAuth0 } from "@auth0/auth0-react";
 import "./food.css";
 
 import FoodTable from "./Table/table";
@@ -173,8 +172,6 @@ function Food() {
         handleChange={handleChange}
         handleSubmit={handleSubmit}
       />
-      {/* <br /> */}
-      {/* <h2>Food Table</h2> */}
       <FoodTable
         food={food}
         deleteFood={removeFood}

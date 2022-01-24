@@ -8,22 +8,15 @@
   /* border: 2px solid black; */
   display: flex;
 }
-
-.foodPageParagraph {
-  margin-top: 1%;
-  margin-bottom: 1%;
-  /* text-align: center; */
-  /* display: inline-block; */
+.foodListParagraph {
+  text-align: center;
+  text-decoration: underline;
+  margin: 1%;
+  font-size: 1em;
 }
-
-ul {
-  /* border: 2px solid black; */
+.foodDislike {
   list-style-type: none;
   text-align: left;
-  /* display: inline-block; */
-}
-
-.foodDislike {
   background-color: lightcoral;
   /* display: inline-block; */
   margin: 1%;
@@ -32,11 +25,20 @@ ul {
 }
 
 .foodLike {
+  list-style-type: none;
+  text-align: left;
   background-color: green;
   /* display: inline-block; */
   margin: 1%;
   padding: 1%;
   width: 50%;
+}
+.foodDislikeItem {
+  font-size: 1em;
+}
+
+.foodLikeItem {
+  font-size: 1em;
 }
 
 .foodDislikeItem:before {
@@ -47,8 +49,54 @@ ul {
   content: "✔️";
 }
 
-.foodListParagraph {
-  text-align: center;
-  text-decoration: underline;
-  margin: 1%;
+@media only screen and (max-width: 320px) {
+  .foodPageLists {
+    font-size: 0.8em;
+  }
+
+  .foodListParagraph {
+    font-size: 1em;
+  }
+
+  .foodDislikeItem {
+    font-size: 1em;
+  }
+
+  .foodLikeItem {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .foodListParagraph {
+    font-size: 1.2em;
+  }
+
+  .foodDislikeItem {
+    font-size: 1.1em;
+  }
+
+  .foodLikeItem {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .foodListParagraph {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* .foodListParagraph {
+    font-size: 1.3em;
+  } */
+
+  .foodDislikeItem {
+    font-size: 1.2em;
+  }
+
+  .foodLikeItem {
+    font-size: 1.2em;
+  }
 }

@@ -17,7 +17,7 @@
   border: 2px solid black;
   border-radius: 5px;
 }
-.providerInput {
+.filmProviderInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -25,18 +25,7 @@
   border: 2px solid black;
   border-radius: 5px;
 }
-.genreInput {
-  width: 95%;
-  font-size: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid black;
-  border-radius: 5px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-}
-.connectedInput {
+.filmGenreInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -47,7 +36,7 @@
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
-.detailsInput {
+.filmConnectedInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -58,7 +47,18 @@
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
-.recommendedByInput {
+.filmDetailsInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+.filmRecommendedByInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -76,19 +76,19 @@
   .filmInput {
     font-size: 1.1em;
   }
-  .providerInput {
+  .filmProviderInput {
     font-size: 1.1em;
   }
-  .genreInput {
+  .filmGenreInput {
     font-size: 1.1em;
   }
-  .connectedInput {
+  .filmConnectedInput {
     font-size: 1.1em;
   }
-  .detailsInput {
+  .filmDetailsInput {
     font-size: 1.1em;
   }
-  .recommendedByInput {
+  .filmRecommendedByInput {
     font-size: 1.1em;
   }
   .filmFormSubmit {

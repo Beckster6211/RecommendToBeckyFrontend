@@ -27,7 +27,7 @@ function FoodForm({ handleChange, handleSubmit }) {
         />
         <p className="foodFormSpace"></p>
         <textarea
-          className="whereInput"
+          className="foodWhereInput"
           type="text"
           name="where"
           id="recipe"
@@ -39,7 +39,7 @@ function FoodForm({ handleChange, handleSubmit }) {
         />
         <p className="foodFormSpace"></p>
         <input
-          className="recommendedByInput"
+          className="foodRecommendedByInput"
           type="text"
           name="recommendedBy"
           id="recommendedBy"

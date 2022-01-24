@@ -1,25 +1,29 @@
 td {
   border: 2px solid black;
 }
-textarea {
+.foodItemTextarea {
   width: 80%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
-button {
+.foodItem {
+  font-size: 0.8em;
+}
+
+#yesButton,
+#alrightButton,
+#noButton,
+#foodDelete {
   border-radius: 50%;
   /* vertical-align: middle;
-  text-align: center; */
+          text-align: center; */
   font-size: 0.9em;
   border: 2px solid black;
 }
 
-/* input.checkBox {
-  width: 25px;
-  height: 25px;
-  border: 2px solid black;
-} */
-
-.checkBox {
+.foodCheckBox {
   width: 25px;
   height: 25px;
   /* border: 2px solid black; */
@@ -27,8 +31,114 @@ button {
 
 .foodBeckyOpinion {
   /* margin-top: 2%;
-  margin-bottom: 2%; */
+          margin-bottom: 2%; */
   margin: 2%;
   /* padding: 1%; */
   /* border: 2px solid black; */
+  font-size: 1.1em;
+}
+
+@media only screen and (max-width: 320px) {
+  .foodItem {
+    font-size: 0.8em;
+  }
+
+  .foodItemTextarea {
+    font-size: 0.8em;
+  }
+
+  #yesButton,
+  #alrightButton,
+  #noButton,
+  #foodDelete {
+    font-size: 0.9em;
+  }
+
+  .foodCheckBox {
+    width: 25px;
+    height: 25px;
+  }
+
+  .foodBeckyOpinion {
+    margin: 2%;
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .foodItem {
+    font-size: 0.9em;
+  }
+
+  .foodItemTextarea {
+    font-size: 0.9em;
+  }
+
+  #yesButton,
+  #alrightButton,
+  #noButton,
+  #foodDelete {
+    font-size: 1em;
+  }
+
+  .foodCheckBox {
+    width: 30px;
+    height: 30px;
+  }
+
+  .foodBeckyOpinion {
+    margin: 2%;
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .foodItem {
+    font-size: 1em;
+  }
+  #yesButton,
+  #alrightButton,
+  #noButton {
+    font-size: 1.1em;
+  }
+
+  #foodDelete {
+    font-size: 1.5em;
+  }
+
+  .foodCheckBox {
+    width: 30px;
+    height: 30px;
+  }
+
+  .foodBeckyOpinion {
+    margin: 2%;
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .foodItem {
+    font-size: 1em;
+  }
+
+  #yesButton,
+  #alrightButton,
+  #noButton {
+    font-size: 1.2em;
+  }
+
+  #foodDelete {
+    font-size: 1.5em;
+  }
+
+  .foodCheckBox {
+    width: 35px;
+    height: 35px;
+  }
+
+  .foodBeckyOpinion {
+    margin: 2%;
+    font-size: 1.5em;
+  }
 }

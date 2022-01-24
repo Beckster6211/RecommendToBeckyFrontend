@@ -26,7 +26,7 @@ function FilmForm({ handleChange, handleSubmit }) {
         />
         <p className="filmFormSpace"></p>
         <input
-          className="providerInput"
+          className="filmProviderInput"
           type="text"
           name="provider"
           id="provider"
@@ -37,7 +37,7 @@ function FilmForm({ handleChange, handleSubmit }) {
         />
         <p className="filmFormSpace"></p>
         <textarea
-          className="genreInput"
+          className="filmGenreInput"
           type="text"
           name="genre"
           id="genre"
@@ -49,7 +49,7 @@ function FilmForm({ handleChange, handleSubmit }) {
         />
         <p className="filmFormSpace"></p>
         <textarea
-          className="connectedInput"
+          className="filmConnectedInput"
           type="text"
           name="connected"
           id="connected"
@@ -61,7 +61,7 @@ function FilmForm({ handleChange, handleSubmit }) {
         />
         <p className="filmFormSpace"></p>
         <textarea
-          className="detailsInput"
+          className="filmDetailsInput"
           type="text"
           name="description"
           id="description"
@@ -73,7 +73,7 @@ function FilmForm({ handleChange, handleSubmit }) {
         />
         <p className="filmFormSpace"></p>
         <input
-          className="recommendedByInput"
+          className="filmRecommendedByInput"
           type="text"
           name="recommendedBy"
           id="recommendedBy"
