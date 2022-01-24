@@ -1,11 +1,22 @@
 td {
   border: 2px solid black;
+  padding: 1%;
 }
-textarea {
+.filmItemTextarea {
   width: 80%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
-button {
+.filmItem {
+  font-size: 0.8em;
+}
+
+#yesButton,
+#alrightButton,
+#noButton,
+#filmDelete {
   border-radius: 50%;
   /* vertical-align: middle;
           text-align: center; */
@@ -13,7 +24,7 @@ button {
   border: 2px solid black;
 }
 
-.checkBox {
+.filmCheckBox {
   width: 25px;
   height: 25px;
   /* border: 2px solid black; */
@@ -25,4 +36,110 @@ button {
   margin: 2%;
   /* padding: 1%; */
   /* border: 2px solid black; */
+  font-size: 1.1em;
+}
+
+@media only screen and (max-width: 320px) {
+  .filmItem {
+    font-size: 0.8em;
+  }
+
+  .filmItemTextarea {
+    font-size: 0.8em;
+  }
+
+  #yesButton,
+  #alrightButton,
+  #noButton,
+  #filmDelete {
+    font-size: 0.9em;
+  }
+
+  .filmCheckBox {
+    width: 25px;
+    height: 25px;
+  }
+
+  .filmBeckyOpinion {
+    margin: 2%;
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .filmItem {
+    font-size: 0.9em;
+  }
+
+  .filmItemTextarea {
+    font-size: 0.9em;
+  }
+
+  #yesButton,
+  #alrightButton,
+  #noButton,
+  #filmDelete {
+    font-size: 1em;
+  }
+
+  .filmCheckBox {
+    width: 30px;
+    height: 30px;
+  }
+
+  .filmBeckyOpinion {
+    margin: 2%;
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #yesButton,
+  #alrightButton,
+  #noButton {
+    font-size: 1.1em;
+  }
+
+  #filmDelete {
+    font-size: 1.5em;
+  }
+
+  .filmCheckBox {
+    width: 30px;
+    height: 30px;
+  }
+
+  .filmBeckyOpinion {
+    margin: 2%;
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .filmItem {
+    font-size: 1em;
+  }
+
+  /* .filmItemTextarea {
+    font-size: 0.9em;
+  } */
+  #yesButton,
+  #alrightButton,
+  #noButton {
+    font-size: 1.2em;
+  }
+
+  #filmDelete {
+    font-size: 1.5em;
+  }
+
+  .filmCheckBox {
+    width: 35px;
+    height: 35px;
+  }
+
+  .filmBeckyOpinion {
+    margin: 2%;
+    font-size: 1.5em;
+  }
 }

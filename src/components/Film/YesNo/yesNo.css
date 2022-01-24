@@ -51,4 +51,54 @@
   content: "✔️";
 }
 
-/* @media only screen and (min-width: 768px){} */
+@media only screen and (max-width: 320px) {
+  .filmPageLists {
+    font-size: 0.8em;
+  }
+
+  .filmListParagraph {
+    font-size: 1em;
+  }
+
+  .filmDislikeItem {
+    font-size: 1em;
+  }
+
+  .filmLikeItem {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .filmListParagraph {
+    font-size: 1.2em;
+  }
+
+  .filmDislikeItem {
+    font-size: 1.1em;
+  }
+
+  .filmLikeItem {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .filmListParagraph {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* .filmListParagraph {
+    font-size: 1.3em;
+  } */
+
+  .filmDislikeItem {
+    font-size: 1.2em;
+  }
+
+  .filmLikeItem {
+    font-size: 1.2em;
+  }
+}
