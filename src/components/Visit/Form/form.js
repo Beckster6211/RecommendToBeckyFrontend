@@ -16,7 +16,7 @@ function VisitForm({ handleChange, handleSubmit }) {
       >
         <p className="visitFormSpace"></p>
         <input
-          className="whatInput"
+          className="visitWhatInput"
           type="text"
           name="what"
           id="what"
@@ -28,7 +28,7 @@ function VisitForm({ handleChange, handleSubmit }) {
         />
         <p className="visitFormSpace"></p>
         <textarea
-          className="locationInput"
+          className="visitLocationInput"
           type="text"
           name="location"
           id="location"
@@ -40,7 +40,7 @@ function VisitForm({ handleChange, handleSubmit }) {
         />
         <p className="visitFormSpace"></p>
         <input
-          className="whyInput"
+          className="visitWhyInput"
           type="text"
           name="why"
           id="why"
@@ -51,7 +51,7 @@ function VisitForm({ handleChange, handleSubmit }) {
         />
         <p className="visitFormSpace"></p>
         <input
-          className="recommendedByInput"
+          className="visitRecommendedByInput"
           type="text"
           name="recommendedBy"
           id="recommendedBy"

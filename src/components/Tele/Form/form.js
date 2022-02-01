@@ -1,7 +1,7 @@
 import React from "react";
 import "./form.css";
 
-function FilmForm({ handleChange, handleSubmit }) {
+function TeleForm({ handleChange, handleSubmit }) {
   return (
     <div className="teleForm">
       {/* <h3>Form</h3> */}
@@ -26,7 +26,7 @@ function FilmForm({ handleChange, handleSubmit }) {
         />
         <p className="teleFormSpace"></p>
         <input
-          className="providerInput"
+          className="teleProviderInput"
           type="text"
           name="provider"
           id="provider"
@@ -37,7 +37,7 @@ function FilmForm({ handleChange, handleSubmit }) {
         />
         <p className="teleFormSpace"></p>
         <input
-          className="noOfSeriesInput"
+          className="teleNoOfSeriesInput"
           type="number"
           name="numberOfSeries"
           id="numberOfSeries"
@@ -49,7 +49,7 @@ function FilmForm({ handleChange, handleSubmit }) {
         />
         <p className="teleFormSpace"></p>
         <textarea
-          className="genreInput"
+          className="teleGenreInput"
           type="text"
           name="genre"
           id="genre"
@@ -61,7 +61,7 @@ function FilmForm({ handleChange, handleSubmit }) {
         />
         <p className="teleFormSpace"></p>
         <textarea
-          className="connectedInput"
+          className="teleConnectedInput"
           type="text"
           name="connected"
           id="connected"
@@ -73,7 +73,7 @@ function FilmForm({ handleChange, handleSubmit }) {
         />
         <p className="teleFormSpace"></p>
         <textarea
-          className="detailsInput"
+          className="teleDetailsInput"
           type="text"
           name="description"
           id="description"
@@ -85,7 +85,7 @@ function FilmForm({ handleChange, handleSubmit }) {
         />
         <p className="teleFormSpace"></p>
         <input
-          className="recommendedByInput"
+          className="teleRecommendedByInput"
           type="text"
           name="recommendedBy"
           id="recommendedBy"
@@ -95,7 +95,7 @@ function FilmForm({ handleChange, handleSubmit }) {
           }}
         />
         <p className="teleFormSpace"></p>
-        <button className="visitFormSubmit" type="submit">
+        <button className="teleFormSubmit" type="submit">
           Submit
         </button>
         <p className="teleFormSpace"></p>
@@ -104,4 +104,4 @@ function FilmForm({ handleChange, handleSubmit }) {
   );
 }
 
-export default FilmForm;
+export default TeleForm;

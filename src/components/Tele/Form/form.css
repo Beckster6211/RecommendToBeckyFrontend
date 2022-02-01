@@ -17,7 +17,7 @@
   border: 2px solid black;
   border-radius: 5px;
 }
-.providerInput {
+.teleProviderInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -25,7 +25,7 @@
   border: 2px solid black;
   border-radius: 5px;
 }
-.noOfSeriesInput {
+.teleNoOfSeriesInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -33,41 +33,78 @@
   border: 2px solid black;
   border-radius: 5px;
 }
-.genreInput {
+.teleGenreInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
   margin-right: auto;
   border: 2px solid black;
   border-radius: 5px;
-}
-
-.connectedInput {
-  width: 95%;
-  font-size: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid black;
-  border-radius: 5px;
-}
-.detailsInput {
-  width: 95%;
-  font-size: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid black;
-  border-radius: 5px;
-}
-.recommendedByInput {
-  width: 95%;
-  font-size: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid black;
-  border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
-.stayFormSubmit {
+.teleConnectedInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+.teleDetailsInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+.teleRecommendedByInput {
+  width: 95%;
+  font-size: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+}
+
+.teleFormSubmit {
+  font-size: 1em;
   border-radius: 5px;
   border: 2px solid black;
+}
+
+@media only screen and (min-width: 1024px) {
+  .tvShowInput {
+    font-size: 1.1em;
+  }
+  .teleProviderInput {
+    font-size: 1.1em;
+  }
+  .teleGenreInput {
+    font-size: 1.1em;
+  }
+  .teleConnectedInput {
+    font-size: 1.1em;
+  }
+  .teleDetailsInput {
+    font-size: 1.1em;
+  }
+  .teleRecommendedByInput {
+    font-size: 1.1em;
+  }
+  .teleFormSubmit {
+    font-size: 1.1em;
+  }
 }

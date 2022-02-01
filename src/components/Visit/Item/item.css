@@ -1,19 +1,29 @@
 td {
   border: 2px solid black;
 }
-textarea {
+.visitItemTextarea {
   width: 80%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
-button {
+.visitItem {
+  font-size: 0.8em;
+}
+
+#yesButton,
+#alrightButton,
+#noButton,
+#visitDelete {
   border-radius: 50%;
   /* vertical-align: middle;
-    text-align: center; */
+          text-align: center; */
   font-size: 0.9em;
   border: 2px solid black;
 }
 
-.checkBox {
+.visitCheckBox {
   width: 25px;
   height: 25px;
   /* border: 2px solid black; */
@@ -21,8 +31,118 @@ button {
 
 .visitBeckyOpinion {
   /* margin-top: 2%;
-    margin-bottom: 2%; */
+          margin-bottom: 2%; */
   margin: 2%;
   /* padding: 1%; */
   /* border: 2px solid black; */
+  font-size: 1.1em;
+}
+
+@media only screen and (max-width: 320px) {
+  .visitItem {
+    font-size: 0.8em;
+  }
+
+  .visitItemTextarea {
+    font-size: 0.8em;
+  }
+
+  #yesButton,
+  #alrightButton,
+  #noButton,
+  #visitDelete {
+    font-size: 0.9em;
+  }
+
+  .visitCheckBox {
+    width: 25px;
+    height: 25px;
+  }
+
+  .visitBeckyOpinion {
+    margin: 2%;
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .visitItem {
+    font-size: 0.9em;
+  }
+
+  .visitItemTextarea {
+    font-size: 0.9em;
+  }
+
+  #yesButton,
+  #alrightButton,
+  #noButton,
+  #visitDelete {
+    font-size: 1em;
+  }
+
+  .visitCheckBox {
+    width: 30px;
+    height: 30px;
+  }
+
+  .visitBeckyOpinion {
+    margin: 2%;
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .visitItem {
+    font-size: 1em;
+  }
+
+  #yesButton,
+  #alrightButton,
+  #noButton {
+    font-size: 1.1em;
+  }
+
+  #visitDelete {
+    font-size: 1.5em;
+  }
+
+  .visitCheckBox {
+    width: 30px;
+    height: 30px;
+  }
+
+  .visitBeckyOpinion {
+    margin: 2%;
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .visitItem {
+    font-size: 1em;
+  }
+
+  /* .visitItemTextarea {
+    font-size: 0.9em;
+  } */
+  #yesButton,
+  #alrightButton,
+  #noButton {
+    font-size: 1.2em;
+  }
+
+  #visitDelete {
+    font-size: 1.5em;
+  }
+
+  .visitCheckBox {
+    width: 35px;
+    height: 35px;
+  }
+
+  .visitBeckyOpinion {
+    margin: 2%;
+    font-size: 1.5em;
+  }
 }

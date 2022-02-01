@@ -35,21 +35,31 @@ function Item({
   return (
     <tr className="item">
       <td>
-        <p>
+        <p className="teleItem">
           {teleTvShow} <br />({teleNumberOfSeries})
         </p>
-        <p>{teleTvProvider}</p>
+        <p className="teleItem">{teleTvProvider}</p>
       </td>
       <td>
-        <textarea defaultValue={teleConnected} rows="6" readOnly></textarea>
+        <textarea
+          className="teleItemTextarea"
+          defaultValue={teleConnected}
+          rows="6"
+          readOnly
+        ></textarea>
       </td>
       <td>
-        <textarea defaultValue={teleDescription} rows="6" readOnly></textarea>
+        <textarea
+          className="teleItemTextarea"
+          defaultValue={teleDescription}
+          rows="6"
+          readOnly
+        ></textarea>
       </td>
       {user === undefined ? (
         <td>
           <input
-            className="checkBox teleBeckyOpinion"
+            className="teleCheckBox"
             type="checkbox"
             checked={binged}
             disabled={enableIfMe(user)}
@@ -65,6 +75,7 @@ function Item({
             🤩
           </button>
           <button
+            id="alrightButton"
             name="alright"
             onClick={() => {
               console.log("Thats just for me HaHa");
@@ -73,6 +84,7 @@ function Item({
             🤔
           </button>
           <button
+            id="noButton"
             name="no"
             onClick={() => {
               console.log("Thats just for me HaHa");
@@ -84,7 +96,7 @@ function Item({
       ) : (
         <td>
           <input
-            className="checkBox teleBeckyOpinion"
+            className="teleCheckBox"
             type="checkbox"
             checked={binged}
             onChange={() => {
@@ -102,6 +114,7 @@ function Item({
             🤩
           </button>
           <button
+            id="alrightButton"
             name="alright"
             onClick={(event) => {
               opinion(event, id, item);
@@ -110,6 +123,7 @@ function Item({
             🤔
           </button>
           <button
+            id="noButton"
             name="no"
             onClick={(event) => {
               opinion(event, id, item);
@@ -120,10 +134,11 @@ function Item({
         </td>
       )}
       <td>
-        <p>{recommendedBy}</p>
+        <p className="teleItem">{recommendedBy}</p>
       </td>
       <td>
         <button
+          id="teleDelete"
           onClick={() => {
             removeTele(index, id);
           }}

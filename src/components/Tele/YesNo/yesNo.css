@@ -9,21 +9,16 @@
   display: flex;
 }
 
-.telePageParagraph {
-  margin-top: 1%;
-  margin-bottom: 1%;
-  /* text-align: center; */
-  /* display: inline-block; */
-}
-
-ul {
-  /* border: 2px solid black; */
-  list-style-type: none;
-  text-align: left;
-  /* display: inline-block; */
+.teleListParagraph {
+  text-align: center;
+  text-decoration: underline;
+  margin: 1%;
+  font-size: 1em;
 }
 
 .teleDislike {
+  list-style-type: none;
+  text-align: left;
   background-color: lightcoral;
   /* display: inline-block; */
   margin: 1%;
@@ -32,11 +27,21 @@ ul {
 }
 
 .teleLike {
+  list-style-type: none;
+  text-align: left;
   background-color: green;
   /* display: inline-block; */
   margin: 1%;
   padding: 1%;
   width: 50%;
+}
+
+.teleDislikeItem {
+  font-size: 1em;
+}
+
+.teleLikeItem {
+  font-size: 1em;
 }
 
 .teleDislikeItem:before {
@@ -47,8 +52,54 @@ ul {
   content: "✔️";
 }
 
-.teleListParagraph {
-  text-align: center;
-  text-decoration: underline;
-  margin: 1%;
+@media only screen and (max-width: 320px) {
+  .filmPageLists {
+    font-size: 0.8em;
+  }
+
+  .filmListParagraph {
+    font-size: 1em;
+  }
+
+  .filmDislikeItem {
+    font-size: 1em;
+  }
+
+  .filmLikeItem {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .filmListParagraph {
+    font-size: 1.2em;
+  }
+
+  .filmDislikeItem {
+    font-size: 1.1em;
+  }
+
+  .filmLikeItem {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .teleListParagraph {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* .teleListParagraph {
+    font-size: 1.3em;
+  } */
+
+  .teleDislikeItem {
+    font-size: 1.2em;
+  }
+
+  .teleLikeItem {
+    font-size: 1.2em;
+  }
 }

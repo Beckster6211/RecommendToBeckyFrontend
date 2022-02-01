@@ -31,3 +31,21 @@
 .tableBodyVisit tr:hover {
   background-color: lightyellow;
 }
+
+@media only screen and (max-width: 320px) {
+  .tableHeadVisit {
+    /* text-align: center;
+    background-color: #b0c4de;
+    border: 2px solid black; */
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .tableHeadVisit {
+    /* text-align: center;
+    background-color: #b0c4de;
+    border: 2px solid black; */
+    font-size: 1.2em;
+  }
+}

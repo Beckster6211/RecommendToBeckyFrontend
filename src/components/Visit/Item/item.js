@@ -32,16 +32,21 @@ function Item({
   return (
     <tr className="item">
       <td>
-        <p>{visitWhat}</p>
-        <textarea defaultValue={visitLocation} rows="3" readOnly></textarea>
+        <p className="visitItem">{visitWhat}</p>
+        <textarea
+          className="visitItemTextarea"
+          defaultValue={visitLocation}
+          rows="3"
+          readOnly
+        ></textarea>
       </td>
       <td>
-        <p>{visitWhy}</p>
+        <p className="visitItem">{visitWhy}</p>
       </td>
       {user === undefined ? (
         <td>
           <input
-            className="checkBox visitBeckyOpinion"
+            className="visitCheckBox"
             type="checkbox"
             checked={visited}
             disabled={enableIfMe(user)}
@@ -57,6 +62,7 @@ function Item({
             👍
           </button>
           <button
+            id="alrightButton"
             name="alright"
             onClick={() => {
               console.log("Thats just for me HaHa");
@@ -65,6 +71,7 @@ function Item({
             🤙
           </button>
           <button
+            id="noButton"
             name="no"
             onClick={() => {
               console.log("Thats just for me HaHa");
@@ -76,7 +83,7 @@ function Item({
       ) : (
         <td>
           <input
-            className="checkBox visitBeckyOpinion"
+            className="visitCheckBox"
             type="checkbox"
             checked={visited}
             onChange={() => {
@@ -94,6 +101,7 @@ function Item({
             👍
           </button>
           <button
+            id="alrightButton"
             name="alright"
             onClick={(event) => {
               opinion(event, id, item);
@@ -102,6 +110,7 @@ function Item({
             🤙
           </button>
           <button
+            id="noButton"
             name="no"
             onClick={(event) => {
               opinion(event, id, item);
@@ -112,10 +121,11 @@ function Item({
         </td>
       )}
       <td>
-        <p>{recommendedBy}</p>
+        <p className="visitItem">{recommendedBy}</p>
       </td>
       <td>
         <button
+          id="visitDelete"
           onClick={() => {
             removeVisit(index, id);
           }}
