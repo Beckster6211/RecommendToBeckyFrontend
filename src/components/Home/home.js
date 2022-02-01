@@ -48,7 +48,7 @@ function Home() {
         </div>
         {/* <br /> */}
       </div>
-      <p className="homeDescriptionWhy">
+      <p className="homeDescriptionHow">
         There is a partner to this site called <br />{" "}
         <strong>Becky Recommends</strong> <br />
         👇 which you can get to <small>(In a new tab)</small> by clicking the
