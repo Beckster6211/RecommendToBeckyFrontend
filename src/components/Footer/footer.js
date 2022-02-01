@@ -11,7 +11,12 @@ function Footer() {
           alt="Quackers head"
           width="100px"
         />
-        <a className="footerText" href="/">
+        <a
+          className="footerText"
+          href="https://blj-becky-recommends.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
           Becky <br /> Recommends
         </a>
         {/* <h3 className="headerText">

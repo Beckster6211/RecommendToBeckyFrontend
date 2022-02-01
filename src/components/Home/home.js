@@ -48,6 +48,17 @@ function Home() {
         </div>
         {/* <br /> */}
       </div>
+      <p className="homeDescriptionWhy">
+        There is a partner to this site called <br />{" "}
+        <strong>Becky Recommends</strong> <br />
+        👇 which you can get to <small>(In a new tab)</small> by clicking the
+        footer at the bottom 👇
+      </p>
+      <p className="homeDescriptionHow">
+        It is a near copy of this site but with what I recommend to others in
+        the different catagories. <strong>Becky Recommends</strong> can help you
+        with your recommendations or you can just enjoy what I recommend 😃
+      </p>
     </div>
   );
 }
