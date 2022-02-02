@@ -16,7 +16,7 @@ function StayForm({ handleChange, handleSubmit }) {
       >
         <p className="stayFormSpace"></p>
         <input
-          className="whatInput"
+          className="stayWhatInput"
           type="text"
           name="what"
           id="what"
@@ -28,7 +28,7 @@ function StayForm({ handleChange, handleSubmit }) {
         />
         <p className="stayFormSpace"></p>
         <input
-          className="whereInput"
+          className="stayWhereInput"
           type="text"
           name="location"
           id="location"
@@ -39,7 +39,7 @@ function StayForm({ handleChange, handleSubmit }) {
         />
         <p className="stayFormSpace"></p>
         <textarea
-          className="detailsInput"
+          className="stayDetailsInput"
           type="text"
           name="details"
           id="details"
@@ -51,7 +51,7 @@ function StayForm({ handleChange, handleSubmit }) {
         />
         <p className="stayFormSpace"></p>
         <input
-          className="recommendedByInput"
+          className="stayRecommendedByInput"
           type="text"
           name="recommendedBy"
           id="recommendedBy"

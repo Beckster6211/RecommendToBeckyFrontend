@@ -1,6 +1,6 @@
 .stayPageLists {
   /* margin: 1%;
-        padding: 1%; */
+      padding: 1%; */
   /* background-color: lightgreen; */
   /* background-color: white; */
   font-size: 0.8em;
@@ -9,21 +9,16 @@
   display: flex;
 }
 
-.stayPageParagraph {
-  margin-top: 1%;
-  margin-bottom: 1%;
-  /* text-align: center; */
-  /* display: inline-block; */
-}
-
-ul {
-  /* border: 2px solid black; */
-  list-style-type: none;
-  text-align: left;
-  /* display: inline-block; */
+.stayListParagraph {
+  text-align: center;
+  text-decoration: underline;
+  margin: 1%;
+  font-size: 1em;
 }
 
 .stayDislike {
+  list-style-type: none;
+  text-align: left;
   background-color: lightcoral;
   /* display: inline-block; */
   margin: 1%;
@@ -32,11 +27,21 @@ ul {
 }
 
 .stayLike {
+  list-style-type: none;
+  text-align: left;
   background-color: green;
   /* display: inline-block; */
   margin: 1%;
   padding: 1%;
   width: 50%;
+}
+
+.stayDislikeItem {
+  font-size: 1em;
+}
+
+.stayLikeItem {
+  font-size: 1em;
 }
 
 .stayDislikeItem:before {
@@ -47,8 +52,54 @@ ul {
   content: "✔️";
 }
 
-.stayListParagraph {
-  text-align: center;
-  text-decoration: underline;
-  margin: 1%;
+@media only screen and (max-width: 320px) {
+  .stayPageLists {
+    font-size: 0.8em;
+  }
+
+  .stayListParagraph {
+    font-size: 1em;
+  }
+
+  .stayDislikeItem {
+    font-size: 1em;
+  }
+
+  .stayLikeItem {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .stayListParagraph {
+    font-size: 1.2em;
+  }
+
+  .stayDislikeItem {
+    font-size: 1.1em;
+  }
+
+  .stayLikeItem {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .stayListParagraph {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* .stayListParagraph {
+    font-size: 1.3em;
+  } */
+
+  .stayDislikeItem {
+    font-size: 1.2em;
+  }
+
+  .stayLikeItem {
+    font-size: 1.2em;
+  }
 }

@@ -53,33 +53,33 @@
 }
 
 @media only screen and (max-width: 320px) {
-  .filmPageLists {
+  .visitPageLists {
     font-size: 0.8em;
   }
 
-  .filmListParagraph {
+  .visitListParagraph {
     font-size: 1em;
   }
 
-  .filmDislikeItem {
+  .visitDislikeItem {
     font-size: 1em;
   }
 
-  .filmLikeItem {
+  .visitLikeItem {
     font-size: 1em;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .filmListParagraph {
+  .visitListParagraph {
     font-size: 1.2em;
   }
 
-  .filmDislikeItem {
+  .visitDislikeItem {
     font-size: 1.1em;
   }
 
-  .filmLikeItem {
+  .visitLikeItem {
     font-size: 1.1em;
   }
 }

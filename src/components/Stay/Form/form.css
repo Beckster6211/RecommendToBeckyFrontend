@@ -9,7 +9,7 @@
   margin: 1%;
 }
 
-.whatInput {
+.stayWhatInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -17,7 +17,7 @@
   border: 2px solid black;
   border-radius: 5px;
 }
-.whereInput {
+.stayWhereInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -25,15 +25,18 @@
   border: 2px solid black;
   border-radius: 5px;
 }
-.detailsInput {
+.stayDetailsInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
   margin-right: auto;
   border: 2px solid black;
   border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
-.recommendedByInput {
+.stayRecommendedByInput {
   width: 95%;
   font-size: 1em;
   margin-left: auto;
@@ -45,4 +48,18 @@
 .stayFormSubmit {
   border-radius: 5px;
   border: 2px solid black;
+}
+@media only screen and (min-width: 1024px) {
+  .stayWhatInput {
+    font-size: 1.1em;
+  }
+  .stayWhereInput {
+    font-size: 1.1em;
+  }
+  .stayDetailsInput {
+    font-size: 1.1em;
+  }
+  .stayRecommendedByInput {
+    font-size: 1.1em;
+  }
 }

@@ -32,16 +32,21 @@ function Item({
   return (
     <tr className="item">
       <td>
-        <p>{stayWhat}</p>
-        <p>{stayLocation}</p>
+        <p className="stayItem">{stayWhat}</p>
+        <p className="stayItem">{stayLocation}</p>
       </td>
       <td>
-        <textarea defaultValue={stayDetails} rows="6" readOnly></textarea>
+        <textarea
+          className="stayItemTextarea"
+          defaultValue={stayDetails}
+          rows="6"
+          readOnly
+        ></textarea>
       </td>
       {user === undefined ? (
         <td>
           <input
-            className="checkBox stayBeckyOpinion"
+            className="stayCheckBox"
             type="checkbox"
             checked={stayed}
             disabled={enableIfMe(user)}
@@ -58,6 +63,7 @@ function Item({
             😁
           </button>
           <button
+            id="alrightButton"
             name="alright"
             onClick={() => {
               console.log("Thats just for me HaHa");
@@ -66,6 +72,7 @@ function Item({
             😑
           </button>
           <button
+            id="noButton"
             name="no"
             onClick={() => {
               console.log("Thats just for me HaHa");
@@ -77,7 +84,7 @@ function Item({
       ) : (
         <td>
           <input
-            className="checkBox stayBeckyOpinion"
+            className="stayCheckBox"
             type="checkbox"
             checked={stayed}
             onChange={() => {
@@ -95,6 +102,7 @@ function Item({
             😁
           </button>
           <button
+            id="alrightButton"
             name="alright"
             onClick={(event) => {
               opinion(event, id, item);
@@ -103,6 +111,7 @@ function Item({
             😑
           </button>
           <button
+            id="noButton"
             name="no"
             onClick={(event) => {
               opinion(event, id, item);
@@ -113,10 +122,11 @@ function Item({
         </td>
       )}
       <td>
-        <p>{recommendedBy}</p>
+        <p className="stayItem">{recommendedBy}</p>
       </td>
       <td>
         <button
+          id="stayDelete"
           onClick={() => {
             removeStay(index, id);
           }}
