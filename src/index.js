@@ -7,15 +7,15 @@ import { Auth0Provider } from "@auth0/auth0-react";
 
 // import { ChakraProvider } from "@chakra-ui/react";
 
-// const domain = process.env.AUTH0_DOMAIN;
-// const clientId = process.env.AUTH0_CLIENT_ID;
+const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
 ReactDOM.render(
   <Auth0Provider
-    domain="dev-t00rfqob.eu.auth0.com"
-    clientId="7uC0ec9n2BZzXSRjHvl6lWiS8g57uibz"
-    // domain={domain}
-    // clientId={clientId}
+    // domain="domain line 1 from .env"
+    // clientId="client id line 2 from .env"
+    domain={domain}
+    clientId={clientId}
     redirectUri={window.location.origin}
   >
     <React.StrictMode>
