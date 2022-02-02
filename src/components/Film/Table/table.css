@@ -21,11 +21,11 @@
 }
 
 .tableBodyFilm {
-  background-color: #8b4513; /*darkorchid*/
+  background-color: #8b4513; /*saddlebrown*/
 }
 
 .tableBodyFilm tr:nth-child(even) {
-  background-color: #f4a460; /*mauve*/
+  background-color: #f4a460; /*sandybrown*/
 }
 
 .tableBodyFilm tr:hover {
@@ -34,18 +34,12 @@
 
 @media only screen and (max-width: 320px) {
   .tableHeadFilm {
-    /* text-align: center;
-    background-color: #b0c4de;
-    border: 2px solid black; */
     font-size: 0.9em;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .tableHeadFilm {
-    /* text-align: center;
-    background-color: #b0c4de;
-    border: 2px solid black; */
     font-size: 1.2em;
   }
 }

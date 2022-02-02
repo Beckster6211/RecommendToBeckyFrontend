@@ -19,9 +19,6 @@ function Footer() {
         >
           Becky <br /> Recommends
         </a>
-        {/* <h3 className="headerText">
-          Becky <br /> Recommends
-        </h3> */}
         <img
           className="footerPics"
           src="./Capture.PNG"

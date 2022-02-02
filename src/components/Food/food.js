@@ -6,8 +6,6 @@ import Form from "./Form/form";
 import YesNo from "./YesNo/yesNo";
 
 function Food() {
-  // const { user } = useAuth0();
-  // console.log(user);
   const [food, setFood] = useState([]);
   console.log({ food });
   const [form, setForm] = useState({});
@@ -40,26 +38,26 @@ function Food() {
   }, [updatePage]);
 
   function handleChange(event) {
-    let inputName = event.target.name;
-    console.log({ inputName });
-    let vl = event.target.value;
-    console.log({ vl });
-    console.log(`${inputName}: ${vl}`);
+    // let inputName = event.target.name;
+    // console.log({ inputName });
+    // let vl = event.target.value;
+    // console.log({ vl });
+    // console.log(`${inputName}: ${vl}`);
     setForm({ ...form, [event.target.id]: event.target.value });
-    console.log({ form });
+    // console.log({ form });
   }
 
   async function handleTried(id, object) {
-    console.log("checkbox ticked");
-    console.log(object);
-    console.log(object.isdone);
+    // console.log("checkbox ticked");
+    // console.log(object);
+    // console.log(object.isdone);
     if (object.isdone === true) {
       object.isdone = false;
-      console.log(object.isdone);
+      // console.log(object.isdone);
       // console.log((object.isdone = false));
     } else if (object.isdone === false) {
       object.isdone = true;
-      console.log(object.isdone);
+      // console.log(object.isdone);
       // console.log((object.isdone = true));
     }
     const response = await fetch(
@@ -83,25 +81,25 @@ function Food() {
   }
 
   async function handleOpinion(event, id, object) {
-    console.log("button clicked");
-    console.log({ id });
-    console.log({ object });
-    console.log(event);
+    // console.log("button clicked");
+    // console.log({ id });
+    // console.log({ object });
+    // console.log(event);
     if (event.target.name === "yes") {
-      console.log("yes button clicked");
-      console.log(object.beckyopinion);
+      // console.log("yes button clicked");
+      // console.log(object.beckyopinion);
       object.beckyopinion = "😋";
-      console.log(object.beckyopinion);
+      // console.log(object.beckyopinion);
     } else if (event.target.name === "no") {
-      console.log("no button clicked");
-      console.log(object.beckyopinion);
+      // console.log("no button clicked");
+      // console.log(object.beckyopinion);
       object.beckyopinion = "🤮";
-      console.log(object.beckyopinion);
+      // console.log(object.beckyopinion);
     } else if (event.target.name === "alright") {
-      console.log("alright button clicked");
-      console.log(object.beckyopinion);
+      // console.log("alright button clicked");
+      // console.log(object.beckyopinion);
       object.beckyopinion = "🤫";
-      console.log(object.beckyopinion);
+      // console.log(object.beckyopinion);
     }
     const response = await fetch(
       `https://recommend-to-becky.herokuapp.com/food/${id}`,
@@ -126,8 +124,8 @@ function Food() {
   async function handleSubmit(event) {
     // refreshes form, empties form inputs
     window.location.reload();
-    console.log("submit pressed");
-    console.log(form);
+    // console.log("submit pressed");
+    // console.log(form);
     event.preventDefault();
     const response = await fetch(
       "https://recommend-to-becky.herokuapp.com/food",

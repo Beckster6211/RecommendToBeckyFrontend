@@ -21,11 +21,11 @@
 }
 
 .tableBodyStay {
-  background-color: #8b0000;
+  background-color: #8b0000; /*darkred*/
 }
 
 .tableBodyStay tr:nth-child(even) {
-  background-color: #fa8072;
+  background-color: #fa8072; /*salmon*/
 }
 
 .tableBodyStay tr:hover {
@@ -34,18 +34,12 @@
 
 @media only screen and (max-width: 320px) {
   .tableHeadStay {
-    /* text-align: center;
-    background-color: #b0c4de;
-    border: 2px solid black; */
     font-size: 0.9em;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .tableHeadStay {
-    /* text-align: center;
-    background-color: #b0c4de;
-    border: 2px solid black; */
     font-size: 1.2em;
   }
 }

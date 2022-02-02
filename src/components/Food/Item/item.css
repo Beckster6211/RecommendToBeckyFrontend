@@ -17,8 +17,6 @@ td {
 #noButton,
 #foodDelete {
   border-radius: 50%;
-  /* vertical-align: middle;
-          text-align: center; */
   font-size: 0.9em;
   border: 2px solid black;
 }
@@ -30,10 +28,7 @@ td {
 }
 
 .foodBeckyOpinion {
-  /* margin-top: 2%;
-          margin-bottom: 2%; */
   margin: 2%;
-  /* padding: 1%; */
   /* border: 2px solid black; */
   font-size: 1.1em;
 }

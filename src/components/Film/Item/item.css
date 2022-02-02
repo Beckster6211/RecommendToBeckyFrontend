@@ -18,8 +18,6 @@ td {
 #noButton,
 #filmDelete {
   border-radius: 50%;
-  /* vertical-align: middle;
-          text-align: center; */
   font-size: 0.9em;
   border: 2px solid black;
 }
@@ -31,8 +29,6 @@ td {
 }
 
 .filmBeckyOpinion {
-  /* margin-top: 2%;
-          margin-bottom: 2%; */
   margin: 2%;
   /* padding: 1%; */
   /* border: 2px solid black; */
@@ -124,9 +120,6 @@ td {
     font-size: 1em;
   }
 
-  /* .filmItemTextarea {
-    font-size: 0.9em;
-  } */
   #yesButton,
   #alrightButton,
   #noButton {

@@ -21,11 +21,11 @@
 }
 
 .tableBodyTele {
-  background-color: #fb4f14; /*darkorchid*/
+  background-color: #fb4f14; /*oriolesOrange*/
 }
 
 .tableBodyTele tr:nth-child(even) {
-  background-color: #ff7f50; /*mauve*/
+  background-color: #ff7f50; /*coral*/
 }
 
 .tableBodyTele tr:hover {
@@ -34,18 +34,12 @@
 
 @media only screen and (max-width: 320px) {
   .tableHeadTele {
-    /* text-align: center;
-    background-color: #b0c4de;
-    border: 2px solid black; */
     font-size: 0.9em;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .tableHeadTele {
-    /* text-align: center;
-    background-color: #b0c4de;
-    border: 2px solid black; */
     font-size: 1.2em;
   }
 }

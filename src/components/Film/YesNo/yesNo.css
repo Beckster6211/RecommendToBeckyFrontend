@@ -1,10 +1,8 @@
 .filmPageLists {
   /* margin: 1%;
-              padding: 1%; */
-  /* background-color: lightgreen; */
+  padding: 1%; */
   /* background-color: white; */
   font-size: 0.8em;
-  /* text-align: left; */
   /* border: 2px solid black; */
   display: flex;
 }
@@ -19,7 +17,6 @@
   list-style-type: none;
   text-align: left;
   background-color: lightcoral;
-  /* display: inline-block; */
   margin: 1%;
   padding: 1%;
   width: 50%;
@@ -29,7 +26,6 @@
   list-style-type: none;
   text-align: left;
   background-color: green;
-  /* display: inline-block; */
   margin: 1%;
   padding: 1%;
   width: 50%;
@@ -90,10 +86,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  /* .filmListParagraph {
-    font-size: 1.3em;
-  } */
-
   .filmDislikeItem {
     font-size: 1.2em;
   }

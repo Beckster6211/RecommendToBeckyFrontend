@@ -4,7 +4,6 @@
   /* background-color: lightgreen; */
   /* background-color: white; */
   font-size: 0.8em;
-  /* text-align: left; */
   /* border: 2px solid black; */
   display: flex;
 }
@@ -17,7 +16,6 @@
 
 .readDislike {
   background-color: lightcoral;
-  /* display: inline-block; */
   margin: 1%;
   padding: 1%;
   width: 50%;
@@ -27,7 +25,6 @@
 
 .readLike {
   background-color: green;
-  /* display: inline-block; */
   margin: 1%;
   padding: 1%;
   width: 50%;

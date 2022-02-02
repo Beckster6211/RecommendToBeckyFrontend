@@ -3,8 +3,7 @@
   justify-content: space-evenly;
   margin: 1%;
   padding: 1%;
-  background-color: #ff9999; /*lightpinksalmon*/
-  /* text-decoration: none; */
+  background-color: #ff9999; /*not sure*/
 }
 
 a {
@@ -15,9 +14,8 @@ a {
 .foodLink {
   margin: 1%;
   padding: 0.1%;
-  background-color: #00bfff; /*blue*/
+  background-color: #00bfff; /*deepskyblue*/
   border: 2px solid black;
-  /* text-decoration: none; */
   /* color: black; */
   font-size: 1em;
   border-radius: 8px;
@@ -27,8 +25,7 @@ a {
   margin: 1%;
   padding: 0.1%;
   border: 2px solid black;
-  /* text-decoration: none; */
-  background-color: #3cb371; /*medimumseagreen*/
+  background-color: #3cb371; /*mediumseagreen*/
   font-size: 1em;
   border-radius: 8px;
 }
@@ -37,8 +34,7 @@ a {
   margin: 1%;
   padding: 0.1%;
   border: 2px solid black;
-  /* text-decoration: none; */
-  background-color: #ff4500;
+  background-color: #ff4500; /*orangered*/
   font-size: 1em;
   border-radius: 8px;
 }
@@ -47,8 +43,7 @@ a {
   margin: 1%;
   padding: 0.1%;
   border: 2px solid black;
-  /* text-decoration: none; */
-  background-color: #9370db;
+  background-color: #9370db; /*mediumpurple*/
   font-size: 1em;
   border-radius: 8px;
 }
@@ -57,8 +52,7 @@ a {
   margin: 1%;
   padding: 0.1%;
   border: 2px solid black;
-  /* text-decoration: none; */
-  background-color: #ffa500;
+  background-color: #ffa500; /*orange*/
   font-size: 1em;
   border-radius: 8px;
 }
@@ -67,8 +61,7 @@ a {
   margin: 1%;
   padding: 0.1%;
   border: 2px solid black;
-  /* text-decoration: none; */
-  background-color: #d2691e;
+  background-color: #d2691e; /*cocoaBrown*/
   font-size: 1em;
   border-radius: 8px;
 }
@@ -78,139 +71,53 @@ a {
 } */
 
 @media only screen and (min-width: 768px) {
-  /* .nav {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1%;
-    padding: 1%;
-    background-color: #ff9999;
-    text-decoration: none;
-  } */
-
-  /* a {
-    color: black;
-    text-decoration: none;
-  } */
-
   .foodLink {
-    /* margin: 1%;
-    background-color: #00bfff;
-    border: 2px solid black;
-    text-decoration: none;
-    color: black; */
     font-size: 1.3em;
   }
 
   .cityLink {
-    /* margin: 1%;
-    border: 2px solid black;
-    text-decoration: none;
-    background-color: #3cb371; */
     font-size: 1.3em;
   }
 
   .countryLink {
-    /* margin: 1%;
-    border: 2px solid black;
-    text-decoration: none;
-    background-color: #ff4500; */
     font-size: 1.3em;
   }
 
   .bookLink {
-    /* margin: 1%;
-    border: 2px solid black;
-    text-decoration: none;
-    background-color: #9370db; */
     font-size: 1.3em;
   }
 
   .teleLink {
-    /* margin: 1%;
-    border: 2px solid black;
-    text-decoration: none;
-    background-color: #ffa500; */
     font-size: 1.3em;
   }
 
   .filmLink {
-    /* margin: 1%;
-    border: 2px solid black;
-    text-decoration: none;
-    background-color: #d2691e; */
     font-size: 1.3em;
   }
-
-  /* Link {
-    text-decoration: none;
-  } */
 }
 
 @media only screen and (min-width: 1024px) {
-  /* .nav {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1%;
-    padding: 1%;
-    background-color: #ff9999;
-    text-decoration: none;
-  } */
-
-  /* a {
-    color: black;
-    text-decoration: none;
-  } */
-
   .foodLink {
-    /* margin: 1%;
-    background-color: #00bfff;
-    border: 2px solid black;
-    text-decoration: none;
-    color: black; */
     font-size: 1.5em;
   }
 
   .cityLink {
-    /* margin: 1%;
-    border: 2px solid black;
-    text-decoration: none;
-    background-color: #3cb371; */
     font-size: 1.5em;
   }
 
   .countryLink {
-    /* margin: 1%;
-    border: 2px solid black;
-    text-decoration: none;
-    background-color: #ff4500; */
     font-size: 1.5em;
   }
 
   .bookLink {
-    /* margin: 1%;
-    border: 2px solid black;
-    text-decoration: none;
-    background-color: #9370db; */
     font-size: 1.5em;
   }
 
   .teleLink {
-    /* margin: 1%;
-    border: 2px solid black;
-    text-decoration: none;
-    background-color: #ffa500; */
     font-size: 1.5em;
   }
 
   .filmLink {
-    /* margin: 1%;
-    border: 2px solid black;
-    text-decoration: none;
-    background-color: #d2691e; */
     font-size: 1.5em;
   }
-
-  /* Link {
-    text-decoration: none;
-  } */
 }
